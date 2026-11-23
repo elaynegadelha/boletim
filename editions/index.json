@@ -1,0 +1,17 @@
+[
+ {
+  "date": "2026-11-23",
+  "titulo": "Datas dos novos documentos fiscais remarcadas; Câmara vota o ajuste fiscal",
+  "atencao": "Quem emite documento fiscal de locação, condomínio, bens intangíveis ou demais serviços tem até 1º/1/2027 para estar com o sistema pronto: faltam 39 dias.",
+  "norma": "Ato Conjunto RFB/CGIBS nº 7, de 11 de novembro de 2026",
+  "tags": [
+   "Documentos fiscais",
+   "IBS",
+   "CBS",
+   "Simples Nacional",
+   "Ajuste fiscal",
+   "Dados"
+  ],
+  "conexao": "O FS12 no PGDAS-D e o código aberto da Calculadora de Tributos contam a mesma história: a partir de 2027, a alíquota que sai na nota de uma empresa do Simples vai nascer de um dado que ela declara agora e de uma regra que qualquer pessoa pode ler no GitHub. Quem cuida do dado de hoje cuida do preço de amanhã."
+ }
+]

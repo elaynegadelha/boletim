@@ -1,0 +1,426 @@
+{
+ "date": "2026-11-23",
+ "titulo": "Datas dos novos documentos fiscais remarcadas; Câmara vota o ajuste fiscal",
+ "periodo": "De sexta-feira, 20/11, até a manhã de segunda-feira, 23/11/2026.",
+ "tags": [
+  "Documentos fiscais",
+  "IBS",
+  "CBS",
+  "Simples Nacional",
+  "Ajuste fiscal",
+  "Dados"
+ ],
+ "atencao": "Quem emite documento fiscal de locação, condomínio, bens intangíveis ou demais serviços tem até 1º/1/2027 para estar com o sistema pronto: faltam 39 dias.",
+ "destaques": [
+  "Ato Conjunto RFB/CGIBS nº 7 remarca as datas de obrigatoriedade dos documentos fiscais eletrônicos do IBS e da CBS para 1º/1/2027 e 1º/3/2027.",
+  "PLP 299/2026 (ajuste fiscal) na pauta da Câmara a partir de hoje: corte de benefícios fiscais e limite a compensações.",
+  "Simples Nacional: FS12 obrigatório no PGDAS-D para todas as atividades nos períodos de novembro e dezembro de 2026.",
+  "Senado tem até 15/12 para votar a alíquota de referência da CBS; o TCU propôs 11,3468%.",
+  "Receita Federal publica no GitHub o código-fonte aberto da Calculadora de Tributos da reforma."
+ ],
+ "normaExplicada": {
+  "norma": "Ato Conjunto RFB/CGIBS nº 7, de 11 de novembro de 2026",
+  "ementa": "Altera o Ato Conjunto RFB/CGIBS nº 4, de 30 de julho de 2026",
+  "literal": "Art. 2º Fica revogado o item 3 da alínea \"b\" do inciso XVII do caput do art. 1º",
+  "oQueDiz": "O ato não cria tributo nem muda alíquota. Ele mexe no calendário: define a partir de quando cada documento fiscal eletrônico passa a ser obrigatório no IBS e na CBS (art. 112 dos regulamentos dos dois tributos). Na prática, remarca a maior parte das obrigações para 1º de janeiro ou 1º de março de 2027.",
+  "porQue": "A Receita Federal e o Comitê Gestor do IBS escalonaram as datas para dar tempo aos setores com documentos novos (como a NF-e de alienação de imóveis) e às empresas do Simples Nacional adaptarem seus sistemas. Quem já emite NF-e e NFS-e entra antes; quem depende de documento novo entra depois.",
+  "datas": [
+   {
+    "data": "1º/1/2027",
+    "quem": "Bens intangíveis fora da lista de serviços e fora do ICMS; taxas e receitas de condomínio; locação, cessão e arrendamento de bens móveis e imóveis; demais serviços não listados; NFGás (modelo 76) e NFAg (modelo 75); parte das empresas do Simples Nacional."
+   },
+   {
+    "data": "1º/3/2027",
+    "quem": "Plataformas digitais e serviços dos itens 1.03, 1.05, 1.09 e 16.01 da lista do ISS; transporte de passageiros semiurbano, metropolitano e aéreo; NF-e ABI (modelo 77, venda de imóveis); demais empresas do Simples Nacional."
+   },
+   {
+    "data": "15/12/2026 e 15/2/2027",
+    "quem": "Primeiras entregas dos eventos periódicos mensais (competências novembro/2026 e janeiro/2027, conforme a categoria). Eventos transacionais a partir de 1º/1/2027."
+   }
+  ],
+  "exemplo": {
+   "titulo": "Exemplo: uma imobiliária em Fortaleza",
+   "passos": [
+    "Administra aluguéis e também intermedeia vendas de imóveis.",
+    "Aluguel recebido em janeiro/2027: o documento fiscal com os campos de IBS e CBS já é obrigatório (1º/1/2027). De hoje até lá são 39 dias.",
+    "Venda de imóvel em fevereiro/2027: a NF-e ABI (modelo 77) ainda não é obrigatória; passa a ser em 1º/3/2027, 98 dias a partir de hoje.",
+    "Se ela for do Simples Nacional, precisa conferir em qual dos dois grupos do §1º se enquadra: janeiro ou março."
+   ]
+  },
+  "oQueFazer": [
+   "Listar quais documentos cada cliente emite e marcar a data de cada um.",
+   "Cobrar do fornecedor do sistema (ERP ou emissor) a versão com os campos de IBS e CBS antes da data.",
+   "Para o Simples, confirmar o grupo no texto do ato antes de planejar."
+  ],
+  "cuidado": "Resumo feito a partir do PDF oficial. Antes de aplicar a um caso concreto, confira o texto integral, inclusive a redação consolidada do Ato Conjunto nº 4.",
+  "fonte": "CGIBS — Atos conjuntos",
+  "url": "https://cgibs.gov.br/upload/arquivos/202611/13061456-ato-conjunto-7-rfb-cgibs-alteracao-ato-4.pdf"
+ },
+ "fiscalDados": {
+  "titulo": "Quando o documento vira obrigatório, o dado tem de existir",
+  "texto": "Cada data do Ato nº 7 é, na prática, um prazo de projeto de dados. A partir dela, o sistema emissor precisa preencher os campos de IBS e CBS do documento (classificação tributária, base de cálculo, alíquotas e valores), e esses campos passam a alimentar a apuração. Se o cadastro de produtos e serviços não tem a classificação correta, a nota sai errada e o erro se propaga para a apuração.",
+  "checklist": [
+   "Cadastro: cada item tem a classificação tributária do IBS/CBS preenchida?",
+   "Regra: o sistema sabe qual documento emitir para cada operação (locação, condomínio, venda de imóvel)?",
+   "Teste: o emissor já passou pelo ambiente de testes com os campos novos?",
+   "Conferência: um relatório compara o valor de IBS/CBS das notas com o que vai para a apuração?"
+  ],
+  "sqlTitulo": "Consulta de conferência (exemplo com tabela fictícia)",
+  "sql": "-- Notas de locação emitidas a partir de 1º/1/2027\n-- que saíram sem a classificação tributária do IBS/CBS\nSELECT n.numero, n.data_emissao, n.cliente, n.valor\nFROM notas_fiscais AS n\nWHERE n.tipo_operacao = 'LOCACAO'\n  AND n.data_emissao >= '2027-01-01'\n  AND (n.class_trib_ibs_cbs IS NULL\n       OR n.class_trib_ibs_cbs = '')\nORDER BY n.data_emissao;",
+  "ferramenta": "A Receita Federal publicou no GitHub, com licença MIT, o código da Calculadora de Tributos (regime regular, Simples Nacional e gerador de DANFSe). Serve como componente oficial para integrar a sistemas, mas não dispensa os testes de integração.",
+  "ferramentaUrl": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-publica-primeiro-codigo-fonte-aberto-no-github-e-amplia-transparencia-da-reforma-tributaria/"
+ },
+ "categorias": [
+  {
+   "id": "federal",
+   "nome": "Atos oficiais federais",
+   "itens": [
+    {
+     "titulo": "Ato Conjunto RFB/CGIBS nº 7: novas datas dos documentos fiscais eletrônicos",
+     "status": "PUBLICADO",
+     "relevancia": "ALTA",
+     "resumo": "Altera o Ato Conjunto nº 4 e remarca a obrigatoriedade dos documentos fiscais do IBS e da CBS para 1º/1/2027 ou 1º/3/2027, conforme o setor. Veja a explicação completa acima.",
+     "literal": "Art. 2º Fica revogado o item 3 da alínea \"b\" do inciso XVII do caput do art. 1º",
+     "impacto": "Emissores de locação, condomínio, intangíveis e demais serviços têm até 1º/1/2027; plataformas digitais, transporte de passageiros e venda de imóveis, até 1º/3/2027.",
+     "fontes": [
+      {
+       "nome": "CGIBS",
+       "data": "11/11/2026",
+       "url": "https://cgibs.gov.br/atos-conjuntos"
+      }
+     ]
+    },
+    {
+     "titulo": "Portaria Cotec nº 342/2026: código da Calculadora de Tributos no GitHub",
+     "status": "PUBLICADO",
+     "relevancia": "MÉDIA",
+     "resumo": "A Receita Federal passou a publicar em repositórios públicos o código da Calculadora de Tributos da reforma, com os hashes das versões iniciais registrados na portaria.",
+     "literal": "",
+     "impacto": "Software houses e equipes de TI podem usar a mesma lógica de cálculo oficial em sistemas de faturamento e compliance.",
+     "fontes": [
+      {
+       "nome": "Receita Federal",
+       "data": "16/11/2026",
+       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-publica-primeiro-codigo-fonte-aberto-no-github-e-amplia-transparencia-da-reforma-tributaria/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "legislativo",
+   "nome": "Legislativo",
+   "itens": [
+    {
+     "titulo": "PLP 299/2026: ajuste fiscal na Câmara",
+     "status": "EM TRAMITAÇÃO",
+     "relevancia": "ALTA",
+     "resumo": "Votação prevista a partir de 23/11, com o relator mantendo o texto do Senado. O projeto corta benefícios fiscais federais e restringe o uso de créditos em compensações.",
+     "literal": "",
+     "impacto": "Empresas com benefícios fiscais federais ou que compensam créditos devem simular o efeito para 2027. A imprensa diverge sobre o tamanho do corte (10% ou cerca de 20%).",
+     "fontes": [
+      {
+       "nome": "Metrópoles",
+       "data": "23/11/2026",
+       "url": "https://www.metropoles.com/brasil/camara-tenta-votar-ajuste-fiscal-nesta-segunda-e-relator-evita-mudancas"
+      },
+      {
+       "nome": "Times Brasil",
+       "data": "22/11/2026",
+       "url": "https://timesbrasil.com.br/brasil/economia-brasileira/camara-abre-semana-decisiva-para-ajuste-fiscal/"
+      }
+     ]
+    },
+    {
+     "titulo": "Alíquota de referência da CBS no Senado",
+     "status": "EM TRAMITAÇÃO",
+     "relevancia": "ALTA",
+     "resumo": "O TCU entregou ao Senado estudo com alíquota de referência de 11,3468%. Cabe ao Senado fixá-la por resolução até 15/12/2026; artigo de opinião discute quanto o Senado pode alterar esse número.",
+     "literal": "",
+     "impacto": "Afeta o planejamento de preço de todos os contribuintes da CBS para 2027.",
+     "fontes": [
+      {
+       "nome": "Agência Senado",
+       "data": "10/11/2026",
+       "url": "https://www12.senado.leg.br/noticias/materias/2026/11/10/senado-recebe-acordao-do-tcu-que-propoe-aliquota-de-11-3-para-a-cbs"
+      },
+      {
+       "nome": "ConJur",
+       "data": "22/11/2026",
+       "url": "https://conjur.com.br/2026-nov-22/qual-o-espaco-do-senado-para-mexer-na-aliquota-de-referencia-da-cbs/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tribunais",
+   "nome": "Tribunais",
+   "itens": [],
+   "vazio": "Sem novidades tributárias relevantes no período."
+  },
+  {
+   "id": "contabilidade",
+   "nome": "Contabilidade",
+   "itens": [
+    {
+     "titulo": "PGDAS-D: FS12 para todas as atividades do Simples",
+     "status": "PUBLICADO",
+     "relevancia": "ALTA",
+     "resumo": "Nos períodos de apuração de novembro e dezembro de 2026, a folha de salários dos últimos 12 meses (FS12) deve ser informada por todas as atividades, não só pelas sujeitas ao fator R. Nesses períodos deixa de ser preciso escolher entre caixa e competência; a partir de 2027 a apuração será por competência.",
+     "literal": "",
+     "impacto": "Os dados declarados vão servir para calcular as alíquotas efetivas de IBS e CBS que sairão nos documentos fiscais. Folha informada errada vira alíquota errada na nota.",
+     "fontes": [
+      {
+       "nome": "Receita Federal",
+       "data": "13/11/2026",
+       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/pgdas-d-e-atualizado-para-atender-a-reforma-tributaria-a-partir-de-novembro-de-2026/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "imprensa",
+   "nome": "Imprensa especializada",
+   "itens": [
+    {
+     "titulo": "Pró-labore ou lucros: retenção de 10% acima de R$ 50 mil por mês",
+     "status": "ESPECULAÇÃO/IMPRENSA",
+     "relevancia": "BAIXA",
+     "resumo": "Texto explicativo relembra que lucros acima de R$ 50 mil por mês pagos a uma mesma pessoa física sofrem retenção de 10% de IRRF (Lei 15.270/2025).",
+     "literal": "",
+     "impacto": "Planejar as retiradas de dezembro dos sócios.",
+     "fontes": [
+      {
+       "nome": "Contábeis",
+       "data": "21/11/2026",
+       "url": "https://www.contabeis.com.br/noticias/80921/pro-labore-ou-lucro-entenda-como-remunerar-os-socios/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dados",
+   "nome": "Dados, IA e tecnologia",
+   "itens": [
+    {
+     "titulo": "Receita abre o código da Calculadora de Tributos",
+     "status": "PUBLICADO",
+     "relevancia": "MÉDIA",
+     "resumo": "Três repositórios públicos no GitHub: regime regular, Simples Nacional e gerador de DANFSe. É a primeira vez que a Receita publica oficialmente um projeto de software nesse ambiente.",
+     "literal": "",
+     "impacto": "Boa oportunidade de estudo: ler como as regras da CBS viram código.",
+     "fontes": [
+      {
+       "nome": "Receita Federal",
+       "data": "16/11/2026",
+       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-publica-primeiro-codigo-fonte-aberto-no-github-e-amplia-transparencia-da-reforma-tributaria/"
+      }
+     ]
+    },
+    {
+     "titulo": "Caso de negócio: consultoria que nem sempre recomenda IA",
+     "status": "PUBLICADO",
+     "relevancia": "BAIXA",
+     "resumo": "A Join4 entrou pelo segundo ano no ranking Negócios em Expansão da Exame, com receita 155,9% maior em 2025. A proposta é diagnosticar antes: às vezes a resposta é IA, às vezes uma ferramenta mais simples ou o melhor uso do sistema que o cliente já tem.",
+     "literal": "",
+     "impacto": "Mostra o valor de entender o processo antes da ferramenta.",
+     "fontes": [
+      {
+       "nome": "Exame",
+       "data": "01/10/2026",
+       "url": "https://exame.com/negocios/join4-receita-produtos-proprios/"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "prazos": [
+  {
+   "data": "23–24/11/2026",
+   "obrigacao": "Votação do PLP 299/2026 na Câmara",
+   "afetados": "Empresas com benefícios fiscais federais e compensações",
+   "fonte": "Metrópoles",
+   "url": "https://www.metropoles.com/brasil/camara-tenta-votar-ajuste-fiscal-nesta-segunda-e-relator-evita-mudancas"
+  },
+  {
+   "data": "PA 11 e 12/2026",
+   "obrigacao": "Informar a FS12 no PGDAS-D para todas as atividades",
+   "afetados": "Optantes do Simples Nacional",
+   "fonte": "Receita Federal",
+   "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/pgdas-d-e-atualizado-para-atender-a-reforma-tributaria-a-partir-de-novembro-de-2026/"
+  },
+  {
+   "data": "15/12/2026",
+   "obrigacao": "Primeira entrega dos eventos periódicos mensais (competência novembro)",
+   "afetados": "Contribuintes das categorias do Ato Conjunto nº 7",
+   "fonte": "CGIBS",
+   "url": "https://cgibs.gov.br/atos-conjuntos"
+  },
+  {
+   "data": "15/12/2026",
+   "obrigacao": "Prazo do Senado para a resolução da alíquota de referência da CBS (há fonte que indica 22/12)",
+   "afetados": "Todos os contribuintes da CBS",
+   "fonte": "Agência Senado",
+   "url": "https://www12.senado.leg.br/noticias/materias/2026/11/10/senado-recebe-acordao-do-tcu-que-propoe-aliquota-de-11-3-para-a-cbs"
+  },
+  {
+   "data": "1º/1/2027",
+   "obrigacao": "Documentos fiscais de locação, condomínio, intangíveis e demais serviços; NFGás e NFAg",
+   "afetados": "Emissores desses documentos",
+   "fonte": "CGIBS",
+   "url": "https://cgibs.gov.br/upload/arquivos/202611/13061456-ato-conjunto-7-rfb-cgibs-alteracao-ato-4.pdf"
+  },
+  {
+   "data": "1º/3/2027",
+   "obrigacao": "Plataformas digitais, transporte de passageiros e NF-e ABI",
+   "afetados": "Emissores desses documentos",
+   "fonte": "CGIBS",
+   "url": "https://cgibs.gov.br/upload/arquivos/202611/13061456-ato-conjunto-7-rfb-cgibs-alteracao-ato-4.pdf"
+  }
+ ],
+ "acoes": [
+  "Mapear os documentos fiscais de cada cliente e marcar a data de obrigatoriedade de cada um (1º/1 ou 1º/3/2027).",
+  "Cobrar dos fornecedores de sistema a versão com os campos de IBS e CBS antes de 1º/1/2027.",
+  "Revisar com clientes do Simples a FS12 do PGDAS-D de novembro e dezembro.",
+  "Acompanhar a votação do PLP 299 e simular o impacto de 2027 para clientes com benefícios e compensações.",
+  "Estudar: abrir o repositório da Calculadora de Tributos e ler como a regra vira código, ligando com a trilha de SQL e Python."
+ ],
+ "glossario": [
+  {
+   "termo": "CGIBS",
+   "def": "Comitê Gestor do IBS: órgão que administra o imposto de estados e municípios."
+  },
+  {
+   "termo": "Ato Conjunto",
+   "def": "Norma assinada em conjunto pela Receita Federal e pelo CGIBS, usada para regras comuns da CBS e do IBS."
+  },
+  {
+   "termo": "DF-e",
+   "def": "Documento fiscal eletrônico: NF-e, NFS-e, CT-e, NFCom e os novos modelos da reforma."
+  },
+  {
+   "termo": "NF-e ABI",
+   "def": "Nota fiscal eletrônica de alienação de bens imóveis (modelo 77)."
+  },
+  {
+   "termo": "NFGás e NFAg",
+   "def": "Notas fiscais eletrônicas de gás canalizado (modelo 76) e de água e saneamento (modelo 75)."
+  },
+  {
+   "termo": "FS12",
+   "def": "Folha de salários dos 12 meses anteriores, informada no PGDAS-D."
+  },
+  {
+   "termo": "PGDAS-D",
+   "def": "Programa em que a empresa do Simples Nacional calcula e declara o DAS."
+  },
+  {
+   "termo": "Alíquota de referência",
+   "def": "Alíquota que mantém a arrecadação da CBS equivalente à dos tributos que ela substitui; fixada pelo Senado."
+  },
+  {
+   "termo": "PLP",
+   "def": "Projeto de Lei Complementar."
+  }
+ ],
+ "fontes": [
+  {
+   "nome": "CGIBS",
+   "titulo": "Ato Conjunto RFB/CGIBS nº 7 (PDF)",
+   "data": "11/11/2026",
+   "url": "https://cgibs.gov.br/upload/arquivos/202611/13061456-ato-conjunto-7-rfb-cgibs-alteracao-ato-4.pdf"
+  },
+  {
+   "nome": "Receita Federal",
+   "titulo": "PGDAS-D atualizado para a reforma",
+   "data": "13/11/2026",
+   "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/pgdas-d-e-atualizado-para-atender-a-reforma-tributaria-a-partir-de-novembro-de-2026/"
+  },
+  {
+   "nome": "Receita Federal",
+   "titulo": "Código aberto da Calculadora de Tributos",
+   "data": "16/11/2026",
+   "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-publica-primeiro-codigo-fonte-aberto-no-github-e-amplia-transparencia-da-reforma-tributaria/"
+  },
+  {
+   "nome": "Agência Senado",
+   "titulo": "Senado recebe acórdão do TCU sobre a CBS",
+   "data": "10/11/2026",
+   "url": "https://www12.senado.leg.br/noticias/materias/2026/11/10/senado-recebe-acordao-do-tcu-que-propoe-aliquota-de-11-3-para-a-cbs"
+  },
+  {
+   "nome": "Metrópoles",
+   "titulo": "Câmara tenta votar ajuste fiscal",
+   "data": "23/11/2026",
+   "url": "https://www.metropoles.com/brasil/camara-tenta-votar-ajuste-fiscal-nesta-segunda-e-relator-evita-mudancas"
+  },
+  {
+   "nome": "Times Brasil",
+   "titulo": "Câmara abre semana decisiva",
+   "data": "22/11/2026",
+   "url": "https://timesbrasil.com.br/brasil/economia-brasileira/camara-abre-semana-decisiva-para-ajuste-fiscal/"
+  },
+  {
+   "nome": "ConJur",
+   "titulo": "Espaço do Senado na alíquota da CBS",
+   "data": "22/11/2026",
+   "url": "https://conjur.com.br/2026-nov-22/qual-o-espaco-do-senado-para-mexer-na-aliquota-de-referencia-da-cbs/"
+  },
+  {
+   "nome": "Contábeis",
+   "titulo": "Pró-labore ou lucro",
+   "data": "21/11/2026",
+   "url": "https://www.contabeis.com.br/noticias/80921/pro-labore-ou-lucro-entenda-como-remunerar-os-socios/"
+  },
+  {
+   "nome": "Exame",
+   "titulo": "Join4 e o diagnóstico antes da IA",
+   "data": "01/10/2026",
+   "url": "https://exame.com/negocios/join4-receita-produtos-proprios/"
+  }
+ ],
+ "conexao": {
+  "texto": "O FS12 no PGDAS-D e o código aberto da Calculadora de Tributos contam a mesma história: a partir de 2027, a alíquota que sai na nota de uma empresa do Simples vai nascer de um dado que ela declara agora e de uma regra que qualquer pessoa pode ler no GitHub. Quem cuida do dado de hoje cuida do preço de amanhã.",
+  "liga": [
+   "PGDAS-D: FS12 para todas as atividades do Simples",
+   "Receita abre o código da Calculadora de Tributos"
+  ]
+ },
+ "cadeia": {
+  "titulo": "Do Ato nº 7 até o caixa da empresa",
+  "elos": [
+   {
+    "etapa": "Norma",
+    "texto": "O Ato Conjunto nº 7 fixa 1º/1/2027 para locação, condomínio, intangíveis e demais serviços."
+   },
+   {
+    "etapa": "Sistema",
+    "texto": "O emissor passa a ter de preencher os campos de IBS e CBS do documento."
+   },
+   {
+    "etapa": "Cadastro",
+    "texto": "Cada serviço precisa estar com a classificação tributária correta."
+   },
+   {
+    "etapa": "Preço",
+    "texto": "Nota com tributo errado distorce o preço e o crédito do cliente."
+   },
+   {
+    "etapa": "Caixa",
+    "texto": "O erro volta como retificação, crédito questionado ou cobrança a mais."
+   },
+   {
+    "etapa": "Decisão",
+    "texto": "Atualizar e testar o sistema em dezembro, não em janeiro."
+   }
+  ]
+ },
+ "ceara": {
+  "novidade": "Nenhuma norma nova da Sefaz-CE ou da Prefeitura de Fortaleza nas fontes consultadas no período.",
+  "olho": "O efeito do dia chega por outro caminho: imobiliárias, condomínios e prestadores de serviço de Fortaleza entram na data de 1º/1/2027 do Ato Conjunto nº 7. Vale conferir agora com quem emite nota de locação ou de taxa condominial."
+ }
+}
