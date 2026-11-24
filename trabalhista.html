@@ -113,12 +113,13 @@ h3{font-size:17px;margin:28px 0 10px}
   <svg viewBox="0 0 150 150" aria-hidden="true"><path d="M150 0A150 150 0 0 1 0 150L150 150Z" fill="var(--shape)" opacity=".85" transform="translate(0,0) scale(.62) translate(92,92)"/><path d="M150 18A132 132 0 0 0 18 150" fill="none" stroke="var(--shape)" stroke-width="1"/><path d="M150 40A110 110 0 0 0 40 150" fill="none" stroke="var(--shape)" stroke-width="1" opacity=".6"/></svg>
   <p class="kick">DECODIFICA. · Trabalhista</p>
   <h1 class="serif">Calculadora de direitos <em>trabalhistas</em></h1>
-  <p class="lede">Rescisão, salário líquido, férias e 13º com as tabelas de 2026: INSS da Portaria Interministerial MPS/MF nº 13/2026 e IRRF com a redução da Lei nº 15.270/2025. <a href="#" id="tonews" style="color:var(--acc)">Ver notícias trabalhistas da semana</a></p>
+  <p class="lede">Rescisão, salário líquido, férias, 13º e horas extras com as tabelas de 2026: INSS da Portaria Interministerial MPS/MF nº 13/2026 e IRRF com a redução da Lei nº 15.270/2025. <a href="#" id="tonews" style="color:var(--acc)">Ver notícias trabalhistas da semana</a></p>
   <nav class="tabs" role="tablist" aria-label="Tipo de cálculo">
     <button class="tab" role="tab" data-t="rescisao">Rescisão</button>
     <button class="tab" role="tab" data-t="liquido">Salário líquido</button>
     <button class="tab" role="tab" data-t="ferias">Férias</button>
     <button class="tab" role="tab" data-t="decimo-terceiro">13º salário</button>
+    <button class="tab" role="tab" data-t="horas-extras">Horas extras</button>
   </nav>
 </div></section>
 
@@ -158,6 +159,21 @@ h3{font-size:17px;margin:28px 0 10px}
         <div><label for="f_dep">Dependentes (IR)</label><input id="f_dep" type="number" inputmode="numeric" min="0" step="1" value="0"></div>
       </div>
     </div>
+    <div class="panel" data-p="horas-extras" hidden>
+      <div class="fields">
+        <div><label for="x_sal">Salário-base (R$)</label><input id="x_sal" type="number" inputmode="decimal" step="0.01" min="0" value="3000"></div>
+        <div><label for="x_add">Adicionais que entram na base (R$)</label><input id="x_add" type="number" inputmode="decimal" step="0.01" min="0" value="0"><p class="hint">Periculosidade, insalubridade, adicional noturno.</p></div>
+        <div><label for="x_mes">Mês das horas</label><input id="x_mes" type="month" value="2026-11"></div>
+        <div><label for="x_div">Divisor</label><select id="x_div"><option value="auto">Automático pelo mês</option><option value="220">220 (44 h)</option><option value="210">210 (42 h)</option><option value="200">200 (40 h)</option></select></div>
+        <div><label for="x_jor">Jornada semanal do contrato (h)</label><input id="x_jor" type="number" inputmode="numeric" min="1" max="44" step="1" placeholder="Em branco: limite legal"><p class="hint">Se for menor que o limite legal, o divisor cai (jornada × 5).</p></div>
+        <div><label for="x_h50">Horas extras a 50%</label><input id="x_h50" type="number" inputmode="decimal" min="0" step="0.25" value="10"><p class="hint">Dias úteis. Use decimais: 1h30 = 1,5.</p></div>
+        <div><label for="x_h100">Horas a 100%</label><input id="x_h100" type="number" inputmode="decimal" min="0" step="0.25" value="0"><p class="hint">Domingos e feriados sem folga compensatória.</p></div>
+        <div><label for="x_pct">Outro percentual (%)</label><input id="x_pct" type="number" inputmode="decimal" min="0" step="1" placeholder="Ex.: 70, da convenção"></div>
+        <div><label for="x_hpct">Horas nesse percentual</label><input id="x_hpct" type="number" inputmode="decimal" min="0" step="0.25" value="0"></div>
+        <div><label for="x_du">Dias úteis no mês</label><input id="x_du" type="number" inputmode="numeric" min="1" max="31" step="1"><p class="hint" id="x_du_h"></p></div>
+        <div><label for="x_dsr">Domingos e feriados no mês</label><input id="x_dsr" type="number" inputmode="numeric" min="0" max="31" step="1"><p class="hint">Inclua feriados estaduais e municipais.</p></div>
+      </div>
+    </div>
     <div class="panel" data-p="decimo-terceiro" hidden>
       <div class="fields">
         <div><label for="d_sal">Salário mensal (R$)</label><input id="d_sal" type="number" inputmode="decimal" step="0.01" min="0" value="4500"></div>
@@ -177,6 +193,7 @@ h3{font-size:17px;margin:28px 0 10px}
     <table><tbody id="rows"></tbody></table>
     <ul class="notes" id="rn"></ul>
     <button class="btn" id="copy" type="button">Copiar resumo</button>
+    <button class="btn" id="x_go" type="button" hidden>Levar para o salário líquido</button>
   </aside>
 </div></main>
 
@@ -363,6 +380,12 @@ ferias:['<b>Férias:</b> (remuneração ÷ 30) × dias de descanso, mais 1/3 con
  '<b>Abono pecuniário:</b> venda de até 1/3 das férias (10 dias), com o 1/3 correspondente. Não tem INSS nem IRRF (CLT, arts. 143 e 144).',
  '<b>Descontos:</b> INSS e IRRF sobre férias + 1/3, em separado do salário do mês. Aqui o IRRF usa deduções legais (INSS e dependentes).',
  '<b>Prazo:</b> pagamento até 2 dias antes do início das férias (CLT, art. 145).'],
+'horas-extras':['<b>Salário-hora:</b> (salário + adicionais que integram a base) ÷ divisor. O divisor é 220 até 15/12/2026, 210 a partir de 16/12/2026 e 200 a partir de 16/12/2027 (Decreto nº 13.173/2026, art. 5º). Se o contrato tiver jornada menor, vale o divisor menor (jornada semanal × 5), porque prevalece o mais favorável ao empregado.',
+ '<b>Adicional:</b> no mínimo 50% sobre a hora normal (CF, art. 7º, XVI). Domingo e feriado trabalhados sem folga compensatória são pagos em dobro (Lei 605/1949, art. 9º; Súmula 146 do TST). A convenção coletiva pode prever percentuais maiores; use o campo "Outro percentual".',
+ '<b>Base:</b> periculosidade (Súmula 132 do TST), insalubridade (OJ 47 da SDI-1) e adicional noturno (OJ 97 da SDI-1) entram no cálculo da hora extra.',
+ '<b>DSR:</b> (horas extras do mês ÷ dias úteis) × domingos e feriados (Lei 605/1949, art. 7º; Súmula 172 do TST). A conta automática usa os feriados nacionais; acrescente os estaduais e municipais, como os do Ceará e de Fortaleza.',
+ '<b>Escala 5x2:</b> o Ministério do Trabalho ainda vai regulamentar o repouso semanal (Decreto nº 13.173/2026, art. 4º). Até lá, a calculadora usa a contagem tradicional do DSR.',
+ '<b>Limite:</b> até 2 horas extras por dia (CLT, art. 59). INSS, IRRF e FGTS incidem sobre horas extras e DSR.'],
 'decimo-terceiro':['<b>Valor:</b> (remuneração ÷ 12) × meses com 15 dias ou mais trabalhados.',
  '<b>1ª parcela:</b> metade do valor, sem descontos, até 30/11 (Lei 4.749/1965).',
  '<b>2ª parcela:</b> até 20/12, com INSS e IRRF calculados sobre o valor total do 13º.',
@@ -434,6 +457,36 @@ function ferias(){
    rows:[['h','Proventos'],['p','Férias',fe,`${g} dias`],['p','1/3 constitucional',t3],['p','Abono pecuniário',aV,ab?`${ab} dias · sem INSS e IRRF`:''],['p','1/3 sobre o abono',a3],
     ['h','Descontos'],['d','INSS',iV],['d','IRRF',ir.val,irNote(ir)],['t','Líquido',liq]],notes}}
 
+function pascoa(y){const a=y%19,b=Math.floor(y/100),c=y%100,d=Math.floor(b/4),e=b%4,f=Math.floor((b+8)/25),g=Math.floor((b-f+1)/3),h=(19*a+b-d-g+15)%30,i=Math.floor(c/4),k=c%4,l=(32+2*e+2*i-h-k)%7,m=Math.floor((a+11*h+22*l)/451),mo=Math.floor((h+l-7*m+114)/31),da=((h+l-7*m+114)%31)+1;return Date.UTC(y,mo-1,da)}
+function diasMes(ym){const[y,m]=ym.split('-').map(Number);if(!y||!m)return null;
+  const fix=['01-01','04-21','05-01','09-07','10-12','11-02','11-15','11-20','12-25'].map(s=>{const[mm,dd]=s.split('-').map(Number);return Date.UTC(y,mm-1,dd)});
+  fix.push(pascoa(y)-2*864e5);const n=ld(y,m-1);let dsr=0,fer=0;
+  for(let d=1;d<=n;d++){const t=Date.UTC(y,m-1,d),dom=new Date(t).getUTCDay()===0,f=fix.includes(t);if(dom||f)dsr++;if(f&&!dom)fer++}
+  return{uteis:n-dsr,dsr,fer}}
+function divLegal(ym){if(ym<'2026-12')return[220,''];if(ym==='2026-12')return[210,'Dezembro/2026 tem dois divisores: 220 até 15/12 e 210 a partir de 16/12. Calcule as horas da primeira quinzena à parte, escolhendo o divisor 220.'];
+  if(ym<'2027-12')return[210,''];if(ym==='2027-12')return[200,'Dezembro/2027 tem dois divisores: 210 até 15/12 e 200 a partir de 16/12. Calcule as horas da primeira quinzena à parte, escolhendo o divisor 210.'];return[200,'']}
+function horas(){
+  const base=num('x_sal')+num('x_add'),ym=$('x_mes').value||'2026-11',cal=diasMes(ym);
+  if(!base)return{warn:'Informe o salário-base.'};
+  const[dl,aviso]=divLegal(ym),sel=$('x_div').value;let div=sel==='auto'?dl:+sel;const jor=Math.floor(num('x_jor'));
+  let divNote=sel==='auto'?'pelo mês informado':'escolhido';
+  if(jor&&jor*5<div){div=jor*5;divNote=`jornada contratual de ${jor} h × 5`}
+  const du=Math.floor(num('x_du'))||cal.uteis,dd=$('x_dsr').value===''?cal.dsr:Math.floor(num('x_dsr'));
+  $('x_du').placeholder=cal.uteis;$('x_dsr').placeholder=cal.dsr;
+  $('x_du_h').textContent=`Automático: ${cal.uteis} úteis e ${cal.dsr} domingos e feriados nacionais${cal.fer?` (${cal.fer} feriado${cal.fer>1?'s':''})`:''}.`;
+  const hr=base/div,h50=num('x_h50'),h100=num('x_h100'),pc=num('x_pct'),hp=pc?num('x_hpct'):0;
+  const v50=r2(hr*1.5*h50),v100=r2(hr*2*h100),vp=r2(hr*(1+pc/100)*hp),he=r2(v50+v100+vp);
+  const dsr=du?r2(he/du*dd):0,tot=r2(he+dsr);
+  const old=base/220,tot220=r2((old*1.5*h50+old*2*h100+old*(1+pc/100)*hp)*(1+(du?dd/du:0)));
+  const notes=[];if(aviso)notes.push(aviso);
+  if(h50+h100+hp>0&&h50/Math.max(du,1)>2)notes.push('Atenção: a média passa de 2 horas extras por dia útil, limite do art. 59 da CLT.');
+  if(div<220&&he>0)notes.push(`Com o divisor 220, as mesmas horas dariam ${fmt(tot220)}: diferença de ${fmt(r2(tot-tot220))} no mês.`);
+  return{title:'Horas extras · total do mês',big:tot,sub:`Soma ao salário do mês. Sobre esse valor incidem INSS, IRRF e FGTS.`,
+   rows:[['h','Base'],['i',`Salário-hora (divisor ${div})`,r2(hr),divNote],['i','Hora extra a 50%',r2(hr*1.5)],['i','Hora a 100%',r2(hr*2)],
+    ['h','Horas extras'],['p','Horas a 50%',v50,`${String(h50).replace('.',',')} h`],['p','Horas a 100%',v100,`${String(h100).replace('.',',')} h`],
+    ['p',`Horas a ${pc}%`,vp,`${String(hp).replace('.',',')} h`],['p','Reflexo no DSR',dsr,`${fmt(he)} ÷ ${du} dias úteis × ${dd} domingos e feriados`],
+    ['t','Total de horas extras',tot],['h','Para o holerite'],['i','FGTS sobre horas extras (8%)',r2(tot*.08)]],notes}}
+
 function decimo(){
   const rem=num('d_sal')+num('d_med'),mm=Math.min(12,Math.floor(num('d_meses'))),dep=Math.floor(num('d_dep'));
   if(!rem||!mm)return{warn:'Informe o salário e os meses trabalhados.'};
@@ -443,7 +496,7 @@ function decimo(){
     ['h','Descontos (na 2ª parcela)'],['d','INSS',iV],['d','IRRF',ir.val,irNote(ir)],['t','Total líquido',r2(p1+p2)]],
    notes:['O INSS e o IRRF do 13º são calculados em separado do salário de dezembro.']}}
 
-const CALC={rescisao,liquido,ferias,'decimo-terceiro':decimo};
+const CALC={rescisao,liquido,ferias,'decimo-terceiro':decimo,'horas-extras':horas};
 let cur='rescisao',last=null;
 function render(){
   const o=CALC[cur]();last=o;
@@ -457,6 +510,7 @@ function render(){
     .replace(/<tr class="h"><td colspan="2">[^<]*<\/td><\/tr>(?=<tr class="h"|$)/g,'');
   $('rn').innerHTML=(o.notes||[]).map(n=>`<li>${n}</li>`).join('');
   $('how').innerHTML=HOW[cur].map(h=>`<li>${h}</li>`).join('');
+  $('x_go').hidden=!(cur==='horas-extras'&&!o.warn&&o.big>0);
 }
 function show(t){if(!CALC[t])t='rescisao';cur=t;
   document.querySelectorAll('.tab').forEach(b=>b.setAttribute('aria-selected',b.dataset.t===t));
@@ -470,6 +524,7 @@ $('f').addEventListener('submit',e=>e.preventDefault());
 $('f').addEventListener('input',e=>{if(e.target.id==='r_tipo')syncAviso();render();
   try{const s={};for(const id of ids){const el=$(id);s[id]=el.type==='checkbox'?el.checked:el.value}localStorage.setItem(KEY,JSON.stringify(s))}catch(err){}});
 $('r_tipo').addEventListener('change',()=>{syncAviso();render()});
+$('x_go').addEventListener('click',()=>{if(!last||last.warn)return;$('l_sal').value=$('x_sal').value;$('l_add').value=r2(last.big+num('x_add')).toFixed(2);$('f').dispatchEvent(new Event('input'));location.hash='liquido'});
 $('copy').addEventListener('click',async()=>{if(!last||last.warn)return;
   const lines=[`DECODIFICA. · ${last.title}`,`Resultado: ${fmt(last.big)}`,...last.rows.filter(([k,,v])=>k!=='h'&&(typeof v==='string'||v>0)).map(([k,l,v])=>`${l}: ${typeof v==='string'?v:(k==='d'?'− ':'')+fmt(v)}`),'Simulação · tabelas 2026 · elaynegadelha.com.br/trabalhista.html'];
   try{await navigator.clipboard.writeText(lines.join('\n'));$('copy').textContent='Resumo copiado'}catch(err){$('copy').textContent='Não foi possível copiar'}
