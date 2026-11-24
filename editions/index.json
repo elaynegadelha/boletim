@@ -1,5 +1,21 @@
 [
  {
+  "date": "2026-11-24",
+  "titulo": "Simples fecha o regime de caixa em 31/12; ajuste fiscal vai à sanção",
+  "atencao": "No Simples, quem apura pelo regime de caixa vai incluir no DAS de dezembro tudo o que ainda tiver a receber em 31/12/2026, inclusive parcelas que ainda não venceram. Título já pago e sem baixa no sistema vira imposto sobre receita que não existe.",
+  "norma": "Resolução CGSN nº 196, de 16 de novembro de 2026",
+  "conexao": "A Resolução CGSN 196 e o PLP 299 falam da mesma coisa: em 2027, o imposto que a empresa paga e o crédito que ela usa passam a depender do que está registrado nos sistemas do Fisco, não do que está na intenção do empresário. No Simples, o valor do PGDAS-D prevalece sobre o da nota; no lucro real e presumido, o Executivo poderá limitar por ato próprio quanto crédito vira compensação. Nos dois casos, quem controla o dado controla o caixa.",
+  "tags": [
+   "Simples Nacional",
+   "Regime de caixa",
+   "IBS",
+   "CBS",
+   "Ajuste fiscal",
+   "Compensação",
+   "Dados"
+  ]
+ },
+ {
   "date": "2026-11-23",
   "titulo": "Datas dos novos documentos fiscais remarcadas; Câmara vota o ajuste fiscal",
   "atencao": "Quem emite documento fiscal de locação, condomínio, bens intangíveis ou demais serviços tem até 1º/1/2027 para estar com o sistema pronto: faltam 39 dias.",

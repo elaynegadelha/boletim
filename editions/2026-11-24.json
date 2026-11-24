@@ -1,0 +1,403 @@
+{
+ "date": "2026-11-24",
+ "titulo": "Simples fecha o regime de caixa em 31/12; ajuste fiscal vai à sanção",
+ "periodo": "De segunda-feira, 23/11, até a manhã de terça-feira, 24/11/2026. Sem feriado no intervalo.",
+ "tags": [
+  "Simples Nacional",
+  "Regime de caixa",
+  "IBS",
+  "CBS",
+  "Ajuste fiscal",
+  "Compensação",
+  "Dados"
+ ],
+ "atencao": "No Simples, quem apura pelo regime de caixa vai incluir no DAS de dezembro tudo o que ainda tiver a receber em 31/12/2026, inclusive parcelas que ainda não venceram. Título já pago e sem baixa no sistema vira imposto sobre receita que não existe.",
+ "destaques": [
+  "Resolução CGSN nº 196: o saldo a receber em 31/12/2026 entra na base do DAS de dezembro de quem está no regime de caixa.",
+  "No Simples, quando o IBS/CBS da nota diverge do PGDAS-D, vale o valor informado no PGDAS-D.",
+  "DEFIS 2026: entrega até 31/03/2027, pelo módulo do PGDAS-D 2018.",
+  "Câmara aprova o PLP 299/2026 (ajuste fiscal) sem mudanças, por 353 a 128; o texto vai à sanção.",
+  "Portaria RFB nº 763 disciplina o Piloto RTC-CBS, o ambiente de testes da CBS antes de 2027."
+ ],
+ "conexao": {
+  "texto": "A Resolução CGSN 196 e o PLP 299 falam da mesma coisa: em 2027, o imposto que a empresa paga e o crédito que ela usa passam a depender do que está registrado nos sistemas do Fisco, não do que está na intenção do empresário. No Simples, o valor do PGDAS-D prevalece sobre o da nota; no lucro real e presumido, o Executivo poderá limitar por ato próprio quanto crédito vira compensação. Nos dois casos, quem controla o dado controla o caixa.",
+  "liga": [
+   "Resolução CGSN nº 196 (Simples, regime de caixa e PGDAS-D)",
+   "PLP 299/2026 (limite às compensações)"
+  ]
+ },
+ "ceara": {
+  "novidade": "Não encontrei norma tributária nova da Sefaz-CE, da Prefeitura de Fortaleza, da Assembleia ou do TJCE publicada no período. O relator do ajuste fiscal na Câmara foi o deputado cearense Mauro Benevides Filho (União-CE).",
+  "olho": "A Resolução 196 chega direto ao comércio de Fortaleza que vende parcelado no Simples: o DAS de dezembro, mais alto, vence em janeiro. Antes disso, até 30/12, fecha a adesão ao Refis 2026 do Ceará (Lei nº 19.915/2026), com desconto de até 100% em multas e juros de ICMS. Vale planejar as duas contas de caixa juntas."
+ },
+ "normaExplicada": {
+  "norma": "Resolução CGSN nº 196, de 16 de novembro de 2026",
+  "ementa": "Altera as Resoluções CGSN nº 140/2018 e nº 190/2026, que tratam do Simples Nacional.",
+  "literal": "",
+  "oQueDiz": "Fecha a transição do regime de caixa para o de competência no Simples. Quem apura pelo caixa em 2026 soma ao mês de dezembro tudo o que ainda não recebeu, mesmo parcelas a vencer; quando esse dinheiro entrar em 2027, ele não é tributado de novo. A norma também diz que, se o IBS/CBS destacado na nota divergir do informado no PGDAS-D, vale o PGDAS-D, e fixa a entrega da DEFIS 2026 até 31/03/2027.",
+  "porQue": "A Resolução CGSN nº 190/2026 acabou com o regime de caixa a partir de 2027. Sem uma regra de corte, a receita vendida em 2026 e recebida em 2027 ficaria sem tributação em nenhum dos dois regimes.",
+  "datas": [
+   {
+    "data": "31/12/2026",
+    "quem": "ME e EPP no regime de caixa: saldo a receber entra na base de dezembro"
+   },
+   {
+    "data": "Janeiro/2027",
+    "quem": "Vencimento do DAS de dezembro, já com o saldo incluído"
+   },
+   {
+    "data": "31/03/2027",
+    "quem": "Todas as ME e EPP optantes em 2026: entrega da DEFIS 2026"
+   }
+  ],
+  "exemplo": {
+   "titulo": "Exemplo: uma loja de móveis em Fortaleza (números ilustrativos)",
+   "passos": [
+    "Optante do Simples, apura pelo regime de caixa e vende muito em 10 vezes no cartão próprio e no crediário.",
+    "Em 31/12/2026 tem R$ 120.000 em parcelas a receber de vendas feitas até essa data.",
+    "Esses R$ 120.000 entram na receita de dezembro. Com uma alíquota efetiva de 7%, são cerca de R$ 8.400 a mais no DAS que vence em janeiro.",
+    "Quando as parcelas forem pagas em 2027, não entram de novo na receita: o imposto foi antecipado, não duplicado."
+   ]
+  },
+  "oQueFazer": [
+   "Listar os clientes do Simples que apuram pelo regime de caixa.",
+   "Extrair o contas a receber em aberto de cada um e conferir as baixas antes de 31/12.",
+   "Projetar o DAS de dezembro e avisar o cliente do impacto no caixa de janeiro.",
+   "Rever o calendário do 1º trimestre de 2027 com a DEFIS em 31/03."
+  ],
+  "cuidado": "Não localizei o texto oficial no Diário Oficial da União; o resumo foi feito a partir da reprodução publicada pela Tax Prático, por isso o campo de texto literal ficou vazio. Confira a versão certificada antes de aplicar a um caso concreto.",
+  "fonte": "Tax Prático — reprodução da Resolução CGSN nº 196/2026",
+  "url": "https://taxpratico.com.br/detalhes-artigo/resolucao-cgsn-no-196-de-16-de-novembro-de-2026"
+ },
+ "cadeia": {
+  "titulo": "Da Resolução 196 até a decisão de venda",
+  "elos": [
+   {
+    "etapa": "Norma",
+    "texto": "O art. 144-C manda incluir em dezembro tudo o que estiver a receber em 31/12/2026."
+   },
+   {
+    "etapa": "Sistema",
+    "texto": "O ERP precisa gerar o relatório de recebíveis em aberto na data de corte."
+   },
+   {
+    "etapa": "Cadastro/dado",
+    "texto": "Cada título precisa estar com vencimento e baixa corretos; baixa esquecida infla a base."
+   },
+   {
+    "etapa": "Preço",
+    "texto": "Receita de dezembro maior pode elevar a alíquota efetiva dos meses seguintes."
+   },
+   {
+    "etapa": "Caixa",
+    "texto": "O DAS de dezembro, maior, sai em janeiro, antes de as parcelas entrarem."
+   },
+   {
+    "etapa": "Decisão",
+    "texto": "Fazer reserva e rever as condições das vendas parceladas de dezembro."
+   }
+  ]
+ },
+ "fiscalDados": {
+  "titulo": "O saldo a receber em 31/12 vira base de cálculo",
+  "texto": "Na prática, a Resolução 196 transforma o contas a receber em dado fiscal. O valor que entra no DAS de dezembro sai direto do relatório de títulos em aberto, então qualquer erro de cadastro vira imposto a mais ou a menos.",
+  "checklist": [
+   "Todos os títulos pagos em 2026 estão baixados no sistema?",
+   "Há títulos de vendas canceladas ou devolvidas ainda em aberto?",
+   "As parcelas a vencer em 2027 de vendas feitas até 31/12 estão todas no relatório?",
+   "O total em aberto bate com o razão de clientes na contabilidade?"
+  ],
+  "sqlTitulo": "Consulta de conferência (exemplo com tabela fictícia)",
+  "sql": "-- Saldo a receber em 31/12/2026 por cliente do escritório\n-- Tabela fictícia: titulos(cnpj_cliente, data_venda, valor, data_baixa, status)\nSELECT cnpj_cliente,\n       SUM(valor) AS saldo_a_receber\nFROM titulos\nWHERE data_venda <= '2026-12-31'\n  AND (data_baixa IS NULL OR data_baixa > '2026-12-31')\n  AND status <> 'CANCELADO'\nGROUP BY cnpj_cliente\nORDER BY saldo_a_receber DESC;"
+ },
+ "categorias": [
+  {
+   "id": "federal",
+   "nome": "Atos oficiais federais",
+   "itens": [
+    {
+     "titulo": "Resolução CGSN nº 196/2026: regras do Simples para a virada para 2027",
+     "status": "PUBLICADO",
+     "relevancia": "ALTA",
+     "resumo": "Fecha o regime de caixa em 31/12/2026 (art. 144-C), dá prevalência ao PGDAS-D sobre o IBS/CBS destacado na nota (art. 38-A, § 2º-A), fixa a DEFIS 2026 em 31/03/2027 e traz a nova partilha dos Anexos para 2027 a 2033.",
+     "literal": "",
+     "impacto": "Optantes do Simples no regime de caixa, a partir do DAS de dezembro/2026; todos os optantes na DEFIS e na apuração do IBS/CBS em 2027.",
+     "fontes": [
+      {
+       "nome": "Tax Prático",
+       "data": "24/11/2026",
+       "url": "https://taxpratico.com.br/detalhes-artigo/resolucao-cgsn-no-196-de-16-de-novembro-de-2026"
+      }
+     ]
+    },
+    {
+     "titulo": "Portaria RFB nº 763/2026: Piloto RTC-CBS",
+     "status": "PUBLICADO",
+     "relevancia": "MÉDIA",
+     "resumo": "Disciplina o piloto da CBS, o ambiente em que empresas testam emissão de documentos e apuração antes de o tributo começar a valer. A portaria entra em vigor na data de publicação no DOU.",
+     "literal": "",
+     "impacto": "Empresas e softwarehouses que querem testar processos da CBS antes de janeiro de 2027.",
+     "fontes": [
+      {
+       "nome": "Tax Prático",
+       "data": "23/11/2026",
+       "url": "https://taxpratico.com.br/detalhes-artigo/portaria-rfb-no-763-de-19-de-novembro-de-2026"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "legislativo",
+   "nome": "Legislativo",
+   "itens": [
+    {
+     "titulo": "PLP 299/2026 (ajuste fiscal) aprovado na Câmara e enviado à sanção",
+     "status": "EM TRAMITAÇÃO",
+     "relevancia": "ALTA",
+     "resumo": "A Câmara aprovou o texto do Senado sem mudanças, por 353 votos a 128 e 5 abstenções, e rejeitou os destaques. O projeto permite ao Executivo travar mais despesas para cumprir a meta de 2027 e reduzir, por ato próprio, a compensação de débitos com créditos de outros tributos da Receita Federal; a compensação de créditos de PIS/Cofins com a CBS fica fora dessa limitação. Divergência: As fontes divergem sobre o corte de benefícios: parte da imprensa fala em fator de 20% (ante 10% da LC 224/2025), outra parte em corte adicional de 10%. Confirme no texto sancionado.",
+     "literal": "",
+     "impacto": "Empresas que compensam créditos federais (inclusive judiciais) e que têm benefícios fiscais federais. Os percentuais de limite dependem de ato do Executivo, depois da sanção.",
+     "fontes": [
+      {
+       "nome": "Agência Câmara",
+       "data": "24/11/2026",
+       "url": "https://www.camara.leg.br/noticias/1322146-camara-aprova-texto-base-do-projeto-de-ajuste-fiscal-acompanhe"
+      },
+      {
+       "nome": "CNN Brasil",
+       "data": "24/11/2026",
+       "url": "https://cnnbrasil.com.br/politica/governo-contorna-resistencias-e-aprova-plp-do-ajuste-fiscal-com-amplo-apoio"
+      },
+      {
+       "nome": "Atlas Público",
+       "data": "19/11/2026",
+       "url": "https://atlaspublico.com.br/camara/noticias/senado-envia-a-camara-projeto-que-da-ao-executivo-novos-103889"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tribunais",
+   "nome": "Tribunais",
+   "itens": [],
+   "vazio": "Sem novidades tributárias relevantes no período."
+  },
+  {
+   "id": "contabilidade",
+   "nome": "Contabilidade",
+   "itens": [
+    {
+     "titulo": "DEFIS 2026 até 31/03/2027",
+     "status": "PUBLICADO",
+     "relevancia": "MÉDIA",
+     "resumo": "A Resolução CGSN 196 fixa a entrega da DEFIS relativa a 2026 até 31 de março de 2027, pelo módulo do aplicativo PGDAS-D 2018.",
+     "literal": "",
+     "impacto": "Todas as ME e EPP que foram optantes do Simples em 2026; entra no calendário do 1º trimestre dos escritórios.",
+     "fontes": [
+      {
+       "nome": "Tax Prático",
+       "data": "24/11/2026",
+       "url": "https://taxpratico.com.br/detalhes-artigo/resolucao-cgsn-no-196-de-16-de-novembro-de-2026"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "imprensa",
+   "nome": "Imprensa especializada",
+   "itens": [
+    {
+     "titulo": "Tax Prático: Resolução CGSN 196 é a principal publicação do dia",
+     "status": "ESPECULAÇÃO/IMPRENSA",
+     "relevancia": "MÉDIA",
+     "resumo": "A Tax Prático destacou em 24/11 a Resolução 196; em 23/11, trouxe a Portaria RFB 763 e a aprovação do PLP 299 no Senado, com alerta da CNC sobre a limitação a créditos tributários. Entidades como a Fenacon já vinham alertando que o fim do regime de caixa obriga a pagar tributo sobre receita ainda não recebida.",
+     "literal": "",
+     "impacto": "Reforça a urgência de simular o DAS de dezembro dos clientes que vendem a prazo.",
+     "fontes": [
+      {
+       "nome": "Tax Prático",
+       "data": "24/11/2026",
+       "url": "https://taxpratico.com.br/"
+      },
+      {
+       "nome": "Fenacon",
+       "data": "agosto/2026",
+       "url": "https://fenacon.org.br/noticias/regime-de-caixa-deixara-de-ser-utilizado-na-apuracao-do-simples-nacional/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dados",
+   "nome": "Dados, IA e tecnologia",
+   "itens": [
+    {
+     "titulo": "Caso real: a Cielo usa agentes de IA para transformar reclamações em produtos",
+     "status": "ESPECULAÇÃO/IMPRENSA",
+     "relevancia": "BAIXA",
+     "resumo": "A Exame mostra como a Cielo passou a usar agentes de IA para ler reclamações de clientes e convertê-las em melhorias de produto em cerca de 12 dias. É um exemplo de dado não estruturado virando decisão de negócio, a mesma lógica que a reforma impõe ao dado fiscal.",
+     "literal": "",
+     "impacto": "Referência de uso prático de IA sobre dados de atendimento; não há vaga ou norma associada.",
+     "fontes": [
+      {
+       "nome": "Exame",
+       "data": "novembro/2026",
+       "url": "https://exame.com/tecnologia/como-a-cielo-usa-agentes-de-ia-para-transformar-reclamacoes-de-clientes-em-produtos-em-12-dias/"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "prazos": [
+  {
+   "data": "30/11/2026",
+   "obrigacao": "Último dia para acumular pontos do Sua Nota Tem Valor com desconto no IPVA 2027",
+   "afetados": "Consumidores do Ceará",
+   "fonte": "Sefaz-CE via Legisweb",
+   "url": "https://www.legisweb.com.br/noticia/?id=34750"
+  },
+  {
+   "data": "15/12/2026",
+   "obrigacao": "Prazo para o Senado fixar a alíquota de referência da CBS",
+   "afetados": "Todos os contribuintes da CBS",
+   "fonte": "Brasil 61",
+   "url": "https://brasil61.com/n/frentes-parlamentares-levam-32-pontos-de-ajustes-da-reforma-tributaria-a-receita-cacb260283.amp"
+  },
+  {
+   "data": "20/12/2026",
+   "obrigacao": "Fim do prazo para cancelar a opção pelo recolhimento do IBS/CBS no regime regular (optantes do Simples)",
+   "afetados": "ME e EPP que optaram pelo regime regular",
+   "fonte": "CRC-SP",
+   "url": "https://online.crcsp.org.br/portal/noticias/noticia.asp?c=11355"
+  },
+  {
+   "data": "30/12/2026",
+   "obrigacao": "Fim da adesão ao Refis 2026 do Ceará (ICMS, IPVA, ITCD)",
+   "afetados": "Contribuintes com débitos estaduais no Ceará",
+   "fonte": "Sefaz-CE via Legisweb",
+   "url": "https://www.legisweb.com.br/noticia/?id=34699"
+  },
+  {
+   "data": "31/12/2026",
+   "obrigacao": "Corte do regime de caixa no Simples: saldo a receber entra em dezembro",
+   "afetados": "ME e EPP no regime de caixa",
+   "fonte": "Tax Prático",
+   "url": "https://taxpratico.com.br/detalhes-artigo/resolucao-cgsn-no-196-de-16-de-novembro-de-2026"
+  },
+  {
+   "data": "31/03/2027",
+   "obrigacao": "Entrega da DEFIS 2026",
+   "afetados": "ME e EPP optantes em 2026",
+   "fonte": "Tax Prático",
+   "url": "https://taxpratico.com.br/detalhes-artigo/resolucao-cgsn-no-196-de-16-de-novembro-de-2026"
+  }
+ ],
+ "acoes": [
+  "Levantar o contas a receber em aberto dos clientes do Simples no regime de caixa e projetar o DAS de dezembro.",
+  "Conferir as baixas de títulos pagos antes de 31/12, para não tributar receita já recebida duas vezes nem receita inexistente.",
+  "Mapear os clientes que compensam créditos federais e acompanhar o ato do Executivo que vai fixar os limites do PLP 299.",
+  "Orientar sobre o Refis-CE, até 30/12, os clientes com débito de ICMS que também terão DAS maior em janeiro.",
+  "Estudar: escrever a consulta SQL do saldo a receber em 31/12 e levar o resultado para um painel no Power BI por cliente."
+ ],
+ "glossario": [
+  {
+   "termo": "CGSN",
+   "def": "Comitê Gestor do Simples Nacional: edita as regras do regime."
+  },
+  {
+   "termo": "Regime de caixa",
+   "def": "Tributa a receita quando o dinheiro entra, não quando a venda é feita."
+  },
+  {
+   "termo": "Regime de competência",
+   "def": "Tributa a receita no momento da venda ou do faturamento."
+  },
+  {
+   "termo": "PGDAS-D",
+   "def": "Aplicativo em que a empresa do Simples declara a receita e gera o DAS."
+  },
+  {
+   "termo": "DEFIS",
+   "def": "Declaração anual de informações socioeconômicas e fiscais do Simples."
+  },
+  {
+   "termo": "Compensação",
+   "def": "Uso de um crédito tributário para quitar outro débito com a Receita."
+  },
+  {
+   "termo": "PLP",
+   "def": "Projeto de lei complementar; exige maioria absoluta para aprovação."
+  },
+  {
+   "termo": "Piloto RTC-CBS",
+   "def": "Ambiente de testes da CBS, sem efeito tributário, antes de 2027."
+  }
+ ],
+ "fontes": [
+  {
+   "nome": "Tax Prático",
+   "titulo": "Resolução CGSN nº 196, de 16/11/2026 (reprodução)",
+   "data": "24/11/2026",
+   "url": "https://taxpratico.com.br/detalhes-artigo/resolucao-cgsn-no-196-de-16-de-novembro-de-2026"
+  },
+  {
+   "nome": "Tax Prático",
+   "titulo": "Portaria RFB nº 763, de 19/11/2026",
+   "data": "23/11/2026",
+   "url": "https://taxpratico.com.br/detalhes-artigo/portaria-rfb-no-763-de-19-de-novembro-de-2026"
+  },
+  {
+   "nome": "Agência Câmara",
+   "titulo": "Câmara aprova texto-base do projeto de ajuste fiscal",
+   "data": "24/11/2026",
+   "url": "https://www.camara.leg.br/noticias/1322146-camara-aprova-texto-base-do-projeto-de-ajuste-fiscal-acompanhe"
+  },
+  {
+   "nome": "CNN Brasil",
+   "titulo": "Governo aprova PLP do ajuste fiscal com amplo apoio",
+   "data": "24/11/2026",
+   "url": "https://cnnbrasil.com.br/politica/governo-contorna-resistencias-e-aprova-plp-do-ajuste-fiscal-com-amplo-apoio"
+  },
+  {
+   "nome": "Atlas Público",
+   "titulo": "Senado envia à Câmara o PLP 299/2026",
+   "data": "19/11/2026",
+   "url": "https://atlaspublico.com.br/camara/noticias/senado-envia-a-camara-projeto-que-da-ao-executivo-novos-103889"
+  },
+  {
+   "nome": "Rota da Jurisprudência",
+   "titulo": "Senado aprova PLP 299 e mantém restrições às compensações",
+   "data": "19/11/2026",
+   "url": "https://rotadajurisprudencia.com.br/2026/11/senado-aprova-plp-299-2026-e-mantem-restricoes-as-compensacoes-tributarias-texto-segue-para-a-camara/"
+  },
+  {
+   "nome": "Fenacon",
+   "titulo": "Regime de caixa deixará de ser utilizado no Simples",
+   "data": "agosto/2026",
+   "url": "https://fenacon.org.br/noticias/regime-de-caixa-deixara-de-ser-utilizado-na-apuracao-do-simples-nacional/"
+  },
+  {
+   "nome": "Legisweb / Sefaz-CE",
+   "titulo": "Refis-CE: adesão aberta até 30/12/2026",
+   "data": "03/11/2026",
+   "url": "https://www.legisweb.com.br/noticia/?id=34699"
+  },
+  {
+   "nome": "CRC-SP",
+   "titulo": "CGSN altera prazos de opção para 2027 (Res. 194)",
+   "data": "29/09/2026",
+   "url": "https://online.crcsp.org.br/portal/noticias/noticia.asp?c=11355"
+  },
+  {
+   "nome": "Exame",
+   "titulo": "Como a Cielo usa agentes de IA",
+   "data": "novembro/2026",
+   "url": "https://exame.com/tecnologia/como-a-cielo-usa-agentes-de-ia-para-transformar-reclamacoes-de-clientes-em-produtos-em-12-dias/"
+  }
+ ]
+}
