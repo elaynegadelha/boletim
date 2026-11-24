@@ -64,7 +64,7 @@ blockquote small{display:block;font:400 13px/1.4 var(--sans);color:var(--foot);f
 .tl .when{font:500 15px/1.3 var(--sans);white-space:nowrap}
 .tl p{margin:2px 0 0;color:var(--sup);font-size:15px}
 .ex ol{margin:0;padding-left:20px}.ex li{margin:0 0 8px}
-.todo{margin:0;padding-left:20px}.todo li{margin:0 0 6px}
+.pts{margin:0 0 10px;padding-left:20px}.pts li{margin:0 0 6px}.todo{margin:0;padding-left:20px}.todo li{margin:0 0 6px}
 .note{font-size:14px;color:var(--foot);margin:16px 0 0}
 .dados{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(22px,4vw,48px)}
 .check{list-style:none;margin:16px 0 0;padding:0}
@@ -206,6 +206,7 @@ ${n.norma?`<section id="norma"><h2>Norma <em>explicada</em></h2><p class="sub">A
  <p class="ident">${esc(n.norma)}</p><p class="ementa">${esc(n.ementa)}</p>
  ${n.literal?`<blockquote>“${esc(n.literal)}”<small>Trecho literal do texto oficial</small></blockquote>`:''}
  <h3>O que diz</h3><p>${esc(n.oQueDiz)}</p>
+ ${n.pontos?.length?`<h3>Principais pontos</h3><ul class="pts">${n.pontos.map(p=>`<li>${esc(p)}</li>`).join('')}</ul>`:''}
  <h3>Por que existe</h3><p>${esc(n.porQue)}</p>
  ${n.datas?.length?`<h3>Datas</h3><ul class="tl">${n.datas.map(d=>`<li><span class="when">${esc(d.data)}</span><p>${esc(d.quem)}</p></li>`).join('')}</ul>`:''}
 </div><div>
@@ -224,6 +225,7 @@ ${fd.ferramenta?`<p class="note" style="font-size:15px;color:var(--sup)">${esc(f
 <div class="cats">${(e.categorias||[]).map(c=>`<div class="cat"><h3>${esc(c.nome)}</h3>${c.itens?.length?`<div class="items">${c.itens.map(i=>`<article class="item">
 <div class="chips"><span class="chip">${esc(i.status)}</span><span class="chip ${i.relevancia==='ALTA'?'alta':''}">Relevância ${esc((i.relevancia||'').toLowerCase())}</span></div>
 <h4>${esc(i.titulo)}</h4><p>${esc(i.resumo)}</p>
+${i.pontos?.length?`<p style="margin:8px 0 2px"><b>Principais pontos:</b></p><ul class="pts">${i.pontos.map(p=>`<li>${esc(p)}</li>`).join('')}</ul>`:''}
 ${i.literal?`<blockquote style="margin:4px 0;font-size:16px">“${esc(i.literal)}”</blockquote>`:''}
 <p class="imp"><b>Impacto prático:</b> ${esc(i.impacto)}</p><p class="src">${fontesInline(i.fontes)}</p></article>`).join('')}</div>`:`<p class="empty">${esc(c.vazio||'Sem novidades relevantes no período.')}</p>`}</div>`).join('')}</div></section>
 <section id="prazos"><h2>Prazos <em>próximos</em></h2><p class="sub">Em ordem cronológica.</p>

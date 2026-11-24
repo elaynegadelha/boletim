@@ -32,7 +32,7 @@
   "olho": "O caixa de dezembro e janeiro fica apertado de dois lados: o DAS maior, que vence em janeiro, e o fim da adesão ao Refis 2026 do Ceará em 30/12 (Lei nº 19.915/2026), com desconto de até 100% em multas e juros de ICMS. Quem tem débito estadual e vende parcelado precisa decidir as duas coisas juntas, ainda em dezembro."
  },
  "normaExplicada": {
-  "norma": "Resolução CGSN nº 196, de 16 de novembro de 2026",
+  "norma": "Resolução CGSN nº 196, de 16 de novembro de 2026 (publicada em 24/11/2026)",
   "ementa": "Altera as Resoluções CGSN nº 140/2018 e nº 190/2026, que tratam do Simples Nacional.",
   "literal": "",
   "oQueDiz": "Fecha a transição do regime de caixa para o de competência no Simples. Quem apura pelo caixa em 2026 soma ao mês de dezembro tudo o que ainda não recebeu, mesmo parcelas a vencer; quando esse dinheiro entrar em 2027, ele não é tributado de novo. A norma também diz que, se o IBS/CBS destacado na nota divergir do informado no PGDAS-D, vale o PGDAS-D, e fixa a entrega da DEFIS 2026 até 31/03/2027.",
@@ -68,7 +68,15 @@
   ],
   "cuidado": "O texto oficial no Diário Oficial da União não estava disponível no fechamento desta edição; o resumo segue a reprodução publicada pela Tax Prático, por isso o trecho literal não foi transcrito. Confira a versão certificada antes de aplicar a um caso concreto.",
   "fonte": "Tax Prático — reprodução da Resolução CGSN nº 196/2026",
-  "url": "https://taxpratico.com.br/detalhes-artigo/resolucao-cgsn-no-196-de-16-de-novembro-de-2026"
+  "url": "https://taxpratico.com.br/detalhes-artigo/resolucao-cgsn-no-196-de-16-de-novembro-de-2026",
+  "pontos": [
+   "Art. 144-C: quem apura pelo regime de caixa em 2026 soma à base de dezembro/2026 os valores ainda não recebidos em 31/12/2026, inclusive parcelas não vencidas, de vendas e serviços feitos até essa data.",
+   "Art. 144-C, § 1º: quando esses valores forem recebidos em 2027, não entram de novo na receita bruta mensal.",
+   "Art. 144-C, § 2º: devolução, cancelamento ou desfazimento a partir de 1º/1/2027 de operação tributada até 31/12/2026 gera ajuste no período de apuração original.",
+   "Art. 38-A, § 2º-A: se a CBS e o IBS destacados no documento fiscal divergirem do informado no PGDAS-D, prevalece o PGDAS-D na apuração do Simples.",
+   "Art. 144-F: a DEFIS de 2026 deve ser entregue até 31/03/2027, pelo módulo do PGDAS-D 2018.",
+   "Anexos: nova partilha dos tributos nas faixas do Simples, com vigências escalonadas — 2027 e 2028, novas alíquotas a partir de 2029 e partilha própria para cada ano até 2033."
+  ]
  },
  "cadeia": {
   "titulo": "Da Resolução 196 até a decisão de venda",
@@ -131,13 +139,21 @@
        "data": "24/11/2026",
        "url": "https://taxpratico.com.br/detalhes-artigo/resolucao-cgsn-no-196-de-16-de-novembro-de-2026"
       }
+     ],
+     "pontos": [
+      "Art. 144-C: quem apura pelo regime de caixa em 2026 soma à base de dezembro/2026 os valores ainda não recebidos em 31/12/2026, inclusive parcelas não vencidas, de vendas e serviços feitos até essa data.",
+      "Art. 144-C, § 1º: quando esses valores forem recebidos em 2027, não entram de novo na receita bruta mensal.",
+      "Art. 144-C, § 2º: devolução, cancelamento ou desfazimento a partir de 1º/1/2027 de operação tributada até 31/12/2026 gera ajuste no período de apuração original.",
+      "Art. 38-A, § 2º-A: se a CBS e o IBS destacados no documento fiscal divergirem do informado no PGDAS-D, prevalece o PGDAS-D na apuração do Simples.",
+      "Art. 144-F: a DEFIS de 2026 deve ser entregue até 31/03/2027, pelo módulo do PGDAS-D 2018.",
+      "Anexos: nova partilha dos tributos nas faixas do Simples, com vigências escalonadas — 2027 e 2028, novas alíquotas a partir de 2029 e partilha própria para cada ano até 2033."
      ]
     },
     {
      "titulo": "Portaria RFB nº 763/2026: Piloto RTC-CBS",
      "status": "PUBLICADO",
      "relevancia": "MÉDIA",
-     "resumo": "Disciplina o piloto da CBS, o ambiente em que empresas testam emissão de documentos e apuração antes de o tributo começar a valer. A portaria entra em vigor na data de publicação no DOU.",
+     "resumo": "Disciplina o Piloto RTC-CBS, ambiente colaborativo e gratuito em que as empresas testam emissão, apuração e integrações da CBS antes de o tributo começar a valer em 2027. Entra em vigor na data de publicação no DOU.",
      "literal": "",
      "impacto": "Empresas e softwarehouses que querem testar processos da CBS antes de janeiro de 2027.",
      "fontes": [
@@ -146,6 +162,14 @@
        "data": "23/11/2026",
        "url": "https://taxpratico.com.br/detalhes-artigo/portaria-rfb-no-763-de-19-de-novembro-de-2026"
       }
+     ],
+     "pontos": [
+      "Art. 4º e 5º: qualquer pessoa jurídica inscrita no CNPJ pode participar, sem convite nem pedido prévio, desde que cumpra os requisitos operacionais, cadastrais e de segurança da Receita (por exemplo, procuração eletrônica com poderes específicos).",
+      "Art. 12: as operações feitas no piloto são experimentais e não produzem efeitos tributários, cadastrais ou jurídicos; não substituem as obrigações exigidas em lei.",
+      "Art. 3º: o piloto é desenvolvido com o Serpro; a partir de 1º/1/2027 a gestão passa para a Cotec.",
+      "Arts. 8º e 9º: a Receita pode fixar limites de uso (volume de transações, tipo de serviço) e restringir ou suspender o acesso em caso de uso incompatível ou risco à segurança.",
+      "Art. 10: falhas e inconsistências são comunicadas pelo Receita Atende.",
+      "Art. 14: revoga as Portarias RFB nº 549/2025 e nº 596/2025; participantes atuais continuam no piloto sem novo procedimento (art. 13)."
      ]
     }
    ]
@@ -177,6 +201,13 @@
        "data": "19/11/2026",
        "url": "https://atlaspublico.com.br/camara/noticias/senado-envia-a-camara-projeto-que-da-ao-executivo-novos-103889"
       }
+     ],
+     "pontos": [
+      "Permite ao Executivo, a partir de 2027, limitar mais despesas quando o relatório bimestral indicar risco à meta fiscal.",
+      "Autoriza o Executivo a reduzir, por ato próprio, a compensação de débitos de tributos da Receita Federal com créditos de outros tributos; os percentuais dependem de ato posterior.",
+      "A compensação de créditos de PIS/Cofins com débitos da CBS fica fora dessa limitação.",
+      "Altera a LC 224/2025 e fixa fatores de redução sobre benefícios tributários (isenções, alíquotas reduzidas, bases de cálculo, créditos e regimes especiais), com divergência na imprensa sobre o percentual.",
+      "Aprovado sem mudanças em relação ao Senado; segue para sanção presidencial."
      ]
     }
    ]
