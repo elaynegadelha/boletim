@@ -5,10 +5,10 @@
  "tags": [
   "Simples Nacional",
   "Regime de caixa",
-  "IBS",
-  "CBS",
+  "IBS/CBS",
   "Ajuste fiscal",
-  "Compensação",
+  "IA",
+  "APIs da CBS",
   "Dados"
  ],
  "atencao": "No Simples, quem apura pelo regime de caixa vai incluir no DAS de dezembro tudo o que ainda tiver a receber em 31/12/2026, inclusive parcelas que ainda não venceram. Título já pago e sem baixa no sistema vira imposto sobre receita que não existe.",
@@ -17,7 +17,8 @@
   "No Simples, quando o IBS/CBS da nota diverge do PGDAS-D, vale o valor informado no PGDAS-D.",
   "DEFIS 2026: entrega até 31/03/2027, pelo módulo do PGDAS-D 2018.",
   "Câmara aprova o PLP 299/2026 (ajuste fiscal) sem mudanças, por 353 a 128; o texto vai à sanção.",
-  "Portaria RFB nº 763 disciplina o Piloto RTC-CBS, o ambiente de testes da CBS antes de 2027."
+  "Portaria RFB nº 763 disciplina o Piloto RTC-CBS, o ambiente de testes da CBS antes de 2027.",
+  "IA e dados: Receita publica APIs da CBS e do RAD; Zivo quintuplica receita com IA; vagas fiscais já pedem Python, SQL e Power BI."
  ],
  "conexao": {
   "texto": "A Resolução CGSN 196 e o PLP 299 falam da mesma coisa: em 2027, o imposto que a empresa paga e o crédito que ela usa passam a depender do que está registrado nos sistemas do Fisco, não do que está na intenção do empresário. No Simples, o valor do PGDAS-D prevalece sobre o da nota; no lucro real e presumido, o Executivo poderá limitar por ato próprio quanto crédito vira compensação. Nos dois casos, quem controla o dado controla o caixa.",
@@ -108,7 +109,9 @@
    "O total em aberto bate com o razão de clientes na contabilidade?"
   ],
   "sqlTitulo": "Consulta de conferência (exemplo com tabela fictícia)",
-  "sql": "-- Saldo a receber em 31/12/2026 por cliente do escritório\n-- Tabela fictícia: titulos(cnpj_cliente, data_venda, valor, data_baixa, status)\nSELECT cnpj_cliente,\n       SUM(valor) AS saldo_a_receber\nFROM titulos\nWHERE data_venda <= '2026-12-31'\n  AND (data_baixa IS NULL OR data_baixa > '2026-12-31')\n  AND status <> 'CANCELADO'\nGROUP BY cnpj_cliente\nORDER BY saldo_a_receber DESC;"
+  "sql": "-- Saldo a receber em 31/12/2026 por cliente do escritório\n-- Tabela fictícia: titulos(cnpj_cliente, data_venda, valor, data_baixa, status)\nSELECT cnpj_cliente,\n       SUM(valor) AS saldo_a_receber\nFROM titulos\nWHERE data_venda <= '2026-12-31'\n  AND (data_baixa IS NULL OR data_baixa > '2026-12-31')\n  AND status <> 'CANCELADO'\nGROUP BY cnpj_cliente\nORDER BY saldo_a_receber DESC;",
+  "ferramenta": "A Receita disponibiliza APIs 2.0 de consulta de débitos e créditos da CBS e publicou a documentação do RAD (Recolhimento como Adquirente): é por elas que a conciliação de créditos poderá ser automatizada em 2027.",
+  "ferramentaUrl": "https://radardareformatributaria.com/radar-reforma-tributaria-o-que-mudou-novembro-2026/"
  },
  "categorias": [
   {
@@ -236,17 +239,107 @@
    "nome": "Dados, IA e tecnologia",
    "itens": [
     {
-     "titulo": "Caso real: a Cielo usa agentes de IA para transformar reclamações em produtos",
+     "titulo": "IA no dia a dia: GPT-6.2 Sol vira padrão no ChatGPT e Anthropic lança o Claude Ship",
+     "status": "ESPECULAÇÃO/IMPRENSA",
+     "relevancia": "MÉDIA",
+     "resumo": "Duas novidades de 24/11 mostram para onde as ferramentas caminham. A OpenAI tornou o GPT-6.2 Sol o modelo padrão do chat do ChatGPT, para todos os usuários. A Anthropic lançou o Claude Ship, um conjunto de agentes que revisam, corrigem e aprovam alterações de código conforme uma política escrita em linguagem comum. A tendência é a IA deixar de só responder e passar a executar etapas de um processo com regras definidas.",
+     "literal": "",
+     "impacto": "Para quem trabalha com fiscal e dados, o ganho prático está em delegar rotinas com regra clara (conferências, validações de cadastro) e manter a decisão final com o profissional. Informações de newsletters especializadas; confira nos anúncios oficiais.",
+     "fontes": [
+      {
+       "nome": "Café con IA",
+       "data": "24/11/2026",
+       "url": "https://cafeconia.substack.com/p/cafe-con-ia-24-de-noviembre-de-2026"
+      },
+      {
+       "nome": "Sam on AI",
+       "data": "24/11/2026",
+       "url": "https://samonai.substack.com/p/ai-brief-november-24-2026"
+      }
+     ]
+    },
+    {
+     "titulo": "Tax Tech: Receita publica APIs da CBS e a documentação do Recolhimento como Adquirente",
+     "status": "PUBLICADO",
+     "relevancia": "ALTA",
+     "resumo": "Em novembro a Receita orientou o uso das APIs 2.0 de consulta de débitos e créditos da CBS, que mostram a origem de cada débito, o documento fiscal de referência e a situação de uso dos créditos. Em 17/11 publicou a documentação técnica do RAD (Recolhimento como Adquirente), que prevê gerar DARF de CBS pela própria API. O fisco da reforma é consultado por API, não só por tela.",
+     "literal": "",
+     "impacto": "Escritórios e empresas que querem conciliar créditos da CBS com o ERP ou com um painel em Power BI a partir de 2027. É o tipo de integração em que SQL e Python passam a fazer diferença na rotina fiscal.",
+     "fontes": [
+      {
+       "nome": "Radar da Reforma Tributária",
+       "data": "18/11/2026",
+       "url": "https://radardareformatributaria.com/radar-reforma-tributaria-o-que-mudou-novembro-2026/"
+      }
+     ]
+    },
+    {
+     "titulo": "Caso real de negócio com IA: Comp vira Zivo e quintuplica a receita",
+     "status": "ESPECULAÇÃO/IMPRENSA",
+     "relevancia": "MÉDIA",
+     "resumo": "A brasileira Comp, que começou como base de dados de salários e benefícios, passou a se chamar Zivo em 17/11. Segundo a empresa, a frente de RH com IA, lançada no 2º trimestre de 2026, passou de US$ 10 milhões em receita anual recorrente e já responde por cerca de 85% do faturamento, com cerca de 100 clientes; mais de 90% das ofertas de emprego do Nubank são preparadas com a ferramenta.",
+     "literal": "",
+     "impacto": "Mostra o caminho de um negócio de dados que vira produto de IA: primeiro organiza uma base confiável, depois automatiza a decisão em cima dela. Números informados pela própria empresa.",
+     "fontes": [
+      {
+       "nome": "Exame",
+       "data": "18/11/2026",
+       "url": "https://exame.com/tecnologia/comp-zivo-ia-rh-nubank-receita-cinco-vezes/"
+      }
+     ]
+    },
+    {
+     "titulo": "Mais um caso: Cielo usa agentes de IA para transformar reclamações em produtos",
      "status": "ESPECULAÇÃO/IMPRENSA",
      "relevancia": "BAIXA",
-     "resumo": "A Exame mostra como a Cielo passou a usar agentes de IA para ler reclamações de clientes e convertê-las em melhorias de produto em cerca de 12 dias. É um exemplo de dado não estruturado virando decisão de negócio, a mesma lógica que a reforma impõe ao dado fiscal.",
+     "resumo": "A Exame mostra como a Cielo usa agentes de IA para ler reclamações de clientes e convertê-las em melhorias de produto em cerca de 12 dias: dado não estruturado virando decisão de negócio.",
      "literal": "",
-     "impacto": "Referência de uso prático de IA sobre dados de atendimento; não há vaga ou norma associada.",
+     "impacto": "Referência de uso de IA sobre dados de atendimento.",
      "fontes": [
       {
        "nome": "Exame",
        "data": "novembro/2026",
        "url": "https://exame.com/tecnologia/como-a-cielo-usa-agentes-de-ia-para-transformar-reclamacoes-de-clientes-em-produtos-em-12-dias/"
+      }
+     ]
+    },
+    {
+     "titulo": "Vagas que unem fiscal e dados: Python, Power BI, SQL e IA aparecem nos requisitos",
+     "status": "ESPECULAÇÃO/IMPRENSA",
+     "relevancia": "MÉDIA",
+     "resumo": "Anúncios ativos mostram o perfil que o mercado procura. Uma vaga de Tax Technology Analyst pede automação de rotinas tributárias com Power Automate, VBA e Python, Power BI, conhecimento da reforma e uso de IA para análise de dados. Uma vaga de Analista Fiscal Pleno na Thomson Reuters pede SQL e vivência na reforma tributária.",
+     "literal": "",
+     "impacto": "Confirma a trilha SQL → Power BI → Python somada ao conhecimento da reforma. As datas de publicação dos anúncios não foram confirmadas; verifique se seguem abertos.",
+     "fontes": [
+      {
+       "nome": "K2 University",
+       "data": "anúncio ativo",
+       "url": "https://k2university.com/job/tax-technology-analyst/"
+      },
+      {
+       "nome": "Jooble (Thomson Reuters)",
+       "data": "anúncio ativo",
+       "url": "https://br.jooble.org/jdp/705286422040182500"
+      }
+     ]
+    },
+    {
+     "titulo": "Agenda: IA e reforma tributária para pequenas empresas",
+     "status": "ESPECULAÇÃO/IMPRENSA",
+     "relevancia": "BAIXA",
+     "resumo": "A XII Semana da Micro e Pequena Empresa Paranaense (Sebrae/PR, Fampepar, Conampe) tem como tema IA e Reforma Tributária, de 23 a 27/11, com encontro gratuito hoje em Maringá. No mesmo período, o inovabra, do Bradesco, promove em São Paulo encontros sobre IA generativa (23/11) e reforma tributária na prática (24/11).",
+     "literal": "",
+     "impacto": "Sinal de que IA e reforma passaram a ser tratadas juntas na pauta das pequenas empresas.",
+     "fontes": [
+      {
+       "nome": "Maringá Mais",
+       "data": "24/11/2026",
+       "url": "https://www.maringamais.com.br/2026/11/24/maringa-tera-encontro-gratuito-sobre-ia-e-reforma-tributaria/"
+      },
+      {
+       "nome": "Brasil Inovador",
+       "data": "20/11/2026",
+       "url": "https://brasilinovador.com.br/inovabra-anuncia-agenda-corporativa-de-novembro-de-2026-com-foco-em-ia-reforma-tributaria-e-saude/"
       }
      ]
     }
@@ -302,7 +395,7 @@
   "Conferir as baixas de títulos pagos antes de 31/12, para não tributar receita já recebida duas vezes nem receita inexistente.",
   "Mapear os clientes que compensam créditos federais e acompanhar o ato do Executivo que vai fixar os limites do PLP 299.",
   "Orientar sobre o Refis-CE, até 30/12, os clientes com débito de ICMS que também terão DAS maior em janeiro.",
-  "Estudar: escrever a consulta SQL do saldo a receber em 31/12 e levar o resultado para um painel no Power BI por cliente."
+  "Estudar: escrever a consulta SQL do saldo a receber em 31/12, levar para um painel no Power BI e ler a documentação das APIs da CBS pensando em automatizar a conciliação com Python."
  ],
  "glossario": [
   {
@@ -336,6 +429,14 @@
   {
    "termo": "Piloto RTC-CBS",
    "def": "Ambiente de testes da CBS, sem efeito tributário, antes de 2027."
+  },
+  {
+   "termo": "API",
+   "def": "Interface que permite a um sistema consultar outro automaticamente, sem tela."
+  },
+  {
+   "termo": "RAD",
+   "def": "Recolhimento como Adquirente: o comprador recolhe a CBS da operação."
   }
  ],
  "fontes": [
@@ -398,6 +499,42 @@
    "titulo": "Como a Cielo usa agentes de IA",
    "data": "novembro/2026",
    "url": "https://exame.com/tecnologia/como-a-cielo-usa-agentes-de-ia-para-transformar-reclamacoes-de-clientes-em-produtos-em-12-dias/"
+  },
+  {
+   "nome": "Café con IA",
+   "titulo": "GPT-6.2 Sol vira padrão no ChatGPT",
+   "data": "24/11/2026",
+   "url": "https://cafeconia.substack.com/p/cafe-con-ia-24-de-noviembre-de-2026"
+  },
+  {
+   "nome": "Sam on AI",
+   "titulo": "AI Brief: Claude Ship",
+   "data": "24/11/2026",
+   "url": "https://samonai.substack.com/p/ai-brief-november-24-2026"
+  },
+  {
+   "nome": "Radar da Reforma Tributária",
+   "titulo": "O que mudou em novembro de 2026 (APIs da CBS e RAD)",
+   "data": "18/11/2026",
+   "url": "https://radardareformatributaria.com/radar-reforma-tributaria-o-que-mudou-novembro-2026/"
+  },
+  {
+   "nome": "Exame",
+   "titulo": "Comp vira Zivo e quintuplica receita com IA",
+   "data": "18/11/2026",
+   "url": "https://exame.com/tecnologia/comp-zivo-ia-rh-nubank-receita-cinco-vezes/"
+  },
+  {
+   "nome": "K2 University",
+   "titulo": "Vaga: Tax Technology Analyst",
+   "data": "anúncio ativo",
+   "url": "https://k2university.com/job/tax-technology-analyst/"
+  },
+  {
+   "nome": "Maringá Mais",
+   "titulo": "Encontro gratuito sobre IA e Reforma Tributária",
+   "data": "24/11/2026",
+   "url": "https://www.maringamais.com.br/2026/11/24/maringa-tera-encontro-gratuito-sobre-ia-e-reforma-tributaria/"
   }
  ]
 }
