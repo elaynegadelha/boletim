@@ -28,8 +28,8 @@
   ]
  },
  "ceara": {
-  "novidade": "Não encontrei norma tributária nova da Sefaz-CE, da Prefeitura de Fortaleza, da Assembleia ou do TJCE publicada no período. O relator do ajuste fiscal na Câmara foi o deputado cearense Mauro Benevides Filho (União-CE).",
-  "olho": "A Resolução 196 chega direto ao comércio de Fortaleza que vende parcelado no Simples: o DAS de dezembro, mais alto, vence em janeiro. Antes disso, até 30/12, fecha a adesão ao Refis 2026 do Ceará (Lei nº 19.915/2026), com desconto de até 100% em multas e juros de ICMS. Vale planejar as duas contas de caixa juntas."
+  "novidade": "Sem norma tributária nova da Sefaz-CE, da Prefeitura de Fortaleza, da Assembleia ou do TJCE no período. O efeito do dia no Ceará vem da Resolução CGSN nº 196: o comércio cearense do Simples que vende a prazo vai pagar em janeiro um DAS de dezembro maior, com as parcelas ainda a receber incluídas na base.",
+  "olho": "O caixa de dezembro e janeiro fica apertado de dois lados: o DAS maior, que vence em janeiro, e o fim da adesão ao Refis 2026 do Ceará em 30/12 (Lei nº 19.915/2026), com desconto de até 100% em multas e juros de ICMS. Quem tem débito estadual e vende parcelado precisa decidir as duas coisas juntas, ainda em dezembro."
  },
  "normaExplicada": {
   "norma": "Resolução CGSN nº 196, de 16 de novembro de 2026",
@@ -66,7 +66,7 @@
    "Projetar o DAS de dezembro e avisar o cliente do impacto no caixa de janeiro.",
    "Rever o calendário do 1º trimestre de 2027 com a DEFIS em 31/03."
   ],
-  "cuidado": "Não localizei o texto oficial no Diário Oficial da União; o resumo foi feito a partir da reprodução publicada pela Tax Prático, por isso o campo de texto literal ficou vazio. Confira a versão certificada antes de aplicar a um caso concreto.",
+  "cuidado": "O texto oficial no Diário Oficial da União não estava disponível no fechamento desta edição; o resumo segue a reprodução publicada pela Tax Prático, por isso o trecho literal não foi transcrito. Confira a versão certificada antes de aplicar a um caso concreto.",
   "fonte": "Tax Prático — reprodução da Resolução CGSN nº 196/2026",
   "url": "https://taxpratico.com.br/detalhes-artigo/resolucao-cgsn-no-196-de-16-de-novembro-de-2026"
  },
