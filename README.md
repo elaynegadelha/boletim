@@ -1,4 +1,6 @@
-# Boletim do Dia — Elayne Gadelha
+# DECODIFICA. — Elayne Gadelha
+
+O que muda. O que importa. O que vem depois.
 
 Site público em https://elaynegadelha.com.br
 
