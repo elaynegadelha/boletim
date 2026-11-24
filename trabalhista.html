@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trabalhista — DECODIFICA. — Elayne Gadelha</title>
+<meta name="description" content="Calculadora de rescisão, salário líquido, férias e 13º com as tabelas de 2026, notícias trabalhistas e a escala 5x2 explicada. Uma publicação de Elayne Gadelha.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE: analítica, didática, calma — a DECODIFICA. explicando a conta, sem sensacionalismo.
+   IDEA: um termo de rescisão / holerite editorial: proventos, descontos, líquido.
+   PICTURE: o "recibo" ao vivo, com o líquido em destaque, ao lado das entradas.
+   COLOUR and TYPE: marfim #F5F0EB, verde-grafite #253030, sálvia #708370 (marca Elayne Gadelha); serifa nos títulos, sans no apoio.
+   LAYOUT: abas no topo, entradas à esquerda, recibo à direita; método, tabelas 2026 e fontes abaixo. */
+:root{color-scheme:light dark;
+--bg:light-dark(#F5F0EB,#1B2220);--paper:light-dark(#FBF8F4,#232C29);
+--ink:light-dark(#253030,#F1ECE5);--sup:light-dark(#424F4D,#C9CFCB);--mut:light-dark(#6B7471,#9AA39F);
+--acc:light-dark(#708370,#9DB29C);--shape:light-dark(#758975,#5E7360);--line:light-dark(#DDD5CA,#38433F);--neg:light-dark(#8A4B3C,#D9A08F)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Neue Montreal",Manrope,system-ui,sans-serif;overflow-x:clip}
+.serif{font-family:"TT Ramillas",Fraunces,Georgia,serif;font-weight:400}
+.band{padding:clamp(24px,4vw,56px) max(5vw,16px)}
+.wrap{max-width:1180px;margin:0 auto}
+.mast{display:flex;align-items:center;justify-content:center;gap:16px;padding:18px max(5vw,16px);font-size:13px;letter-spacing:.24em;color:var(--sup);text-align:center}
+.mast i{flex:1;max-width:150px;height:1px;background:var(--line)}
+.intro{position:relative;padding-bottom:12px}
+.intro svg{position:absolute;right:max(5vw,16px);top:0;width:150px;height:150px;pointer-events:none}
+.kick{margin:0 0 10px;color:var(--mut);font-size:14px}
+h1{font-size:clamp(34px,5.4vw,52px);line-height:1.05;margin:0 0 14px;max-width:16ch;text-wrap:balance}
+h1 em,h2 em{color:var(--acc)}
+.lede{max-width:62ch;color:var(--sup);margin:0 0 24px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px}
+.tab{min-height:44px;padding:10px 18px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink);font:inherit;font-size:15px;cursor:pointer}
+.tab[aria-selected=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(20px,3vw,40px);align-items:start}
+.panel[hidden]{display:none}
+.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 18px}
+.full{grid-column:1/-1}
+label{display:block;font-size:14px;color:var(--sup);margin-bottom:6px}
+input,select{width:100%;font:inherit;font-size:16px;padding:10px 12px;min-height:44px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink)}
+.chk{display:flex;gap:10px;align-items:center;min-height:44px}.chk input{width:22px;min-height:22px}.chk label{margin:0}
+input:focus-visible,select:focus-visible,button:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.hint{font-size:13px;color:var(--mut);margin:6px 0 0}
+.sample{font-size:13px;color:var(--mut);margin:18px 0 0}
+.receipt{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:clamp(20px,3vw,32px);position:sticky;top:16px}
+.rl{margin:0;color:var(--mut);font-size:14px}
+.big{font-size:clamp(40px,7vw,60px);line-height:1.05;margin:4px 0 6px;white-space:nowrap}
+.sub{margin:0 0 14px;color:var(--sup);font-size:14px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+td{padding:7px 0;vertical-align:top;border-bottom:1px solid color-mix(in srgb,var(--line) 55%,transparent)}
+td small{display:block;color:var(--mut);font-size:13px}
+td.v{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums;padding-left:12px}
+tr.h td{padding-top:18px;font-size:13px;color:var(--acc);border-bottom:1px solid var(--line)}
+tr.d td.v{color:var(--neg)}
+tr.t td{border-top:1.5px solid var(--ink);border-bottom:0;font-weight:600;padding-top:10px}
+tr.i td.v{color:var(--sup)}
+.warn{background:color-mix(in srgb,var(--neg) 12%,transparent);border-radius:10px;padding:10px 12px;font-size:14px;margin:0 0 12px}
+.notes{margin:14px 0 0;padding:0;list-style:none;font-size:13px;color:var(--mut)}.notes li{margin:4px 0}
+.btn{margin-top:16px;min-height:44px;padding:10px 18px;border-radius:999px;border:1px solid var(--ink);background:transparent;color:var(--ink);font:inherit;cursor:pointer}
+.method,.news{border-top:1px solid var(--line)}
+html{scroll-padding-top:64px}
+.topnav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+.topnav .scr{display:flex;gap:4px;overflow-x:auto;padding:6px max(5vw,16px);max-width:1180px;margin:0 auto;scrollbar-width:none}
+.topnav a{flex:none;padding:10px 12px;font-size:14px;color:var(--sup);text-decoration:none;border-radius:4px}.topnav a:hover{color:var(--ink);background:var(--paper)}
+.topnav a:first-child{color:var(--acc);font-weight:500}
+.upd{color:var(--mut);font-size:14px;margin:-6px 0 20px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:16px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px 22px}
+.card h3{font-size:21px;line-height:1.2;margin:8px 0 10px;font-weight:400}
+.card p{margin:0 0 10px;font-size:15px;color:var(--sup)}
+.card .imp{color:var(--ink)}.card .imp b{font-weight:600}
+.meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13px}
+.st{padding:3px 10px;border-radius:999px;font-size:13px;border:1px solid currentColor}
+.st.pub{color:var(--acc)}.st.tra{color:var(--sup)}.st.esp{color:var(--neg)}
+.rel{color:var(--mut)}
+.fonte{font-size:13px!important;color:var(--mut)!important}.fonte a{color:var(--acc)}
+.tl{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:0;border-top:2px solid var(--shape);margin:8px 0 8px}
+.tl div{padding:14px 16px 6px 0;position:relative}.tl div::before{content:"";position:absolute;top:-7px;left:0;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--shape)}
+.tl .now::before{background:var(--shape)}.tl b{display:block;font-size:15px}.tl span{font-size:14px;color:var(--sup)}
+.lit{margin:0 0 14px;padding:16px 20px;border-left:3px solid var(--acc);background:var(--paper);border-radius:0 12px 12px 0}
+.lit p{margin:0 0 8px;font-family:"TT Ramillas",Fraunces,Georgia,serif;font-size:18px;line-height:1.45}.lit cite{font-style:normal;font-size:13px;color:var(--mut)}
+.arts{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:0 28px}
+.arts div{padding:12px 0;border-bottom:1px solid var(--line)}.arts b{display:block;font-weight:600;font-size:15px;margin-bottom:2px}.arts span{font-size:15px;color:var(--sup)}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:28px 0 16px}
+.two .how{padding-left:1.1em;margin:0}.two .how li{font-size:15px}
+.hora .hrow{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:20px;align-items:start}
+.hora th{text-align:right;font-weight:500;font-size:13px;color:var(--mut);padding:6px 0;border-bottom:1px solid var(--line)}.hora th:first-child{text-align:left}
+.hora td{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}.hora td:first-child{text-align:left;white-space:normal}
+.chain{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline;font-size:15px;color:var(--sup);margin:0 0 14px}
+.chain span{font-size:13px;color:var(--bg);background:var(--acc);padding:2px 10px;border-radius:999px;margin-left:4px}
+@media(max-width:700px){.two,.hora .hrow{grid-template-columns:minmax(0,1fr)}}
+h2{font-size:clamp(28px,3.6vw,36px);line-height:1.1;margin:0 0 16px}
+h3{font-size:17px;margin:28px 0 10px}
+.how{max-width:72ch;padding-left:1.1em;color:var(--sup)}.how li{margin:8px 0}.how b{color:var(--ink);font-weight:600}
+.tables{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.tables table{font-size:14px}.tables th{text-align:left;font-weight:500;color:var(--mut);font-size:13px;padding:6px 0;border-bottom:1px solid var(--line)}
+.tables th:last-child,.tables td:last-child{text-align:right}
+.src{padding-left:1.3em;font-size:14px;color:var(--sup)}.src a{color:var(--acc)}
+.disc{font-size:13px;color:var(--mut);max-width:80ch;margin-top:24px}
+.sig{font-style:italic;color:var(--acc);margin-top:20px}
+@media(max-width:820px){.grid{grid-template-columns:minmax(0,1fr)}.receipt{position:static}.tables{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:600px){.fields{grid-template-columns:minmax(0,1fr)}.intro svg{display:none}.mast i{max-width:40px}}
+@media(prefers-reduced-motion:no-preference){.big.pulse{animation:p .35s ease}@keyframes p{from{opacity:.35}to{opacity:1}}}
+</style>
+</head>
+<body>
+<header class="mast"><i></i><span>DECODIFICA. · ELAYNE GADELHA</span><i></i></header>
+<nav class="topnav" aria-label="Seções"><div class="scr"><a href="./">← DECODIFICA.</a><a href="#calculadora">Calculadora</a><a href="#noticias">Notícias</a><a href="#escala-5x2">Escala 5x2</a><a href="#metodo">Como a conta é feita</a></div></nav>
+
+<section class="band intro"><div class="wrap">
+  <svg viewBox="0 0 150 150" aria-hidden="true"><path d="M150 0A150 150 0 0 1 0 150L150 150Z" fill="var(--shape)" opacity=".85" transform="translate(0,0) scale(.62) translate(92,92)"/><path d="M150 18A132 132 0 0 0 18 150" fill="none" stroke="var(--shape)" stroke-width="1"/><path d="M150 40A110 110 0 0 0 40 150" fill="none" stroke="var(--shape)" stroke-width="1" opacity=".6"/></svg>
+  <p class="kick">DECODIFICA. · Trabalhista</p>
+  <h1 class="serif">Calculadora de direitos <em>trabalhistas</em></h1>
+  <p class="lede">Rescisão, salário líquido, férias e 13º com as tabelas de 2026: INSS da Portaria Interministerial MPS/MF nº 13/2026 e IRRF com a redução da Lei nº 15.270/2025. <a href="#" id="tonews" style="color:var(--acc)">Ver notícias trabalhistas da semana</a></p>
+  <nav class="tabs" role="tablist" aria-label="Tipo de cálculo">
+    <button class="tab" role="tab" data-t="rescisao">Rescisão</button>
+    <button class="tab" role="tab" data-t="liquido">Salário líquido</button>
+    <button class="tab" role="tab" data-t="ferias">Férias</button>
+    <button class="tab" role="tab" data-t="decimo-terceiro">13º salário</button>
+  </nav>
+</div></section>
+
+<main class="band" id="calculadora" style="padding-top:20px"><div class="wrap grid">
+  <form id="f" autocomplete="off" novalidate>
+    <div class="panel" data-p="rescisao">
+      <div class="fields">
+        <div class="full"><label for="r_tipo">Tipo de desligamento</label>
+          <select id="r_tipo"><option value="sjc">Dispensa sem justa causa</option><option value="pd">Pedido de demissão</option><option value="acordo">Acordo entre as partes (art. 484-A)</option><option value="jc">Dispensa por justa causa</option></select></div>
+        <div><label for="r_sal">Salário mensal (R$)</label><input id="r_sal" type="number" inputmode="decimal" step="0.01" min="0" value="4500"></div>
+        <div><label for="r_med">Média de variáveis (R$)</label><input id="r_med" type="number" inputmode="decimal" step="0.01" min="0" value="0"><p class="hint">Horas extras, comissões, adicionais habituais.</p></div>
+        <div><label for="r_adm">Data de admissão</label><input id="r_adm" type="date" value="2022-03-14"></div>
+        <div><label for="r_fim">Último dia trabalhado</label><input id="r_fim" type="date" value="2026-11-24"></div>
+        <div class="full"><label for="r_aviso">Aviso prévio</label><select id="r_aviso"></select></div>
+        <div><label for="r_venc">Férias vencidas não gozadas</label><select id="r_venc"><option value="0">Nenhuma</option><option value="1">1 período</option><option value="2">2 períodos</option></select></div>
+        <div><label for="r_dep">Dependentes (IR)</label><input id="r_dep" type="number" inputmode="numeric" min="0" step="1" value="0"></div>
+        <div><label for="r_fgts">Saldo do FGTS (R$)</label><input id="r_fgts" type="number" inputmode="decimal" step="0.01" min="0" placeholder="Em branco: estimativa"><p class="hint">Do extrato. Sem ele, estimamos 8% ao mês, sem correção.</p></div>
+        <div><label for="r_out">Outros descontos (R$)</label><input id="r_out" type="number" inputmode="decimal" step="0.01" min="0" value="0"></div>
+      </div>
+    </div>
+    <div class="panel" data-p="liquido" hidden>
+      <div class="fields">
+        <div><label for="l_sal">Salário-base (R$)</label><input id="l_sal" type="number" inputmode="decimal" step="0.01" min="0" value="6000"></div>
+        <div><label for="l_add">Adicionais do mês (R$)</label><input id="l_add" type="number" inputmode="decimal" step="0.01" min="0" value="0"><p class="hint">Horas extras, comissões, adicionais.</p></div>
+        <div><label for="l_dep">Dependentes (IR)</label><input id="l_dep" type="number" inputmode="numeric" min="0" step="1" value="0"></div>
+        <div><label for="l_pen">Pensão alimentícia judicial (R$)</label><input id="l_pen" type="number" inputmode="decimal" step="0.01" min="0" value="0"></div>
+        <div><label for="l_out">Outros descontos (R$)</label><input id="l_out" type="number" inputmode="decimal" step="0.01" min="0" value="0"></div>
+        <div class="chk"><input id="l_vt" type="checkbox"><label for="l_vt">Descontar vale-transporte (6%)</label></div>
+      </div>
+    </div>
+    <div class="panel" data-p="ferias" hidden>
+      <div class="fields">
+        <div><label for="f_sal">Salário mensal (R$)</label><input id="f_sal" type="number" inputmode="decimal" step="0.01" min="0" value="4500"></div>
+        <div><label for="f_med">Média de variáveis (R$)</label><input id="f_med" type="number" inputmode="decimal" step="0.01" min="0" value="0"></div>
+        <div><label for="f_dias">Dias de descanso</label><input id="f_dias" type="number" inputmode="numeric" min="5" max="30" step="1" value="20"></div>
+        <div><label for="f_abono">Dias vendidos (abono)</label><input id="f_abono" type="number" inputmode="numeric" min="0" max="10" step="1" value="10"><p class="hint">Até 1/3 das férias: 10 dias.</p></div>
+        <div><label for="f_dep">Dependentes (IR)</label><input id="f_dep" type="number" inputmode="numeric" min="0" step="1" value="0"></div>
+      </div>
+    </div>
+    <div class="panel" data-p="decimo-terceiro" hidden>
+      <div class="fields">
+        <div><label for="d_sal">Salário mensal (R$)</label><input id="d_sal" type="number" inputmode="decimal" step="0.01" min="0" value="4500"></div>
+        <div><label for="d_med">Média de variáveis (R$)</label><input id="d_med" type="number" inputmode="decimal" step="0.01" min="0" value="0"></div>
+        <div><label for="d_meses">Meses trabalhados em 2026</label><input id="d_meses" type="number" inputmode="numeric" min="1" max="12" step="1" value="12"><p class="hint">Conta o mês com 15 dias ou mais.</p></div>
+        <div><label for="d_dep">Dependentes (IR)</label><input id="d_dep" type="number" inputmode="numeric" min="0" step="1" value="0"></div>
+      </div>
+    </div>
+    <p class="sample">Os valores iniciais são um exemplo. Seus dados ficam só neste navegador.</p>
+  </form>
+
+  <aside class="receipt" aria-live="polite">
+    <p class="rl" id="rt"></p>
+    <p class="big serif" id="rv"></p>
+    <p class="sub" id="rs"></p>
+    <div id="rw"></div>
+    <table><tbody id="rows"></tbody></table>
+    <ul class="notes" id="rn"></ul>
+    <button class="btn" id="copy" type="button">Copiar resumo</button>
+  </aside>
+</div></main>
+
+<section class="band news" id="noticias"><div class="wrap">
+  <h2 class="serif">Notícias <em>trabalhistas</em></h2>
+  <p class="upd">Atualizado em 24/11/2026 · fato, status e o que muda na prática</p>
+  <div class="cards">
+    <article class="card"><p class="meta"><span class="st pub">Publicado</span><span class="rel">Relevância alta</span></p>
+      <h3 class="serif">Fim da escala 6x1: EC nº 141/2026</h3>
+      <p>Promulgada em 16/10/2026. Garante dois dias de repouso semanal remunerado e reduz a jornada máxima de 44 para 42 horas, sem redução de salário. Doze meses depois, o limite cai para 40 horas.</p>
+      <p class="imp"><b>Impacto:</b> todas as empresas com empregados CLT revisam escalas, contratos e o cadastro de jornada na folha a partir de <b>16/12/2026</b>. Há fontes que citam 15/12; o governo e o decreto usam 16/12. <a href="#" class="to5x2" style="color:var(--acc)">Veja a análise completa</a></p>
+      <p class="fonte">Fontes: Agência Brasil, via <a href="https://www.diariodepernambuco.com.br/economia/2026/10/11726890-escala-5x2-comeca-a-valer-em-dezembro-entenda-as-regras.html">Diario de Pernambuco</a> (17/10/2026); <a href="https://fenacon.org.br/noticias/congresso-promulga-emenda-que-extingue-a-escala-6x1-e-reduz-jornada-para-40-horas-semanais/">Fenacon</a></p></article>
+    <article class="card"><p class="meta"><span class="st pub">Publicado</span><span class="rel">Relevância alta</span></p>
+      <h3 class="serif">Decreto nº 13.173/2026 regulamenta a escala 5x2</h3>
+      <p>Assinado em 19/11/2026. Dá ao Ministério do Trabalho a competência para editar normas complementares sobre repouso semanal e regimes especiais, e define os divisores 210 e 200 para o cálculo do valor da hora.</p>
+      <p class="imp"><b>Impacto:</b> com o novo divisor, o salário-hora sobe e as horas extras ficam mais caras. Sistemas de folha precisam trocar o divisor de 220 na data de vigência.</p>
+      <p class="fonte">Fontes: <a href="https://agenciagov.ebc.com.br/noticias/202611/estamos-humanizanso-o-mundo-do-trabalho-diz-lula-ao-regulamentar-o-fim-da-escala-6x1">Agência Gov</a>; <a href="https://www.legisweb.com.br/noticia/?id=34902">LegisWeb</a> (19/11/2026)</p></article>
+    <article class="card"><p class="meta"><span class="st tra">Em tramitação</span><span class="rel">Relevância alta</span></p>
+      <h3 class="serif">STF vai julgar a transição no plenário presencial</h3>
+      <p>Uma liminar do ministro Flávio Dino manteve o início em 16/12 e flexibilizou as regras de concessão das folgas. Em 14/11, o ministro Fux pediu destaque e o julgamento saiu do plenário virtual. Dino enviou ao plenário as ações da CNC e da CNI, que pedem 12 meses de adaptação.</p>
+      <p class="imp"><b>Impacto:</b> enquanto não houver julgamento, a liminar vale e o calendário está mantido. Ainda não há data para o plenário.</p>
+      <p class="fonte">Fontes: <a href="https://jurinews.com.br/stf-noticias/dino-leva-ao-plenario-presencial-acoes-sobre-o-fim-da-escala-6x1-e-pede-manifestacoes-do-congresso-agu-e-pgr">JuriNews</a> (17/11/2026); <a href="https://www.congressoemfoco.com.br/noticia/131600/fux-apresenta-destaque-e-leva-escala-6x1-ao-plenario-fisico-do-stf">Congresso em Foco</a> (14/11/2026)</p></article>
+    <article class="card"><p class="meta"><span class="st esp">Especulação/imprensa</span><span class="rel">Relevância média</span></p>
+      <h3 class="serif">Portarias das jornadas especiais até a próxima semana</h3>
+      <p>Em 24/11/2026, o ministro Luiz Marinho disse que o governo publicará até a próxima semana as portarias que regulamentam as jornadas especiais da nova emenda.</p>
+      <p class="imp"><b>Impacto:</b> turnos de revezamento, 12x36 e categorias com regras próprias devem aguardar as portarias antes de fechar escalas.</p>
+      <p class="fonte">Fonte: <a href="https://newsrondonia.com.br/politica/2026/11/24/governo-publicara-portarias-sobre-jornadas-especiais-na-proxima-semana">News Rondônia</a>, com EBC (24/11/2026)</p></article>
+    <article class="card"><p class="meta"><span class="st pub">Publicado</span><span class="rel">Relevância média</span></p>
+      <h3 class="serif">FGTS em processos trabalhistas: Nota Orientativa nº 12/2026</h3>
+      <p>Publicada em 17/11/2026. Para as regras vigentes desde 1º/05/2026, os recolhimentos de FGTS decorrentes de processos trabalhistas passam pelo FGTS Digital, com declaração prévia no evento S-2500 do eSocial. Pagar o FGTS direto ao trabalhador, mesmo em acordo, não substitui o depósito na conta vinculada.</p>
+      <p class="imp"><b>Impacto:</b> departamento pessoal e advogados conferem o fluxo de acordos judiciais. A Nota nº 13/2026, sobre FGTS no 13º, consta na agenda do FGTS Digital com data de 19/11; o detalhe ainda não foi confirmado aqui.</p>
+      <p class="fonte">Fontes: <a href="https://www.legisweb.com.br/noticia/?id=34874">LegisWeb</a>; <a href="https://www.mixvale.com.br/2026/11/24/fgts-em-processos-trabalhistas-mte-publica-nova-nota-orientativa/">Mix Vale</a> (24/11/2026)</p></article>
+    <article class="card"><p class="meta"><span class="st pub">Prazo</span><span class="rel">Relevância alta</span></p>
+      <h3 class="serif">13º salário: 1ª parcela vence segunda, 30/11</h3>
+      <p>A 1ª parcela é paga sem descontos até 30/11. A 2ª vence em 20/12, que em 2026 cai num domingo: programe para sexta, 18/12. É o primeiro 13º com a redução do IR da Lei 15.270/2025.</p>
+      <p class="imp"><b>Impacto:</b> use a aba 13º salário acima para simular as duas parcelas.</p>
+      <p class="fonte">Base legal: Lei nº 4.749/1965; Lei nº 15.270/2025</p></article>
+  </div>
+</div></section>
+
+<section class="band news" id="escala-5x2"><div class="wrap">
+  <h2 class="serif">Escala 5x2: o que diz a lei e o que <em>muda</em></h2>
+  <p class="upd">EC nº 141/2026 e Decreto nº 13.173/2026, lidos no texto oficial · 24/11/2026</p>
+
+  <div class="tl">
+    <div><b>16/10/2026</b><span>EC 141 promulgada e publicada no DOU, em edição extra</span></div>
+    <div><b>19/11/2026</b><span>Decreto 13.173 publicado: divisores da hora, turnos e 12x36</span></div>
+    <div class="now"><b>16/12/2026</b><span>Limite de 42 h semanais, 2 dias de repouso e divisor 210. Cláusulas coletivas incompatíveis perdem efeito.</span></div>
+    <div><b>16/12/2027</b><span>Limite de 40 h semanais e divisor 200</span></div>
+  </div>
+
+  <h3>Texto literal dos dispositivos principais</h3>
+  <blockquote class="lit"><p>“XIII - duração do trabalho normal não superior a 8 (oito) horas diárias e 40 (quarenta) horas semanais, facultada a compensação de horários e a redução da jornada, mediante acordo ou convenção coletiva de trabalho;”</p><cite>Constituição Federal, art. 7º, XIII, na redação da EC nº 141/2026</cite></blockquote>
+  <blockquote class="lit"><p>“Art. 5º Aos empregados em qualquer atividade privada, sujeitos à duração normal do trabalho, será aplicado para o cálculo do salário-hora: I - o divisor 210, quando a duração normal máxima do trabalho for de quarenta e duas horas semanais; e II - o divisor 200, quando a duração normal máxima do trabalho for de quarenta horas semanais.”</p><cite>Decreto nº 13.173/2026, art. 5º</cite></blockquote>
+
+  <h3>Principais pontos, artigo por artigo</h3>
+  <div class="arts">
+    <div><b>EC 141, art. 1º</b><span>Jornada normal de até 8 h por dia e 40 h por semana; repouso semanal remunerado de 2 dias, um deles preferencialmente no domingo. Por convenção ou acordo coletivo, é possível adotar um regime compensatório com média de 2 folgas e pelo menos 1 folga dentro de cada semana.</span></div>
+    <div><b>Art. 2º</b><span>Vale para os contratos em vigor, sem redução salarial nominal, proporcional ou de qualquer outra espécie. A regra também protege os pisos salariais.</span></div>
+    <div><b>Art. 3º</b><span>Cláusulas de convenções e acordos coletivos incompatíveis com a emenda deixam de produzir efeito dois meses após a publicação.</span></div>
+    <div><b>Art. 4º</b><span>Quem já trabalha 40 h ou menos não tem a jornada reduzida proporcionalmente, mas também passa a ter os 2 dias de repouso.</span></div>
+    <div><b>Art. 5º</b><span>Lei complementar <i>poderá</i> criar medidas transitórias para MEI, microempresas e empresas de pequeno porte, condicionadas à manutenção dos empregos. Essa lei ainda não existe.</span></div>
+    <div><b>Arts. 6º e 7º</b><span>Redução em duas etapas: 42 h após dois meses e 40 h um ano depois. Durante a etapa de 42 h, norma coletiva pode ampliar a jornada diária para distribuir as horas da semana.</span></div>
+    <div><b>Art. 8º</b><span>Empregado com diploma de nível superior e remuneração de pelo menos 2,5 vezes o teto do INSS (R$ 21.188,87 em 2026) fica fora das regras de duração e controle de jornada, salvo acordo ou liberalidade da empresa. O repouso de 2 dias continua obrigatório.</span></div>
+    <div><b>Art. 9º</b><span>Em contratos com a administração pública que empregam mão de obra diretamente, a redução vale após aditivo com reequilíbrio econômico-financeiro, no prazo de até 1 ano.</span></div>
+    <div><b>Decreto, arts. 1º a 3º</b><span>Alcança empregados urbanos, rurais e domésticos e, quando couber, trabalhadores avulsos. Turnos ininterruptos de revezamento têm 6 h diárias, salvo norma coletiva. Na escala 12x36, se a média mensal passar do limite semanal, há compensação ou pagamento de horas extras.</span></div>
+    <div><b>Decreto, arts. 4º a 6º</b><span>O Ministério do Trabalho regulamenta o repouso e os regimes especiais. Divisor 210 com jornada de 42 h e 200 com jornada de 40 h; prevalece o divisor mais favorável ao empregado.</span></div>
+  </div>
+
+  <div class="two">
+    <article class="card"><h3 class="serif">Na vida de quem é <em>empregado</em></h3>
+      <ul class="how">
+        <li><b>Mais descanso:</b> 2 folgas por semana, uma delas preferencialmente no domingo.</li>
+        <li><b>Mesmo salário:</b> trabalhar menos horas não pode reduzir o salário nem o piso da categoria.</li>
+        <li><b>A hora vale mais:</b> o salário-hora sobe cerca de 4,8% em 16/12/2026 e 10% em 16/12/2027, e as horas extras acompanham.</li>
+        <li><b>Quem já faz 40 h:</b> mantém a jornada e passa a ter direito às 2 folgas.</li>
+        <li><b>12x36 e turnos:</b> seguem a média do mês e a norma coletiva da categoria.</li>
+        <li><b>Atenção:</b> quem tem diploma e ganha a partir de R$ 21.188,87 pode ficar sem controle de jornada.</li>
+      </ul></article>
+    <article class="card"><h3 class="serif">Na vida de quem é <em>empresário</em></h3>
+      <ul class="how">
+        <li><b>Custo da hora:</b> a mesma folha paga menos horas. O custo por hora sobe cerca de 4,8% na primeira etapa e 10% na segunda.</li>
+        <li><b>Escalas e quadro de pessoal:</b> comércio, serviços e indústria com 6x1 precisam redesenhar turnos ou contratar para manter o horário de funcionamento.</li>
+        <li><b>Sistemas:</b> trocar o divisor 220 por 210 na folha e atualizar a jornada contratual, o ponto, o banco de horas e o cadastro no eSocial.</li>
+        <li><b>Negociação coletiva:</b> cláusulas incompatíveis caem em 16/12. Vale rever a convenção da categoria agora.</li>
+        <li><b>Preço e margem:</b> repassar, absorver ou ganhar produtividade é uma decisão a tomar com números.</li>
+        <li><b>Pequenas empresas:</b> eventual alívio depende de lei complementar que ainda não existe. O STF também julga pedidos de adiamento, ainda sem data.</li>
+      </ul></article>
+  </div>
+
+  <div class="card hora">
+    <h3 class="serif">Quanto vale a sua hora?</h3>
+    <div class="hrow"><div><label for="h_sal">Salário mensal (R$)</label><input id="h_sal" type="number" inputmode="decimal" step="0.01" min="0" value="3000"></div>
+      <table><thead><tr><th></th><th>Hora normal</th><th>Hora extra 50%</th></tr></thead><tbody id="h_rows"></tbody></table></div>
+    <p class="hint">Divisor 220 (até 15/12/2026), 210 (a partir de 16/12/2026) e 200 (a partir de 16/12/2027).</p>
+  </div>
+
+  <h3>Efeito em cadeia</h3>
+  <p class="chain"><span>Norma</span>EC 141 e Decreto 13.173 <span>Sistema</span>divisor 210, limite de 42 h <span>Cadastro</span>jornada contratual, escalas, ponto, eSocial <span>Custo</span>hora e hora extra mais caras <span>Caixa</span>folha e encargos por hora trabalhada sobem <span>Decisão</span>reorganizar turnos, contratar, renegociar ou reprecificar</p>
+  <p class="fonte">Fontes oficiais: <a href="https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc141.htm">EC nº 141/2026 (Planalto)</a> · <a href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/d13173.htm">Decreto nº 13.173/2026 (Planalto)</a> · <a href="https://www.gov.br/casacivil/pt-br/assuntos/noticias/2026/novembro/decreto-regulamenta-novas-regras-sobre-jornada-de-trabalho-e-descanso-semanal-remunerado">Casa Civil</a></p>
+</div></section>
+
+<section class="band method" id="metodo"><div class="wrap">
+  <h2 class="serif">Como a conta é <em>feita</em></h2>
+  <ul class="how" id="how"></ul>
+  <h3>Tabelas de 2026</h3>
+  <div class="tables">
+    <table><thead><tr><th>INSS · salário de contribuição</th><th>Alíquota</th></tr></thead><tbody>
+      <tr><td>Até R$ 1.621,00</td><td>7,5%</td></tr><tr><td>De R$ 1.621,01 a R$ 2.902,84</td><td>9%</td></tr>
+      <tr><td>De R$ 2.902,85 a R$ 4.354,27</td><td>12%</td></tr><tr><td>De R$ 4.354,28 a R$ 8.475,55</td><td>14%</td></tr>
+      <tr><td colspan="2"><small>Progressiva por faixa. Teto R$ 8.475,55; desconto máximo R$ 988,09.</small></td></tr></tbody></table>
+    <table><thead><tr><th>IRRF · base de cálculo mensal</th><th>Alíquota · dedução</th></tr></thead><tbody>
+      <tr><td>Até R$ 2.428,80</td><td>Isento</td></tr><tr><td>De R$ 2.428,81 a R$ 2.826,65</td><td>7,5% · R$ 182,16</td></tr>
+      <tr><td>De R$ 2.826,66 a R$ 3.751,05</td><td>15% · R$ 394,16</td></tr><tr><td>De R$ 3.751,06 a R$ 4.664,68</td><td>22,5% · R$ 675,49</td></tr>
+      <tr><td>Acima de R$ 4.664,68</td><td>27,5% · R$ 908,73</td></tr>
+      <tr><td colspan="2"><small>Dependente: R$ 189,59. Desconto simplificado: R$ 607,20. Redução da Lei 15.270/2025: rendimentos até R$ 5.000 ficam sem imposto; de R$ 5.000,01 a R$ 7.350, redução de R$ 978,62 − 0,133145 × rendimentos.</small></td></tr></tbody></table>
+  </div>
+  <h3>Fontes</h3>
+  <ol class="src">
+    <li>Decreto nº 12.797/2025 — salário mínimo de R$ 1.621,00 a partir de 1º/01/2026. <a href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12797.htm">planalto.gov.br</a></li>
+    <li>Portaria Interministerial MPS/MF nº 13, de 9/01/2026 — faixas e teto do INSS, vigentes desde 1º/01/2026.</li>
+    <li>Lei nº 15.270/2025 — redução do IRRF para rendimentos até R$ 7.350, inclusive no 13º.</li>
+    <li>CLT, arts. 129–145 (férias), 477 (rescisão), 484-A (acordo), 487 (aviso prévio). <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm">planalto.gov.br</a></li>
+    <li>Lei nº 12.506/2011 (aviso proporcional); Leis nº 4.090/1962 e 4.749/1965 (13º); Lei nº 8.036/1990, art. 18 (multa do FGTS); Súmulas 171 e 261 do TST.</li>
+  </ol>
+  <p class="disc">Simulação para orientação, com tabelas conferidas em 24/11/2026. Não considera convenção coletiva, adicionais específicos, faltas, estabilidades, férias em dobro, pensão sobre verbas rescisórias nem outras particularidades do contrato. Confirme com o departamento pessoal ou com um advogado trabalhista.</p>
+  <p class="sig serif">O que muda. O que importa. O que vem depois.</p>
+</div></section>
+<footer class="mast"><i></i><span>INTELIGÊNCIA APLICADA AOS NEGÓCIOS</span><i></i></footer>
+
+<script>
+{
+const $=id=>document.getElementById(id);
+const fmt=v=>v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+const r2=v=>Math.round((v+Number.EPSILON)*100)/100;
+const num=id=>{const v=parseFloat($(id).value);return isFinite(v)&&v>0?v:0};
+const INSS=[[1621,.075],[2902.84,.09],[4354.27,.12],[8475.55,.14]];
+const IR=[[2428.80,0,0],[2826.65,.075,182.16],[3751.05,.15,394.16],[4664.68,.225,675.49],[Infinity,.275,908.73]];
+const DEP=189.59,SIMP=607.20;
+function inss(b){let t=0,p=0;for(const[l,a]of INSS){if(b>p)t+=(Math.min(b,l)-p)*a;p=l}return r2(t)}
+function tab(base){for(const[l,a,d]of IR)if(base<=l)return Math.max(0,base*a-d);return 0}
+function redutor(rend,imp){if(rend<=5000)return Math.min(imp,312.89);if(rend<=7350)return Math.min(imp,Math.max(0,978.62-0.133145*rend));return 0}
+function irrf(rend,inssV,deps,outras,simp){
+  const legal=rend-inssV-deps*DEP-outras;let base=legal,modo='deduções legais';
+  if(simp&&rend-SIMP<legal){base=rend-SIMP;modo='desconto simplificado'}
+  base=Math.max(0,base);const imp=r2(tab(base)),red=r2(redutor(rend,imp));
+  return{base,imp,red,val:r2(imp-red),modo}}
+const irNote=o=>o.imp===0?'Base dentro da faixa isenta':`Tabela ${fmt(o.imp)}${o.red>0?` − redução Lei 15.270 ${fmt(o.red)}`:''} · ${o.modo}`;
+/* datas */
+const D=s=>{if(!s)return null;const[y,m,d]=s.split('-').map(Number);return y?new Date(Date.UTC(y,m-1,d)):null};
+const addD=(t,n)=>new Date(t.getTime()+n*864e5);
+const diff=(a,b)=>Math.round((b-a)/864e5);
+const ld=(y,m)=>new Date(Date.UTC(y,m+1,0)).getUTCDate();
+const addM=(t,n)=>{const m=t.getUTCMonth()+n,y=t.getUTCFullYear()+Math.floor(m/12),mm=((m%12)+12)%12;return new Date(Date.UTC(y,mm,Math.min(t.getUTCDate(),ld(y,mm))))};
+const fullYears=(a,b)=>{let k=0;while(addM(a,12*(k+1))<=b)k++;return k};
+const br=t=>t.toLocaleDateString('pt-BR',{timeZone:'UTC'});
+function avosFerias(adm,end){const A=addM(adm,12*fullYears(adm,end));let av=0;
+  for(let i=0;i<12;i++){const ps=addM(A,i),pe=addD(addM(A,i+1),-1);if(pe<=end){av++;continue}if(diff(ps,end)+1>=15)av++;break}return av}
+function avos13(adm,fimReal,fimProj){const j=new Date(Date.UTC(fimReal.getUTCFullYear(),0,1));const s=adm>j?adm:j;let y=s.getUTCFullYear(),m=s.getUTCMonth(),av=0;
+  for(;;){const ms=new Date(Date.UTC(y,m,1));if(ms>fimProj)break;const me=new Date(Date.UTC(y,m,ld(y,m)));const a=ms<s?s:ms,b=me>fimProj?fimProj:me;if(diff(a,b)+1>=15)av++;if(++m>11){m=0;y++}}return av}
+
+const AVISO={sjc:[['ind','Indenizado (empresa paga e projeta o tempo)'],['trab','Trabalhado']],
+  acordo:[['ind','Indenizado pela metade'],['trab','Trabalhado']],
+  pd:[['cump','Cumprido pela empregada'],['nao','Não cumprido (empresa desconta 30 dias)'],['disp','Dispensado pela empresa']],
+  jc:[['none','Não há aviso prévio']]};
+function syncAviso(){const t=$('r_tipo').value,s=$('r_aviso'),cur=s.value;
+  s.innerHTML=AVISO[t].map(([v,l])=>`<option value="${v}">${l}</option>`).join('');
+  if(AVISO[t].some(([v])=>v===cur))s.value=cur}
+
+const HOW={
+rescisao:['<b>Saldo de salário:</b> (salário ÷ 30) × dias trabalhados no mês do desligamento (CLT, art. 477).',
+ '<b>Aviso prévio:</b> 30 dias + 3 por ano completo, até 90 (Lei 12.506/2011). Indenizado na dispensa sem justa causa; pela metade no acordo (art. 484-A). O aviso indenizado conta como tempo de serviço (art. 487, §1º), por isso projeta avos de 13º e férias.',
+ '<b>13º proporcional:</b> 1/12 por mês com 15 dias ou mais no ano (Lei 4.090/1962). Não é devido na justa causa.',
+ '<b>Férias proporcionais + 1/3:</b> 1/12 por mês do período aquisitivo em curso. Devidas no pedido de demissão (Súmula 261 do TST), não na justa causa (Súmula 171). Férias vencidas são devidas em qualquer modalidade.',
+ '<b>Descontos:</b> INSS e IRRF incidem sobre o saldo de salário e, em separado, sobre o 13º. Aviso indenizado e férias indenizadas + 1/3 não têm INSS nem IRRF; a multa do FGTS também é isenta.',
+ '<b>FGTS:</b> multa de 40% (sem justa causa) ou 20% (acordo) sobre os depósitos do contrato (Lei 8.036/1990, art. 18). Ela vai para a conta do FGTS, não para o líquido.',
+ '<b>Prazo:</b> pagamento em até 10 dias após o término do contrato (CLT, art. 477, §6º).'],
+liquido:['<b>INSS:</b> alíquotas progressivas aplicadas faixa a faixa (Portaria MPS/MF nº 13/2026).',
+ '<b>IRRF:</b> base = bruto − INSS − R$ 189,59 por dependente − pensão, ou bruto − R$ 607,20 (desconto simplificado). A calculadora usa o que for melhor.',
+ '<b>Redução da Lei 15.270/2025:</b> aplicada depois da tabela. Rendimentos até R$ 5.000 ficam sem imposto; entre R$ 5.000,01 e R$ 7.350 a redução diminui aos poucos; acima disso, tabela cheia.',
+ '<b>Vale-transporte:</b> até 6% do salário-base (Lei 7.418/1985), limitado ao custo real do transporte.',
+ '<b>FGTS:</b> 8% depositados pela empresa. Não sai do salário.'],
+ferias:['<b>Férias:</b> (remuneração ÷ 30) × dias de descanso, mais 1/3 constitucional (CF, art. 7º, XVII).',
+ '<b>Abono pecuniário:</b> venda de até 1/3 das férias (10 dias), com o 1/3 correspondente. Não tem INSS nem IRRF (CLT, arts. 143 e 144).',
+ '<b>Descontos:</b> INSS e IRRF sobre férias + 1/3, em separado do salário do mês. Aqui o IRRF usa deduções legais (INSS e dependentes).',
+ '<b>Prazo:</b> pagamento até 2 dias antes do início das férias (CLT, art. 145).'],
+'decimo-terceiro':['<b>Valor:</b> (remuneração ÷ 12) × meses com 15 dias ou mais trabalhados.',
+ '<b>1ª parcela:</b> metade do valor, sem descontos, até 30/11 (Lei 4.749/1965).',
+ '<b>2ª parcela:</b> até 20/12, com INSS e IRRF calculados sobre o valor total do 13º.',
+ '<b>IRRF:</b> tributação exclusiva, separada do salário. A redução da Lei 15.270/2025 também vale para o 13º. Aqui usa deduções legais.',
+ '<b>Calendário 2026:</b> 30/11 cai numa segunda-feira. O dia 20/12 cai num domingo: programe a 2ª parcela até sexta, 18/12.']};
+
+function rescisao(){
+  const t=$('r_tipo').value,av=$('r_aviso').value,sal=num('r_sal')+num('r_med'),dep=Math.floor(num('r_dep'));
+  const adm=D($('r_adm').value),fim=D($('r_fim').value);
+  if(!adm||!fim||fim<adm)return{warn:'Informe a admissão e o último dia trabalhado, nesta ordem.'};
+  if(!sal)return{warn:'Informe o salário mensal.'};
+  const anos=fullYears(adm,fim),diasAv=Math.min(90,30+3*anos);
+  let avInd=0,proj=0,diasInd=0,descAv=0;
+  if(t==='sjc'){if(av==='ind'){diasInd=diasAv}else if(diasAv>30){diasInd=diasAv-30}}
+  if(t==='acordo'&&av==='ind'){diasInd=diasAv/2}
+  avInd=r2(sal/30*diasInd);proj=Math.floor(diasInd);
+  if(t==='pd'&&av==='nao')descAv=r2(sal);
+  const fimP=addD(fim,proj);
+  const y=fim.getUTCFullYear(),m=fim.getUTCMonth(),m1=new Date(Date.UTC(y,m,1)),st=adm>m1?adm:m1;
+  let dias=diff(st,fim)+1;if(st.getTime()===m1.getTime()&&fim.getUTCDate()===ld(y,m))dias=30;dias=Math.min(dias,30);
+  const saldo=r2(sal/30*dias);
+  const a13=t==='jc'?0:avos13(adm,fim,fimP),d13=r2(sal/12*a13);
+  const aF=t==='jc'?0:avosFerias(adm,fimP),fp=r2(sal/12*aF),fp3=r2(fp/3);
+  const nV=+$('r_venc').value,fv=r2(sal*nV),fv3=r2(fv/3);
+  const iS=inss(saldo),i13=inss(d13),irS=irrf(saldo,iS,dep,0,true),ir13=irrf(d13,i13,dep,0,false),out=num('r_out');
+  const prov=saldo+avInd+d13+fp+fp3+fv+fv3,desc=iS+i13+irS.val+ir13.val+descAv+out,liq=r2(prov-desc);
+  const meses=Math.floor(diff(adm,fim)/30.4375),depR=r2(.08*(saldo+avInd+d13));
+  const fg=num('r_fgts')||r2(.08*sal*meses),pct=t==='sjc'?.4:t==='acordo'?.2:0,multa=r2((fg+depR)*pct);
+  const R=[['h','Proventos'],['p',`Saldo de salário`,saldo,`${dias} dia${dias>1?'s':''}`],
+   ['p','Aviso prévio indenizado',avInd,`${String(diasInd).replace('.',',')} dias de ${diasAv}`],
+   ['p','13º proporcional',d13,`${a13}/12 avos`],['p','Férias proporcionais',fp,`${aF}/12 avos`],['p','1/3 sobre férias proporcionais',fp3],
+   ['p','Férias vencidas',fv,`${nV} período${nV>1?'s':''}`],['p','1/3 sobre férias vencidas',fv3],
+   ['h','Descontos'],['d','INSS sobre saldo de salário',iS],['d','INSS sobre 13º',i13],
+   ['d','IRRF sobre saldo de salário',irS.val,saldo?irNote(irS):''],['d','IRRF sobre 13º',ir13.val,d13?irNote(ir13):''],
+   ['d','Aviso prévio não cumprido',descAv],['d','Outros descontos',out],
+   ['t','Líquido a receber',liq],['h','FGTS (fora do líquido)'],['i','Depósito sobre verbas rescisórias (8%)',depR],
+   ['i',`Multa rescisória${pct?` (${pct*100}%)`:''}`,pct?multa:'Não se aplica',pct?(num('r_fgts')?'Sobre o saldo informado':'Estimada, sem correção'):''],
+   ['i','Saque do FGTS',t==='sjc'?'Saldo + multa':t==='acordo'?'Até 80% + multa':'Não há saque'],
+   ['i','Seguro-desemprego',t==='sjc'?'Pode ter direito':'Não se aplica']];
+  const notes=[`${anos} ano${anos===1?'':'s'} completo${anos===1?'':'s'} de contrato; aviso proporcional de ${diasAv} dias.`];
+  if(proj)notes.push(`Data projetada pelo aviso indenizado: ${br(fimP)}.`);
+  if(t==='sjc'&&av==='trab'&&diasAv>30)notes.push('Aviso trabalhado: os dias que passam de 30 são indenizados.');
+  if(t==='pd')notes.push('Pedido de demissão: sem multa do FGTS, sem saque e sem seguro-desemprego.');
+  if(t==='jc')notes.push('Justa causa: recebe saldo de salário e férias vencidas + 1/3.');
+  if(t==='acordo')notes.push('Acordo: aviso e multa pela metade; demais verbas integrais; sem seguro-desemprego.');
+  if(d13)notes.push('Se a 1ª parcela do 13º já foi paga, ela é abatida deste valor.');
+  return{title:'Rescisão · líquido estimado',big:liq,sub:`Total bruto ${fmt(r2(prov))} · descontos ${fmt(r2(desc))}. Prazo: 10 dias após o término.`,rows:R,notes}}
+
+function liquido(){
+  const b=num('l_sal')+num('l_add'),dep=Math.floor(num('l_dep')),pen=num('l_pen');
+  if(!b)return{warn:'Informe o salário-base.'};
+  const iV=inss(b),ir=irrf(b,iV,dep,pen,true),vt=$('l_vt').checked?r2(num('l_sal')*.06):0,out=num('l_out');
+  const liq=r2(b-iV-ir.val-pen-vt-out);
+  return{title:'Salário líquido',big:liq,sub:`Bruto ${fmt(r2(b))} · descontos ${fmt(r2(b-liq))}`,
+   rows:[['h','Proventos'],['p','Salário-base',num('l_sal')],['p','Adicionais',num('l_add')],['h','Descontos'],
+    ['d','INSS',iV,`Alíquota efetiva ${(iV/b*100).toFixed(2).replace('.',',')}%`],['d','IRRF',ir.val,irNote(ir)],
+    ['d','Pensão alimentícia',pen],['d','Vale-transporte',vt],['d','Outros descontos',out],['t','Líquido',liq],
+    ['h','Por conta da empresa'],['i','FGTS (8%)',r2(b*.08)]],
+   notes:[`Base do IRRF: ${fmt(r2(ir.base))}.`]}}
+
+function ferias(){
+  const rem=num('f_sal')+num('f_med'),g=Math.floor(num('f_dias')),ab=Math.floor(num('f_abono')),dep=Math.floor(num('f_dep'));
+  if(!rem)return{warn:'Informe o salário mensal.'};
+  if(g+ab>30||ab>10)return{warn:'Descanso + dias vendidos não podem passar de 30, e o abono vai até 10 dias.'};
+  const fe=r2(rem/30*g),t3=r2(fe/3),aV=r2(rem/30*ab),a3=r2(aV/3),iV=inss(fe+t3),ir=irrf(fe+t3,iV,dep,0,false);
+  const liq=r2(fe+t3+aV+a3-iV-ir.val);
+  const notes=[];if(g<14)notes.push('Atenção: um dos períodos de férias precisa ter pelo menos 14 dias (CLT, art. 134, §1º).');
+  return{title:'Férias · líquido a receber',big:liq,sub:`${g} dias de descanso${ab?` + ${ab} vendidos`:''}. Pagamento até 2 dias antes do início.`,
+   rows:[['h','Proventos'],['p','Férias',fe,`${g} dias`],['p','1/3 constitucional',t3],['p','Abono pecuniário',aV,ab?`${ab} dias · sem INSS e IRRF`:''],['p','1/3 sobre o abono',a3],
+    ['h','Descontos'],['d','INSS',iV],['d','IRRF',ir.val,irNote(ir)],['t','Líquido',liq]],notes}}
+
+function decimo(){
+  const rem=num('d_sal')+num('d_med'),mm=Math.min(12,Math.floor(num('d_meses'))),dep=Math.floor(num('d_dep'));
+  if(!rem||!mm)return{warn:'Informe o salário e os meses trabalhados.'};
+  const tot=r2(rem/12*mm),p1=r2(tot/2),iV=inss(tot),ir=irrf(tot,iV,dep,0,false),p2=r2(tot-iV-ir.val-p1);
+  return{title:'13º salário · líquido total',big:r2(p1+p2),sub:`${mm}/12 avos · bruto ${fmt(tot)}`,
+   rows:[['h','Parcelas'],['p','1ª parcela',p1,'Até 30/11/2026 (segunda-feira), sem descontos'],['p','2ª parcela líquida',p2,'Até 18/12/2026: o dia 20 cai num domingo'],
+    ['h','Descontos (na 2ª parcela)'],['d','INSS',iV],['d','IRRF',ir.val,irNote(ir)],['t','Total líquido',r2(p1+p2)]],
+   notes:['O INSS e o IRRF do 13º são calculados em separado do salário de dezembro.']}}
+
+const CALC={rescisao,liquido,ferias,'decimo-terceiro':decimo};
+let cur='rescisao',last=null;
+function render(){
+  const o=CALC[cur]();last=o;
+  $('rw').innerHTML=o.warn?`<p class="warn">${o.warn}</p>`:'';
+  $('rt').textContent=o.title||'';
+  const big=$('rv');big.textContent=o.warn?'—':fmt(o.big);big.classList.remove('pulse');void big.offsetWidth;big.classList.add('pulse');
+  $('rs').textContent=o.sub||'';
+  $('rows').innerHTML=(o.rows||[]).filter(([k,,v])=>k==='h'||k==='t'||typeof v==='string'||v>0).map(([k,l,v,n])=>k==='h'
+    ?`<tr class="h"><td colspan="2">${l}</td></tr>`
+    :`<tr class="${k}"><td>${l}${n?`<small>${n}</small>`:''}</td><td class="v">${typeof v==='string'?v:(k==='d'?'− ':'')+fmt(v)}</td></tr>`).join('')
+    .replace(/<tr class="h"><td colspan="2">[^<]*<\/td><\/tr>(?=<tr class="h"|$)/g,'');
+  $('rn').innerHTML=(o.notes||[]).map(n=>`<li>${n}</li>`).join('');
+  $('how').innerHTML=HOW[cur].map(h=>`<li>${h}</li>`).join('');
+}
+function show(t){if(!CALC[t])t='rescisao';cur=t;
+  document.querySelectorAll('.tab').forEach(b=>b.setAttribute('aria-selected',b.dataset.t===t));
+  document.querySelectorAll('.panel').forEach(p=>p.hidden=p.dataset.p!==t);render()}
+document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{if(location.hash!=='#'+b.dataset.t)location.hash=b.dataset.t;else show(b.dataset.t)}));
+addEventListener('hashchange',()=>{const h=location.hash.slice(1);if(CALC[h])show(h)});
+const KEY='decodifica-calc-trab';
+const ids=[...document.querySelectorAll('#f input,#f select')].map(e=>e.id);
+try{const s=JSON.parse(localStorage.getItem(KEY)||'{}');for(const id of ids)if(id in s){const e=$(id);if(e.type==='checkbox')e.checked=s[id];else if(id!=='r_aviso')e.value=s[id]}syncAviso();if(s.r_aviso)$('r_aviso').value=s.r_aviso;if(!$('r_aviso').value)syncAviso()}catch(e){syncAviso()}
+$('f').addEventListener('submit',e=>e.preventDefault());
+$('f').addEventListener('input',e=>{if(e.target.id==='r_tipo')syncAviso();render();
+  try{const s={};for(const id of ids){const el=$(id);s[id]=el.type==='checkbox'?el.checked:el.value}localStorage.setItem(KEY,JSON.stringify(s))}catch(err){}});
+$('r_tipo').addEventListener('change',()=>{syncAviso();render()});
+$('copy').addEventListener('click',async()=>{if(!last||last.warn)return;
+  const lines=[`DECODIFICA. · ${last.title}`,`Resultado: ${fmt(last.big)}`,...last.rows.filter(([k,,v])=>k!=='h'&&(typeof v==='string'||v>0)).map(([k,l,v])=>`${l}: ${typeof v==='string'?v:(k==='d'?'− ':'')+fmt(v)}`),'Simulação · tabelas 2026 · elaynegadelha.com.br/trabalhista.html'];
+  try{await navigator.clipboard.writeText(lines.join('\n'));$('copy').textContent='Resumo copiado'}catch(err){$('copy').textContent='Não foi possível copiar'}
+  setTimeout(()=>$('copy').textContent='Copiar resumo',1800)});
+function hora(){const s=num('h_sal');$('h_rows').innerHTML=[['220','44 h · até 15/12/2026'],['210','42 h · a partir de 16/12/2026'],['200','40 h · a partir de 16/12/2027']]
+  .map(([d,l])=>`<tr><td>Divisor ${d}<small>${l}</small></td><td>${fmt(s/+d)}</td><td>${fmt(s/+d*1.5)}</td></tr>`).join('')}
+$('h_sal').addEventListener('input',hora);hora();
+document.querySelectorAll('.to5x2').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();$('escala-5x2').scrollIntoView({behavior:'smooth'})}));
+$('tonews').addEventListener('click',e=>{e.preventDefault();$('noticias').scrollIntoView({behavior:'smooth'})});
+{const h=location.hash.slice(1);show(CALC[h]?h:'rescisao')}
+}
+</script>
+</body>
+</html>
