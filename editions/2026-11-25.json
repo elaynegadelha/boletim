@@ -1,0 +1,577 @@
+{
+ "date": "2026-11-25",
+ "titulo": "Receita mira notas sem IBS/CBS; apuração assistida da CBS prometida para janeiro",
+ "periodo": "De terça-feira, 24/11, até a manhã de quarta-feira, 25/11/2026. Sem feriado no intervalo.",
+ "tags": [
+  "IBS/CBS",
+  "Documentos fiscais",
+  "Apuração assistida",
+  "Piloto RTC-CBS",
+  "Arrecadação",
+  "IA",
+  "Dados"
+ ],
+ "atencao": "Empresas que emitem nota sem destaque de IBS e CBS, ou com destaque parcial, entraram numa lista da Receita e do CGIBS, e o contador responsável será procurado pelo CFC e pelo CRC. A orientação é preventiva e não é autuação, mas o mesmo dado vai alimentar a apuração assistida da CBS em 2027: corrigir o cadastro de produtos e o emissor ainda em dezembro custa menos do que refazer apuração em janeiro.",
+ "destaques": [
+  "Receita, CGIBS e CFC vão orientar mais de 25 mil contadores responsáveis por cerca de 72 mil empresas que emitem nota sem destaque, ou com destaque parcial, de IBS e CBS.",
+  "Receita e Comitê Gestor do IBS afirmam que a apuração assistida estará pronta em janeiro, com revisão contínua das normas.",
+  "Arrecadação federal de outubro: R$ 293,975 bilhões, alta real de 7,28%, recorde para o mês desde 1995.",
+  "Imprensa: regra opcional anunciada pela RFB adiaria em um mês a apuração definitiva da CBS em 2027; o projeto ainda não foi protocolado.",
+  "IA e dados: governo federal prepara duas IAs capazes de alterar registros em bases públicas; ChatGPT pago terá limite de uso por tokens a partir de dezembro."
+ ],
+ "conexao": {
+  "texto": "A orientação da Receita e do CGIBS aos contadores e a promessa de apuração assistida da CBS em janeiro são a mesma engrenagem vista de dois lados. O Fisco já mede, nota a nota, quem destaca IBS e CBS; em 2027 é a partir dessas mesmas notas que a apuração virá pré-preenchida e que o cliente terá ou não crédito. Nota emitida hoje sem destaque é, em janeiro, débito errado para quem vende e crédito perdido para quem compra.",
+  "liga": [
+   "Orientação RFB/CGIBS/CFC sobre destaque de IBS/CBS",
+   "Apuração assistida da CBS pronta em janeiro",
+   "Crédito da CBS vinculado ao pagamento do fornecedor"
+  ]
+ },
+ "ceara": {
+  "novidade": "Sem norma tributária nova da Sefaz-CE, da Prefeitura de Fortaleza, da Assembleia ou do TJCE no período. O efeito nacional do dia chega pelo CRC-CE: a orientação sobre destaque de IBS e CBS será feita pelo CFC e pelos conselhos regionais, com base na planilha da Receita. Escritórios cearenses com clientes que emitiram mais de 150 documentos fiscais em 30 dias sem destaque, ou com preenchimento abaixo de 86%, devem ser procurados.",
+  "olho": "Dois prazos curtos para o contribuinte de Fortaleza: até 30/11 para cadastrar o CPF no Nota Fortaleza e garantir desconto extra de 1% a 2% na cota única do IPTU 2027 de imóvel residencial; até 30/12 para aderir ao Refis 2026 do Ceará (ICMS, IPVA e ITCD)."
+ },
+ "normaExplicada": {
+  "norma": "Portaria RFB nº 763, de 19 de novembro de 2026 (reproduzida pela Tax Prático em 23/11/2026; data de publicação no DOU a confirmar na versão certificada)",
+  "ementa": "Disciplina o Piloto RTC-CBS, ambiente de testes da Contribuição sobre Bens e Serviços mantido pela Receita Federal.",
+  "pontos": [
+   "Art. 4º e 5º: qualquer pessoa jurídica inscrita no CNPJ pode participar, sem convite nem pedido prévio, desde que cumpra os requisitos operacionais, cadastrais e de segurança da Receita (por exemplo, procuração eletrônica com poderes específicos).",
+   "Art. 12: as operações feitas no piloto são experimentais e não produzem efeitos tributários, cadastrais ou jurídicos; não substituem as obrigações exigidas em lei.",
+   "Art. 3º: o piloto é desenvolvido com o Serpro; a partir de 1º/1/2027 a gestão passa para a Cotec.",
+   "Arts. 8º e 9º: a Receita pode fixar limites de uso (volume de transações, tipo de serviço) e restringir ou suspender o acesso em caso de uso incompatível ou risco à segurança.",
+   "Art. 10: falhas e inconsistências são comunicadas pelo Receita Atende.",
+   "Art. 14: revoga as Portarias RFB nº 549/2025 e nº 596/2025; participantes atuais continuam no piloto sem novo procedimento (art. 13)."
+  ],
+  "literal": "",
+  "oQueDiz": "Abre o Piloto RTC-CBS a qualquer pessoa jurídica com CNPJ, sem convite, desde que cumpra os requisitos técnicos e de segurança da Receita. No piloto a empresa testa emissão, apuração e integrações da CBS; o que for feito ali é experimental e não gera efeito tributário. A gestão sai do Serpro e passa à Cotec em 1º/1/2027, e as portarias anteriores do piloto são revogadas, sem exigir nova adesão de quem já participa.",
+  "porQue": "A CBS começa a ser cobrada em 1º/1/2027 e a apuração será assistida: a Receita monta débitos e créditos a partir dos documentos fiscais. Receita e CGIBS dizem que esse módulo estará pronto em janeiro; o piloto é o único lugar para descobrir antes disso se o ERP, o cadastro de produtos e as notas da empresa geram a apuração esperada.",
+  "datas": [
+   {
+    "data": "19/11/2026",
+    "quem": "Assinatura da portaria; vigência na data de publicação no DOU"
+   },
+   {
+    "data": "15/12/2026",
+    "quem": "Prazo do Senado para fixar a alíquota de referência da CBS (TCU calculou 11,3%)"
+   },
+   {
+    "data": "1º/1/2027",
+    "quem": "Início da cobrança da CBS e da gestão do piloto pela Cotec"
+   }
+  ],
+  "exemplo": {
+   "titulo": "Exemplo: distribuidora de Fortaleza no lucro presumido (números ilustrativos)",
+   "passos": [
+    "A distribuidora fatura R$ 500.000 por mês e emite cerca de 900 NF-e. Pela régua da Receita, está acima de 150 documentos em 30 dias.",
+    "No piloto, compara a apuração montada pela Receita com o relatório do ERP e descobre R$ 40.000 em notas sem destaque de CBS, de itens com cadastro tributário incompleto.",
+    "Com uma alíquota ilustrativa de 11,2% (a de 2027 depende da resolução do Senado), são R$ 4.480 de débito que o ERP não mostrava e que o cliente comprador não poderia tomar como crédito.",
+    "Corrigido o cadastro em dezembro, a apuração de janeiro já sai conciliada, sem retificação e sem atrito comercial com os clientes que dependem do crédito."
+   ]
+  },
+  "oQueFazer": [
+   "Confirmar se a empresa já participa do piloto e se a procuração eletrônica tem os poderes exigidos.",
+   "Rodar no piloto ao menos um mês de notas reais e comparar a apuração da Receita com a do ERP.",
+   "Registrar no Receita Atende as inconsistências do ambiente, como prevê o art. 10.",
+   "Corrigir cadastro de produtos e serviços (classificação tributária e destaque) antes de 1º/1/2027."
+  ],
+  "cuidado": "As operações do piloto não produzem efeitos tributários nem substituem obrigações legais (art. 12). O texto oficial certificado no DOU não estava disponível no fechamento desta edição; os pontos seguem a reprodução da Tax Prático e o trecho literal não foi transcrito.",
+  "fonte": "Tax Prático — reprodução da Portaria RFB nº 763/2026",
+  "url": "https://taxpratico.com.br/detalhes-artigo/portaria-rfb-no-763-de-19-de-novembro-de-2026"
+ },
+ "cadeia": {
+  "titulo": "Do piloto da CBS até a decisão de preço",
+  "elos": [
+   {
+    "etapa": "Norma",
+    "texto": "A Portaria RFB 763 abre o Piloto RTC-CBS a qualquer CNPJ antes da cobrança de 2027."
+   },
+   {
+    "etapa": "Sistema",
+    "texto": "No piloto, a apuração assistida monta débitos e créditos a partir das notas emitidas."
+   },
+   {
+    "etapa": "Cadastro/dado",
+    "texto": "Item sem classificação tributária gera nota sem destaque e apuração divergente."
+   },
+   {
+    "etapa": "Crédito",
+    "texto": "Sem destaque e sem pagamento pelo fornecedor, o cliente não aproveita o crédito da CBS."
+   },
+   {
+    "etapa": "Caixa",
+    "texto": "Débito não previsto em janeiro sai do caixa da empresa, e crédito perdido sai do caixa do cliente."
+   },
+   {
+    "etapa": "Decisão",
+    "texto": "Testar e corrigir em dezembro, e só então fechar a tabela de preços de 2027."
+   }
+  ]
+ },
+ "fiscalDados": {
+  "titulo": "A régua da Receita: 150 notas e 86% de preenchimento",
+  "texto": "A Receita escolheu as empresas com um critério de dados simples: mais de 150 documentos fiscais em 30 dias e destaque de IBS e CBS ausente ou abaixo de 86% das notas. O escritório pode aplicar a mesma régua à própria carteira antes de receber o contato do CRC.",
+  "checklist": [
+   "Quantos clientes emitiram mais de 150 notas nos últimos 30 dias?",
+   "Em que percentual dessas notas há destaque de IBS e CBS?",
+   "Os itens sem destaque têm classificação tributária cadastrada no ERP?",
+   "O emissor do cliente já foi atualizado para os leiautes da reforma?",
+   "O cliente já testou a apuração no Piloto RTC-CBS?"
+  ],
+  "sqlTitulo": "Consulta de conferência (exemplo com tabela fictícia)",
+  "sql": "-- Percentual de notas com destaque de IBS/CBS por cliente, últimos 30 dias\n-- Tabela fictícia: notas(cnpj_emitente, data_emissao, vl_cbs, vl_ibs)\nSELECT cnpj_emitente,\n       COUNT(*) AS qtd_notas,\n       ROUND(100.0 * SUM(CASE WHEN vl_cbs > 0 AND vl_ibs > 0 THEN 1 ELSE 0 END) / COUNT(*), 1) AS pct_destaque\nFROM notas\nWHERE data_emissao >= CURRENT_DATE - INTERVAL '30 days'\nGROUP BY cnpj_emitente\nHAVING COUNT(*) > 150\n   AND 100.0 * SUM(CASE WHEN vl_cbs > 0 AND vl_ibs > 0 THEN 1 ELSE 0 END) / COUNT(*) < 86\nORDER BY pct_destaque;",
+  "ferramenta": "O cronograma oficial dos documentos fiscais com destaque de IBS e CBS, por tipo de documento, está consolidado no Ato Conjunto RFB/CGIBS nº 4/2026, alterado pelo nº 7/2026.",
+  "ferramentaUrl": "https://radarrt.com/normas/ato-conjunto-rfb-cgibs-4-2026/"
+ },
+ "categorias": [
+  {
+   "id": "federal",
+   "nome": "Atos oficiais federais",
+   "itens": [
+    {
+     "titulo": "Receita, CGIBS e CFC vão orientar 25 mil contadores sobre o destaque de IBS e CBS",
+     "status": "PUBLICADO",
+     "relevancia": "ALTA",
+     "resumo": "Comunicado conjunto (19/11/2026, repercutido em 23/11): a Receita cruzou documentos fiscais emitidos nos 30 dias até 15/11/2026 com as ECF de 2024 e 2025 e chegou a pouco mais de 25 mil profissionais responsáveis por cerca de 72 mil empresas com destaque ausente ou parcial. A orientação será feita pelo CFC e pelos CRCs. Os órgãos afirmam que a ausência de destaque, por si só, não indica irregularidade.",
+     "literal": "",
+     "impacto": "Contadores e empresas que emitiram mais de 150 documentos em 30 dias sem destaque, ou com preenchimento abaixo de 86%. A base é o Ato Conjunto RFB/CGIBS nº 4/2026, com o cronograma alterado pelo nº 7/2026. Ajustar o emissor agora evita apuração assistida divergente em 2027.",
+     "fontes": [
+      {
+       "nome": "CFC",
+       "data": "19/11/2026",
+       "url": "https://cfc.org.br/noticias/receita-federal-cgibs-e-cfc-vao-orientar-mais-de-25-mil-profissionais-da-contabilidade-sobre-destaque-de-cbs-ibs-em-documentos-fiscais/"
+      },
+      {
+       "nome": "Portal Contábeis",
+       "data": "23/11/2026",
+       "url": "https://www.contabeis.com.br/noticias/81047/receita-vai-orientar-25-mil-contadores-sobre-cbs-e-ibs/"
+      }
+     ]
+    },
+    {
+     "titulo": "Arrecadação federal de outubro bate recorde: R$ 293,975 bilhões",
+     "status": "PUBLICADO",
+     "relevancia": "BAIXA",
+     "resumo": "A Receita divulgou em 24/11 o resultado de outubro: alta real de 7,28% sobre outubro de 2025 e R$ 2,645 trilhões no acumulado do ano (alta real de 7%). IRPJ e CSLL somaram R$ 71,75 bilhões (+8,23%) e os tributos sobre importação subiram 20,05%. Houve R$ 5,91 bilhões de receitas extraordinárias no mês.",
+     "literal": "",
+     "impacto": "Arrecadação em alta reduz a pressão por medidas emergenciais de receita, mas não altera o calendário da CBS nem os limites de compensação da LC 239/2026. Para planejamento, o sinal é de fiscalização sustentada sobre IRPJ e CSLL.",
+     "fontes": [
+      {
+       "nome": "Plox (com Agência Brasil)",
+       "data": "24/11/2026",
+       "url": "https://plox.com.br/noticia/24/11/2026/arrecadacao-federal-recorde-outubro"
+      },
+      {
+       "nome": "Receita Federal",
+       "data": "23/11/2026",
+       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-comenta-nesta-terca-feira-24-11-a-arrecadacao-do-mes-de-outubro"
+      }
+     ]
+    },
+    {
+     "titulo": "Receita Federal: sem atos normativos novos relevantes no período",
+     "status": "PUBLICADO",
+     "relevancia": "BAIXA",
+     "resumo": "Além da Resolução CGSN nº 196/2026 e da LC nº 239/2026, ambas publicadas em 24/11 e analisadas na edição anterior, não há instrução normativa, portaria ou ato conjunto novo da RFB, do CGSN ou do CGIBS com efeito tributário relevante na janela desta edição.",
+     "literal": "",
+     "impacto": "O foco da semana segue nas regras já publicadas: corte do regime de caixa no Simples, limite às compensações e preparação dos documentos fiscais para 2027.",
+     "fontes": [
+      {
+       "nome": "Tax Prático",
+       "data": "25/11/2026",
+       "url": "https://taxpratico.com.br/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "legislativo",
+   "nome": "Legislativo",
+   "itens": [],
+   "vazio": "Sem novidades relevantes no período. A resolução do Senado sobre a alíquota de referência da CBS segue pendente, com prazo até 15/12/2026."
+  },
+  {
+   "id": "tribunais",
+   "nome": "Tribunais",
+   "itens": [],
+   "vazio": "Sem novidades tributárias relevantes no período."
+  },
+  {
+   "id": "contabilidade",
+   "nome": "Contabilidade",
+   "itens": [
+    {
+     "titulo": "Condomínios emitem NFS-e a partir de janeiro de 2027",
+     "status": "PUBLICADO",
+     "relevancia": "MÉDIA",
+     "resumo": "Com o cronograma remarcado pelo Ato Conjunto RFB/CGIBS nº 7/2026, a NFS-e de condomínios, para taxas e outras receitas, passa a ser exigida em janeiro de 2027 (antes, 1º/12/2026). A emissão é no CNPJ do condomínio, pelo Emissor Nacional ou por integração, com o código 99.05.01. Emitir a nota não cria tributo: em regra, condomínio não é contribuinte de IBS e CBS, salvo pela regra dos 80% de receitas de cotas ou por opção.",
+     "literal": "",
+     "impacto": "Síndicos, administradoras e escritórios que fazem a contabilidade de condomínios: cadastro, certificado digital e separação das receitas precisam estar prontos antes de janeiro. A dispensa transitória anunciada pela Receita para condomínios com receitas de terceiros acima de 20% ainda não consta de norma.",
+     "fontes": [
+      {
+       "nome": "Portas",
+       "data": "25/11/2026",
+       "url": "https://portas.com.br/noticias/nota-fiscal-condominio-2027/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "imprensa",
+   "nome": "Imprensa especializada",
+   "itens": [
+    {
+     "titulo": "Tax Prático/JOTA: regra opcional adiaria em um mês a apuração definitiva da CBS",
+     "status": "ESPECULAÇÃO/IMPRENSA",
+     "relevancia": "ALTA",
+     "resumo": "A RFB anunciou, em transmissão de 11/11, um projeto de lei complementar com regra opcional para 2027: o recolhimento do mês seguinte à competência seria por estimativa e a diferença acertada no mês posterior. O objetivo é dar transição ao crédito vinculado ao pagamento do fornecedor (arts. 47 e 48 da LC 214/2025) enquanto o split payment não chega. Até 24/11, o projeto não havia sido protocolado; para valer em fevereiro, precisaria ser aprovado ainda este ano.",
+     "literal": "",
+     "impacto": "Empresas do regime regular que vão apurar CBS em 2027: sem a regra, a apuração de janeiro segue o prazo normal. Ficam em aberto o tratamento do crédito estimado quando o fornecedor não pagar e a incidência de Selic e multa sobre diferenças.",
+     "fontes": [
+      {
+       "nome": "Tax Prático (com JOTA)",
+       "data": "24/11/2026",
+       "url": "https://taxpratico.com.br/detalhes-artigo/credito-da-cbs-quem-paga-a-conta-quando-o-fornecedor-nao-paga"
+      }
+     ]
+    },
+    {
+     "titulo": "Split payment tira o fôlego de caixa do pequeno negócio",
+     "status": "ESPECULAÇÃO/IMPRENSA",
+     "relevancia": "MÉDIA",
+     "resumo": "Artigo reproduzido pela Tax Prático mostra que, com o split payment, o tributo é retido na liquidação e o fornecedor recebe só o valor líquido. Some o prazo de pagar o tributo no mês seguinte, o que pode aumentar a dependência de crédito bancário de giro. Maquininhas, PDVs, estornos e alíquotas diferenciadas são os pontos práticos citados.",
+     "literal": "",
+     "impacto": "Comércio e serviços com venda no cartão e no Pix: rever o orçamento de caixa, a classificação fiscal (NCM) e as alíquotas cadastradas, e reavaliar o regime de tributação.",
+     "fontes": [
+      {
+       "nome": "Tax Prático (com Migalhas)",
+       "data": "24/11/2026",
+       "url": "https://taxpratico.com.br/detalhes-artigo/o-split-payment-e-os-impactos-no-fluxo-de-caixa-dos-empreendedores"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dados",
+   "nome": "Dados, IA e tecnologia",
+   "itens": [
+    {
+     "titulo": "Tax Tech: apuração assistida da CBS deve ficar pronta em janeiro",
+     "status": "ESPECULAÇÃO/IMPRENSA",
+     "relevancia": "ALTA",
+     "resumo": "Em reportagem de 24/11, técnicos da Receita e do Comitê Gestor do IBS detalharam o calendário de regulamentos e sistemas e afirmaram que a apuração assistida estará pronta em janeiro, com revisão contínua das normas. A página traz marcação de conteúdo patrocinado, o que recomenda cautela com o enquadramento.",
+     "literal": "",
+     "impacto": "A apuração assistida monta débitos e créditos a partir dos documentos fiscais. Escritórios que conciliam notas por API e SQL antes de janeiro chegam ao primeiro mês da CBS com divergências já mapeadas.",
+     "fontes": [
+      {
+       "nome": "JOTA",
+       "data": "24/11/2026",
+       "url": "https://jota.info/coberturas-especiais/ambiente-negocios-oportunidades/receita-e-comite-gestor-dizem-que-apuracao-assistida-estara-pronta-em-janeiro"
+      }
+     ]
+    },
+    {
+     "titulo": "IA no governo: duas IAs transacionais poderão alterar registros em bases públicas",
+     "status": "ESPECULAÇÃO/IMPRENSA",
+     "relevancia": "MÉDIA",
+     "resumo": "Na abertura da Semana Dados BR (23/11), a ministra da Gestão anunciou que dois serviços de IA transacional estão prontos para lançamento e poderão alterar registros em bases do governo. Há mais de 300 soluções de IA em operação em 78 órgãos federais e 600 em desenvolvimento. Os serviços não foram identificados, nem a forma de autenticação e de correção de erros.",
+     "literal": "",
+     "impacto": "Atendimento público por IA que executa, e não só responde, chega também aos serviços usados por empresas e contadores. Vale acompanhar quais cadastros serão alcançados e como contestar uma alteração indevida.",
+     "fontes": [
+      {
+       "nome": "Convergência Digital",
+       "data": "24/11/2026",
+       "url": "https://convergenciadigital.com.br/governo/governo-esta-prestes-a-lancar-duas-ia-transacionais-nos-servicos-digitais/"
+      }
+     ]
+    },
+    {
+     "titulo": "Ferramenta de IA: ChatGPT pago terá limite de uso por tokens em dezembro",
+     "status": "PUBLICADO",
+     "relevancia": "MÉDIA",
+     "resumo": "Com o GPT-6.2 liberado nos planos Plus, Pro, Business e Enterprise desde 23/11, a OpenAI informou que, a partir de dezembro, Plus, Pro e Business terão limites de uso compartilhados entre ChatGPT e Codex, medidos em tokens. As quantidades não foram detalhadas; o modo Instant fica fora da conta.",
+     "literal": "",
+     "impacto": "Escritórios que usam IA para ler normas, revisar planilhas ou escrever código de conciliação devem acompanhar o consumo em dezembro, mês de pico com fechamento do regime de caixa e preparação para a CBS.",
+     "fontes": [
+      {
+       "nome": "Canaltech",
+       "data": "24/11/2026",
+       "url": "https://canaltech.com.br/inteligencia-artificial/gpt-62-chega-aos-usuarios-do-chatgpt-com-alertas-de-preco-mas-ha-um-problema/"
+      }
+     ]
+    },
+    {
+     "titulo": "Caso real de negócio com IA: Freedom cresce 900% vendendo agentes para empresas",
+     "status": "ESPECULAÇÃO/IMPRENSA",
+     "relevancia": "BAIXA",
+     "resumo": "A brasileira Freedom, de agentes de IA para médias e grandes empresas, cresceu 900% no faturamento anual de 2025, captou R$ 14,5 milhões e comprou a plataforma de dados Nalk. Com pouco mais de 20 pessoas, atende mais de 100 empresas, entre elas Panvel e Vibra, e mira R$ 500 milhões de faturamento em cinco anos. A reportagem é de janeiro de 2026, atualizada em fevereiro.",
+     "literal": "",
+     "impacto": "Mostra o modelo que mais cresce: equipe pequena, agentes de IA sobre os dados do cliente e validação por auditoria (a empresa trabalha com a Grant Thornton). O mesmo desenho serve a serviços fiscais de conciliação e conferência.",
+     "fontes": [
+      {
+       "nome": "Exame",
+       "data": "29/01/2026",
+       "url": "https://exame.com/negocios/cresceu-900-em-1-ano-startup-brasileira-quer-faturar-r-500-milhoes-com-agentes-de-ia/"
+      }
+     ]
+    },
+    {
+     "titulo": "Mercado: 73% dos profissionais tributários esperam mais demanda, mas só 8% medem o impacto da reforma",
+     "status": "ESPECULAÇÃO/IMPRENSA",
+     "relevancia": "MÉDIA",
+     "resumo": "Pesquisa da Thomson Reuters com 577 profissionais tributários e contábeis (julho e agosto de 2026): 73% esperam alta na demanda por serviços especializados e 49% projetam crescimento significativo. Apenas 8% dos escritórios já calculam o impacto financeiro da transição, embora o percentual tenha dobrado em um ano; 46% pretendem calcular.",
+     "literal": "",
+     "impacto": "A lacuna está na quantificação: quem sabe montar base de notas, simular CBS e IBS e mostrar o efeito no caixa em um painel tem espaço num mercado em que 9 de cada 10 escritórios ainda não fazem essa conta.",
+     "fontes": [
+      {
+       "nome": "Mix Vale",
+       "data": "09/11/2026",
+       "url": "https://www.mixvale.com.br/2026/11/09/thomson-reuters-73-esperam-mais-procura-por-consultoria-tributaria/"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "prazos": [
+  {
+   "data": "30/11/2026",
+   "obrigacao": "Cadastro do CPF no Nota Fortaleza para desconto extra (1% a 2%) na cota única do IPTU 2027",
+   "afetados": "Proprietários de imóveis residenciais em Fortaleza",
+   "fonte": "Prefeitura de Fortaleza via LegisWeb",
+   "url": "https://legisweb.com.br/noticia/?id=34849"
+  },
+  {
+   "data": "30/11/2026",
+   "obrigacao": "Último dia para acumular pontos do Sua Nota Tem Valor com desconto no IPVA 2027",
+   "afetados": "Consumidores do Ceará",
+   "fonte": "Sefaz-CE via Legisweb",
+   "url": "https://www.legisweb.com.br/noticia/?id=34750"
+  },
+  {
+   "data": "15/12/2026",
+   "obrigacao": "Prazo do Senado para fixar a alíquota de referência da CBS; sem resolução, vale o cálculo do TCU (11,3%)",
+   "afetados": "Todos os contribuintes da CBS",
+   "fonte": "Mix Vale",
+   "url": "https://www.mixvale.com.br/2026/11/24/cbs-de-2027-tera-aliquota-de-referencia-de-113-calculada-pelo-tcu/"
+  },
+  {
+   "data": "15/12/2026",
+   "obrigacao": "Primeiros eventos mensais da DeRE (competência novembro)",
+   "afetados": "Contribuintes obrigados à DeRE",
+   "fonte": "Radar RT (Ato Conjunto RFB/CGIBS nº 4/2026)",
+   "url": "https://radarrt.com/normas/ato-conjunto-rfb-cgibs-4-2026/"
+  },
+  {
+   "data": "20/12/2026",
+   "obrigacao": "Fim do prazo para cancelar a opção pelo recolhimento do IBS/CBS no regime regular (optantes do Simples)",
+   "afetados": "ME e EPP que optaram pelo regime regular",
+   "fonte": "CRC-SP",
+   "url": "https://online.crcsp.org.br/portal/noticias/noticia.asp?c=11355"
+  },
+  {
+   "data": "30/12/2026",
+   "obrigacao": "Fim da adesão ao Refis 2026 do Ceará (ICMS, IPVA, ITCD)",
+   "afetados": "Contribuintes com débitos estaduais no Ceará",
+   "fonte": "Sefaz-CE via Legisweb",
+   "url": "https://www.legisweb.com.br/noticia/?id=34699"
+  },
+  {
+   "data": "31/12/2026",
+   "obrigacao": "Corte do regime de caixa no Simples: saldo a receber entra em dezembro",
+   "afetados": "ME e EPP no regime de caixa",
+   "fonte": "Tax Prático",
+   "url": "https://taxpratico.com.br/detalhes-artigo/resolucao-cgsn-no-196-de-16-de-novembro-de-2026"
+  },
+  {
+   "data": "1º/1/2027",
+   "obrigacao": "Início da cobrança da CBS; NFS-e de condomínios, locação e demais serviços",
+   "afetados": "Contribuintes do regime regular, condomínios e prestadores de serviço",
+   "fonte": "Portas",
+   "url": "https://portas.com.br/noticias/nota-fiscal-condominio-2027/"
+  }
+ ],
+ "acoes": [
+  "Aplicar à carteira a régua da Receita (mais de 150 notas em 30 dias e destaque abaixo de 86%) e priorizar os clientes que aparecerem.",
+  "Corrigir o cadastro tributário de produtos e serviços dos clientes com nota sem destaque de IBS e CBS antes de 1º/1/2027.",
+  "Colocar ao menos um cliente do regime regular no Piloto RTC-CBS e comparar a apuração da Receita com a do ERP.",
+  "Avisar condomínios e administradoras que a NFS-e passa a ser exigida em janeiro de 2027.",
+  "Estudar: rodar a consulta SQL de percentual de destaque, levar o resultado para um painel no Power BI e usar IA para redigir o e-mail de orientação aos clientes da lista."
+ ],
+ "glossario": [
+  {
+   "termo": "Apuração assistida",
+   "def": "Apuração da CBS e do IBS montada pelo Fisco a partir dos documentos fiscais, para o contribuinte conferir."
+  },
+  {
+   "termo": "Piloto RTC-CBS",
+   "def": "Ambiente de testes da Receita para emissão, apuração e integrações da CBS, sem efeito tributário."
+  },
+  {
+   "termo": "Destaque",
+   "def": "Campo da nota fiscal que informa o valor do tributo da operação."
+  },
+  {
+   "termo": "ECF",
+   "def": "Escrituração Contábil Fiscal: identifica, entre outros dados, o contador responsável pela empresa."
+  },
+  {
+   "termo": "DeRE",
+   "def": "Declaração de Regimes Específicos de IBS e CBS, com eventos mensais."
+  },
+  {
+   "termo": "Crédito vinculado ao pagamento",
+   "def": "Regra pela qual o comprador só usa o crédito quando o tributo do fornecedor é pago."
+  },
+  {
+   "termo": "Split payment",
+   "def": "Separação automática do tributo no momento do pagamento, antes de o valor chegar ao vendedor."
+  },
+  {
+   "termo": "Alíquota de referência",
+   "def": "Alíquota fixada pelo Senado (ou calculada pelo TCU) que serve de base para a CBS."
+  }
+ ],
+ "fontes": [
+  {
+   "nome": "Receita Federal",
+   "titulo": "Notícias da Receita Federal",
+   "data": "25/11/2026",
+   "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias"
+  },
+  {
+   "nome": "Receita Federal",
+   "titulo": "Receita comenta a arrecadação de outubro (24/11)",
+   "data": "23/11/2026",
+   "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/receita-federal-comenta-nesta-terca-feira-24-11-a-arrecadacao-do-mes-de-outubro"
+  },
+  {
+   "nome": "Receita Federal",
+   "titulo": "Normas da Receita Federal (Sijut)",
+   "data": "25/11/2026",
+   "url": "http://normas.receita.fazenda.gov.br/"
+  },
+  {
+   "nome": "Receita Federal",
+   "titulo": "Legislação da Receita Federal",
+   "data": "25/11/2026",
+   "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao"
+  },
+  {
+   "nome": "Receita Federal",
+   "titulo": "Reforma Tributária",
+   "data": "25/11/2026",
+   "url": "https://www.gov.br/receitafederal/pt-br/assuntos/reforma-tributaria"
+  },
+  {
+   "nome": "Receita Federal",
+   "titulo": "Reforma Tributária do Consumo",
+   "data": "25/11/2026",
+   "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria-do-consumo"
+  },
+  {
+   "nome": "Imprensa Nacional",
+   "titulo": "Diário Oficial da União",
+   "data": "25/11/2026",
+   "url": "https://www.in.gov.br/"
+  },
+  {
+   "nome": "Tax Prático",
+   "titulo": "Página inicial (atos e notícias do dia)",
+   "data": "25/11/2026",
+   "url": "https://taxpratico.com.br/"
+  },
+  {
+   "nome": "Tax Prático",
+   "titulo": "Portaria RFB nº 763, de 19/11/2026 (reprodução)",
+   "data": "23/11/2026",
+   "url": "https://taxpratico.com.br/detalhes-artigo/portaria-rfb-no-763-de-19-de-novembro-de-2026"
+  },
+  {
+   "nome": "Tax Prático",
+   "titulo": "Crédito da CBS: quem paga a conta quando o fornecedor não paga?",
+   "data": "24/11/2026",
+   "url": "https://taxpratico.com.br/detalhes-artigo/credito-da-cbs-quem-paga-a-conta-quando-o-fornecedor-nao-paga"
+  },
+  {
+   "nome": "Tax Prático",
+   "titulo": "O split payment e os impactos no fluxo de caixa",
+   "data": "24/11/2026",
+   "url": "https://taxpratico.com.br/detalhes-artigo/o-split-payment-e-os-impactos-no-fluxo-de-caixa-dos-empreendedores"
+  },
+  {
+   "nome": "CFC",
+   "titulo": "Receita, CGIBS e CFC vão orientar mais de 25 mil profissionais",
+   "data": "19/11/2026",
+   "url": "https://cfc.org.br/noticias/receita-federal-cgibs-e-cfc-vao-orientar-mais-de-25-mil-profissionais-da-contabilidade-sobre-destaque-de-cbs-ibs-em-documentos-fiscais/"
+  },
+  {
+   "nome": "Portal Contábeis",
+   "titulo": "Receita vai orientar 25 mil contadores sobre CBS e IBS",
+   "data": "23/11/2026",
+   "url": "https://www.contabeis.com.br/noticias/81047/receita-vai-orientar-25-mil-contadores-sobre-cbs-e-ibs/"
+  },
+  {
+   "nome": "JOTA",
+   "titulo": "Receita e Comitê Gestor dizem que apuração assistida estará pronta em janeiro",
+   "data": "24/11/2026",
+   "url": "https://jota.info/coberturas-especiais/ambiente-negocios-oportunidades/receita-e-comite-gestor-dizem-que-apuracao-assistida-estara-pronta-em-janeiro"
+  },
+  {
+   "nome": "Plox",
+   "titulo": "Arrecadação federal recorde em outubro",
+   "data": "24/11/2026",
+   "url": "https://plox.com.br/noticia/24/11/2026/arrecadacao-federal-recorde-outubro"
+  },
+  {
+   "nome": "Mix Vale",
+   "titulo": "CBS de 2027 terá alíquota de referência de 11,3%",
+   "data": "24/11/2026",
+   "url": "https://www.mixvale.com.br/2026/11/24/cbs-de-2027-tera-aliquota-de-referencia-de-113-calculada-pelo-tcu/"
+  },
+  {
+   "nome": "Radar RT",
+   "titulo": "Ato Conjunto RFB/CGIBS nº 4/2026",
+   "data": "25/11/2026",
+   "url": "https://radarrt.com/normas/ato-conjunto-rfb-cgibs-4-2026/"
+  },
+  {
+   "nome": "Portas",
+   "titulo": "Condomínios terão de emitir nota fiscal em 2027",
+   "data": "25/11/2026",
+   "url": "https://portas.com.br/noticias/nota-fiscal-condominio-2027/"
+  },
+  {
+   "nome": "LegisWeb",
+   "titulo": "Nota Fortaleza: cadastro para desconto no IPTU 2027 até 30/11",
+   "data": "16/11/2026",
+   "url": "https://legisweb.com.br/noticia/?id=34849"
+  },
+  {
+   "nome": "Convergência Digital",
+   "titulo": "Governo está prestes a lançar duas IAs transacionais",
+   "data": "24/11/2026",
+   "url": "https://convergenciadigital.com.br/governo/governo-esta-prestes-a-lancar-duas-ia-transacionais-nos-servicos-digitais/"
+  },
+  {
+   "nome": "Canaltech",
+   "titulo": "GPT-6.2 chega aos usuários do ChatGPT",
+   "data": "24/11/2026",
+   "url": "https://canaltech.com.br/inteligencia-artificial/gpt-62-chega-aos-usuarios-do-chatgpt-com-alertas-de-preco-mas-ha-um-problema/"
+  },
+  {
+   "nome": "Exame",
+   "titulo": "Startup brasileira cresceu 900% com agentes de IA",
+   "data": "29/01/2026",
+   "url": "https://exame.com/negocios/cresceu-900-em-1-ano-startup-brasileira-quer-faturar-r-500-milhoes-com-agentes-de-ia/"
+  },
+  {
+   "nome": "Mix Vale",
+   "titulo": "Thomson Reuters: 73% esperam mais procura por consultoria tributária",
+   "data": "09/11/2026",
+   "url": "https://www.mixvale.com.br/2026/11/09/thomson-reuters-73-esperam-mais-procura-por-consultoria-tributaria/"
+  }
+ ]
+}

@@ -1,5 +1,21 @@
 [
  {
+  "date": "2026-11-25",
+  "titulo": "Receita mira notas sem IBS/CBS; apuração assistida da CBS prometida para janeiro",
+  "atencao": "Empresas que emitem nota sem destaque de IBS e CBS, ou com destaque parcial, entraram numa lista da Receita e do CGIBS, e o contador responsável será procurado pelo CFC e pelo CRC. A orientação é preventiva e não é autuação, mas o mesmo dado vai alimentar a apuração assistida da CBS em 2027: corrigir o cadastro de produtos e o emissor ainda em dezembro custa menos do que refazer apuração em janeiro.",
+  "norma": "Portaria RFB nº 763/2026 (Piloto RTC-CBS)",
+  "conexao": "A orientação da Receita e do CGIBS aos contadores e a promessa de apuração assistida da CBS em janeiro são a mesma engrenagem vista de dois lados. O Fisco já mede, nota a nota, quem destaca IBS e CBS; em 2027 é a partir dessas mesmas notas que a apuração virá pré-preenchida e que o cliente terá ou não crédito. Nota emitida hoje sem destaque é, em janeiro, débito errado para quem vende e crédito perdido para quem compra.",
+  "tags": [
+   "IBS/CBS",
+   "Documentos fiscais",
+   "Apuração assistida",
+   "Piloto RTC-CBS",
+   "Arrecadação",
+   "IA",
+   "Dados"
+  ]
+ },
+ {
   "date": "2026-11-24",
   "titulo": "Simples fecha o regime de caixa em 31/12; ajuste fiscal sancionado (LC 239)",
   "atencao": "No Simples, quem apura pelo regime de caixa vai incluir no DAS de dezembro tudo o que ainda tiver a receber em 31/12/2026, inclusive parcelas que ainda não venceram. Título já pago e sem baixa no sistema vira imposto sobre receita que não existe.",
