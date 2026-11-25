@@ -156,6 +156,14 @@ footer p{max-width:70ch;margin:10px auto}
 .news .pq{color:var(--ink);border-top:1px dashed var(--line);padding-top:10px}
 .news .pq span{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--foot);margin-bottom:4px}
 .lead{font:400 clamp(19px,2.2vw,23px)/1.45 var(--serif);max-width:60ch;margin:0 0 26px}
+.casos{list-style:none;margin:0 0 clamp(30px,4vw,48px);padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,360px),1fr));gap:16px}
+.casos li{border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:6px;padding:20px;background:var(--bg);display:flex;flex-direction:column;gap:8px}
+.casos h3{font:400 23px/1.15 var(--serif);margin:0}
+.casos .quem{font-size:14px;color:var(--foot);margin:0}
+.casos dl{margin:0;display:grid;gap:8px}.casos dt{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--foot)}.casos dd{margin:0;color:var(--sup);font-size:15px}
+.casos .licao{margin:4px 0 0;padding:12px 14px;background:var(--panel);border-radius:4px;font-size:15px}
+.casos .licao b{font-weight:600;color:var(--acc)}
+.secao{font:500 13px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin:28px 0 14px}
 </style>
 <script>new MutationObserver(()=>{for(const c of document.querySelectorAll('.stack td:not([data-l])')){let i=0,p=c;while(p=p.previousElementSibling)i+=p.colSpan;c.dataset.l=c.closest('table').rows[0].cells[i]?.textContent||''}}).observe(document,{childList:true,subtree:true})</script>
 </head><body>
@@ -174,14 +182,17 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const url=u=>/^https?:\/\//.test(u||'')?esc(u):'#';
 const MESES=['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
 const fmt=d=>{const[y,m,dd]=d.split('-');return `${+dd} de ${MESES[+m-1]} de ${y}`};
+const caso=c=>`<li><h3>${c.url?`<a href="${url(c.url)}" style="text-decoration:none">${esc(c.nome)}</a>`:esc(c.nome)}</h3><p class="quem">${esc(c.quem)}${c.local?' · '+esc(c.local):''}</p>
+<dl><div><dt>O negócio</dt><dd>${esc(c.negocio)}</dd></div><div><dt>Como usa a IA</dt><dd>${esc(c.comoUsaIA)}</dd></div><div><dt>Números</dt><dd>${esc(c.numeros)}</dd></div></dl>
+${c.licao?`<p class="licao"><b>Lição: </b>${esc(c.licao)}</p>`:''}<p class="quem">${esc(c.fonte)} · ${esc(c.data)}</p></li>`;
 const card=n=>`<li><div class="meta"><b>${esc(n.tema||'IA')}</b><span>${esc(n.fonte)} · ${esc(n.data)}</span></div>
 <h3><a href="${url(n.url)}">${esc(n.titulo)}</a></h3><p>${esc(n.resumo)}</p>
 ${n.porQueImporta?`<p class="pq"><span>Por que importa</span>${esc(n.porQueImporta)}</p>`:''}</li>`;
 (async()=>{
  try{
   const r=await fetch('ia.json',{cache:'no-cache'});const dias=(await r.json()).dias||[];
-  app.innerHTML=`<header style="padding:clamp(18px,3vw,36px) 0 0"><p class="kick">IA</p><h1>Inteligência artificial, <em>sem ruído</em></h1><p class="sub" style="margin-top:14px">As notícias de IA do dia que mudam alguma coisa para empresas, contadores e profissionais. Fonte principal: Exame.</p></header>`+
-   dias.map((d,i)=>`<section class="dia" id="ia-${esc(d.date)}"><p class="kick">${i?'':'Hoje · '}${esc(fmt(d.date))}</p><h2>${esc(d.titulo)}</h2>${d.resumo?`<p class="lead">${esc(d.resumo)}</p>`:''}<ul class="news">${(d.noticias||[]).map(card).join('')}</ul></section>`).join('');
+  app.innerHTML=`<header style="padding:clamp(18px,3vw,36px) 0 0"><p class="kick">IA</p><h1>Inteligência artificial, <em>sem ruído</em></h1><p class="sub" style="margin-top:14px">Quem criou ou fez crescer um negócio com IA, e as notícias do dia que mudam alguma coisa para empresas, contadores e profissionais. Fonte principal: Exame.</p></header>`+
+   dias.map((d,i)=>`<section class="dia" id="ia-${esc(d.date)}"><p class="kick">${i?'':'Hoje · '}${esc(fmt(d.date))}</p><h2>${esc(d.titulo)}</h2>${d.resumo?`<p class="lead">${esc(d.resumo)}</p>`:''}${d.negocios?.length?`<p class="secao">IA e os negócios</p><ul class="casos">${d.negocios.map(caso).join('')}</ul>`:''}<p class="secao">Notícias do dia</p><ul class="news">${(d.noticias||[]).map(card).join('')}</ul></section>`).join('');
   if(location.hash){const el=document.getElementById(location.hash.slice(1));if(el)el.scrollIntoView();}
  }catch(_){app.innerHTML='<p class="loading">Não foi possível carregar as notícias agora. Recarregue a página.</p>'}
 })();

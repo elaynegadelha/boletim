@@ -86,6 +86,68 @@
      "resumo": "Com o GPT-6.2 liberado nos planos Plus, Pro, Business e Enterprise, a OpenAI informou que Plus, Pro e Business passam a ter, em dezembro, limites compartilhados entre ChatGPT e Codex, medidos em tokens. As quantidades não foram divulgadas; o modo Instant fica fora da conta.",
      "porQueImporta": "Dezembro é mês de pico no escritório contábil. Quem usa a ferramenta para ler normas, revisar planilhas ou gerar código precisa acompanhar o consumo para não ficar sem acesso no fechamento."
     }
+   ],
+   "negocios": [
+    {
+     "nome": "Dynamox",
+     "quem": "Guillaume Barrault, CEO",
+     "local": "Florianópolis (SC)",
+     "fonte": "Exame",
+     "data": "23/11/2026",
+     "url": "https://exame.com/negocios/o-big-brother-da-prevencao-industrial-processa-25-bilhoes-de-dados-por-dia/",
+     "negocio": "Sensores, software e IA para prever falhas em máquinas industriais antes que parem a produção (manutenção preditiva).",
+     "comoUsaIA": "A IA lê os dados dos sensores instalados nos equipamentos e avisa quando um padrão indica falha próxima.",
+     "numeros": "Mais de 2,5 bilhões de dados processados por dia, presença em mais de 50 países, crescimento acima de 30% ao ano desde 2022 e equipe de 100 para mais de 450 pessoas. Clientes como Bunge, ArcelorMittal, Usiminas e Alcoa.",
+     "licao": "O valor não está no modelo de IA, e sim no dado próprio que ninguém mais tem. Vale para escritórios: a base histórica de notas e apurações dos clientes é o ativo."
+    },
+    {
+     "nome": "Ainwater",
+     "quem": "Camilo Huneeus, CEO e cofundador",
+     "local": "Chile, com escritório em Porto Alegre (RS)",
+     "fonte": "Exame",
+     "data": "23/11/2026",
+     "url": "https://exame.com/negocios/startup-chilena-de-ia-para-tratamento-de-agua-capta-us-13-milhao-e-mira-expansao-no-brasil/",
+     "negocio": "Plataforma de IA que monitora e otimiza o tratamento de água e de fluidos industriais, com alertas, recomendações e controle remoto.",
+     "comoUsaIA": "Junta dados de sensores, automação e registros manuais da planta e recomenda ajustes de operação.",
+     "numeros": "Captou US$ 1,3 milhão (cerca de R$ 7,6 milhões), opera em 103 plantas e mira mais de mil até o fim de 2027. Clientes no Brasil incluem Klabin, Irani e Sanepar.",
+     "licao": "Nicho técnico e chato, com dor clara de custo, é onde a IA vira negócio rápido. A Ainwater não vende IA: vende economia de água e de produto químico."
+    },
+    {
+     "nome": "Guardian RH",
+     "quem": "Empresa de software de folha de pagamento",
+     "local": "Nova Lima (MG)",
+     "fonte": "Exame (ranking Negócios em Expansão 2026)",
+     "data": "26/08/2026",
+     "url": "https://exame.com/revista-exame/de-2-milhoes-a-5-milhoes-de-reais-2/",
+     "negocio": "Software de folha de pagamento por assinatura, com mais de 120 empresas clientes.",
+     "comoUsaIA": "IA no CRM, em painéis de gestão, num vendedor digital (SDR) e em agentes que corrigem dados de cadastro.",
+     "numeros": "Receita de R$ 2,02 milhões para R$ 3,71 milhões em um ano (+83,2%).",
+     "licao": "Negócio de rotina trabalhista e de dados, muito próximo da contabilidade, crescendo com IA aplicada a vender e a limpar cadastro, e não com um produto de IA."
+    },
+    {
+     "nome": "Fortio Soluções Logísticas",
+     "quem": "Thiago dos Santos, CEO",
+     "local": "Belo Horizonte (MG)",
+     "fonte": "Exame (ranking Negócios em Expansão 2026)",
+     "data": "26/08/2026",
+     "url": "https://exame.com/revista-exame/de-2-milhoes-a-5-milhoes-de-reais-2/",
+     "negocio": "Plataforma de logística e crédito para o transporte de cargas.",
+     "comoUsaIA": "Atendimento por IA no WhatsApp para cadastrar motoristas e acompanhar cargas.",
+     "numeros": "Receita de R$ 2,06 milhões para R$ 4,17 milhões em um ano (+101,9%).",
+     "licao": "Automatizar o atendimento repetitivo no WhatsApp foi o que liberou a equipe para crescer. É o primeiro passo mais barato para pequenas empresas."
+    },
+    {
+     "nome": "Pieter Levels (PhotoAI, InteriorAI)",
+     "quem": "Empreendedor que trabalha sozinho",
+     "local": "Holanda",
+     "fonte": "Exame",
+     "data": "02/06/2025",
+     "url": "https://exame.com/inteligencia-artificial/com-ia-empreendedor-fatura-sozinho-us-35-milhoes-por-ano/",
+     "negocio": "Portfólio de produtos digitais, como geração de fotos e de projetos de decoração por IA.",
+     "comoUsaIA": "A IA escreve de 80% a 95% do código dos aplicativos e cuida de atendimento, moderação e reembolsos.",
+     "numeros": "Cerca de US$ 3,5 milhões por ano, margens acima de 90% e nenhum funcionário.",
+     "licao": "Caso referência de empresa de uma pessoa só. Mais de 70 projetos lançados desde 2012 e só quatro deram certo: a IA barateia o teste, não elimina a tentativa."
+    }
    ]
   }
  ]
