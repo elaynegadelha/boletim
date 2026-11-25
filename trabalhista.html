@@ -61,10 +61,11 @@ tr.i td.v{color:var(--sup)}
 .btn{margin-top:16px;min-height:44px;padding:10px 18px;border-radius:999px;border:1px solid var(--ink);background:transparent;color:var(--ink);font:inherit;cursor:pointer}
 .method,.news{border-top:1px solid var(--line)}
 html{scroll-padding-top:64px}
+.abas{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;padding:0 max(5vw,16px) 16px}.abas a{min-height:44px;display:inline-flex;align-items:center;padding:8px 20px;border-radius:999px;border:1px solid var(--line);color:var(--ink);text-decoration:none;font:500 15px/1 inherit}.abas a:hover{border-color:var(--ink)}.abas a[aria-current=page]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .topnav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
 .topnav .scr{display:flex;gap:4px;overflow-x:auto;padding:6px max(5vw,16px);max-width:1180px;margin:0 auto;scrollbar-width:none}
 .topnav a{flex:none;padding:10px 12px;font-size:14px;color:var(--sup);text-decoration:none;border-radius:4px}.topnav a:hover{color:var(--ink);background:var(--paper)}
-.topnav a:first-child{color:var(--acc);font-weight:500}
+
 .upd{color:var(--mut);font-size:14px;margin:-6px 0 20px}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:16px}
 .card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px 22px}
@@ -107,7 +108,8 @@ h3{font-size:17px;margin:28px 0 10px}
 </head>
 <body>
 <header class="mast"><i></i><span>DECODIFICA. · ELAYNE GADELHA</span><i></i></header>
-<nav class="topnav" aria-label="Seções"><div class="scr"><a href="./">← DECODIFICA.</a><a href="#calculadora">Calculadora</a><a href="#noticias">Notícias</a><a href="#escala-5x2">Escala 5x2</a><a href="#metodo">Como a conta é feita</a></div></nav>
+<nav class="abas" aria-label="Áreas do site"><a href="./">Edição do dia</a><a href="tributario.html">Tributário</a><a href="trabalhista.html" aria-current="page">Trabalhista</a></nav>
+<nav class="topnav" aria-label="Seções"><div class="scr"><a href="#calculadora">Calculadora</a><a href="#noticias">Notícias</a><a href="#escala-5x2">Escala 5x2</a><a href="#metodo">Como a conta é feita</a></div></nav>
 
 <section class="band intro"><div class="wrap">
   <svg viewBox="0 0 150 150" aria-hidden="true"><path d="M150 0A150 150 0 0 1 0 150L150 150Z" fill="var(--shape)" opacity=".85" transform="translate(0,0) scale(.62) translate(92,92)"/><path d="M150 18A132 132 0 0 0 18 150" fill="none" stroke="var(--shape)" stroke-width="1"/><path d="M150 40A110 110 0 0 0 40 150" fill="none" stroke="var(--shape)" stroke-width="1" opacity=".6"/></svg>

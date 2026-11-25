@@ -1,0 +1,115 @@
+{
+ "temas": [
+  {
+   "id": "pacote-fiscal",
+   "titulo": "Pacote fiscal: a LC nº 239/2026 explicada",
+   "sub": "O ajuste fiscal sancionado em 24/11/2026: o que muda na compensação de créditos, no corte de benefícios e no caixa das empresas.",
+   "atualizado": "2026-11-24",
+   "norma": "Lei Complementar nº 239, de 24 de novembro de 2026 (publicada no DOU em edição extra de 24/11/2026)",
+   "ementa": "Pacote de ajuste fiscal, derivado do PLP nº 299/2026 e sancionado sem vetos. Altera as LCs 200/2023, 176/2020, 235/2026 e 224/2025 e as Leis 11.540/2007 e 9.796/1999.",
+   "literal": "Fica o Poder Executivo federal autorizado, com fundamento na […] § 2º O disposto no caput deste artigo não se aplica à compensação […]",
+   "literalRef": "LC nº 200/2023, art. 6º-F, incluído pela LC nº 239/2026: trechos do texto oficial; íntegra no Planalto",
+   "oQueDiz": "A lei dá ao governo três ferramentas. Primeira: contingenciar despesas mesmo quando o resultado projetado está dentro da faixa inferior de tolerância da meta. Segunda: nesses anos, reduzir de 2,5% para 2% o crescimento real do limite de despesas. Terceira, a que pesa para as empresas: limitar, por ato do Executivo, a compensação de débitos de tributos da Receita Federal com créditos de outros tributos. A lei também amplia o corte linear dos benefícios fiscais da LC 224/2025 de 10% para 20%.",
+   "pontos": [
+    "LC 200, art. 6º-F: o Executivo pode reduzir a compensação de débitos de tributos da Receita com créditos de outros tributos. O teto é o valor do corte de despesas somado ao contingenciamento, e só vale se as medidas de contenção forem acionadas. Os percentuais serão fixados por ato do Executivo e podem variar por valor ou tipo de crédito.",
+    "Art. 6º-F, § 2º: a restrição não alcança a compensação de créditos de PIS/Pasep e Cofins com débitos da CBS.",
+    "LC 224, art. 4º: o corte linear dos benefícios sobe de 10% para 20%. Isenção e alíquota zero passam a pagar 20% da alíquota padrão; reduções de base e de tributo passam a valer 80% do benefício; créditos ficam limitados a 80% do valor original. Entram na lista de exceções os incentivos para compra de veículos por pessoas com deficiência ou com TEA.",
+    "LC 200, arts. 6º-C a 6º-E: contingenciamento dentro da faixa de tolerância da meta, com proteção para obrigações constitucionais e dívida. O excesso reduz o limite do ano, sem passar para os seguintes.",
+    "LC 200, art. 5º: a partir de 2027, nos anos em que a contenção for acionada, o limite de despesas cresce no máximo 2% reais.",
+    "Art. 13: em 2026, até R$ 10,5 bilhões de subvenção ao óleo diesel podem ser descontados da meta de resultado primário.",
+    "Até 2030: R$ 2 bi/ano para a entrega da LC 176, R$ 3 bi/ano para a compensação da Lei 9.796 e R$ 1 bi/ano para a equalização do Proex.",
+    "Art. 15: a lei vigora desde a publicação. O corte de benefícios produz efeitos em 1º/01/2027 ou no 1º dia do 4º mês após a publicação, para os tributos sujeitos à noventena."
+   ],
+   "porQue": "O governo quer cumprir a meta fiscal de 2027 e conter a dívida. Estima melhora de R$ 45,1 bilhões a R$ 56,1 bilhões no resultado primário de 2027. Na tramitação, o governo também defendeu que a compensação cruzada cresceu demais e serve a abusos, como a compra de empresas falidas para aproveitar créditos.",
+   "datas": [
+    {
+     "data": "24/11/2026",
+     "quem": "Publicação e vigência. Desconto do diesel na meta de 2026."
+    },
+    {
+     "data": "1º/01/2027",
+     "quem": "Corte de 20% nos benefícios de tributos sem noventena."
+    },
+    {
+     "data": "1º/03/2027",
+     "quem": "Corte de 20% nos benefícios de tributos com noventena, como as contribuições. Data calculada pela regra do 1º dia do 4º mês."
+    },
+    {
+     "data": "2027 a 2030",
+     "quem": "Teto de 2% para a despesa quando a contenção for acionada; limites de repasses."
+    },
+    {
+     "data": "Sem data",
+     "quem": "Ato do Executivo que fixará os percentuais da compensação cruzada: ainda não publicado."
+    }
+   ],
+   "exemplo": {
+    "titulo": "Exemplo: uma exportadora com saldo de PIS/Cofins (números ilustrativos)",
+    "passos": [
+     "A empresa exporta quase tudo. Por isso não tem PIS/Cofins a pagar nas vendas e acumula R$ 600.000 de créditos.",
+     "Hoje ela usa cerca de R$ 50.000 por mês desses créditos para quitar IRPJ, CSLL e contribuição previdenciária.",
+     "Se o ato do Executivo fixar, por hipótese, uma restrição de 50%, só R$ 25.000 por mês poderão ser compensados. Os outros R$ 25.000 sairão do caixa.",
+     "Em 12 meses, isso soma R$ 300.000 de capital de giro a mais, sem que a empresa deva um centavo a mais de tributo."
+    ]
+   },
+   "blocos": [
+    {
+     "titulo": "Preocupações atuais",
+     "itens": [
+      "Exportadoras: acumulam créditos de PIS/Cofins e IPI que não conseguem usar contra os mesmos tributos e dependem da compensação cruzada. Esse é o alerta da CNI.",
+      "Insegurança jurídica: o tamanho da restrição depende de ato futuro do Executivo. O Sistema CFC/CRCs e 57 entidades empresariais pediram a retirada do art. 6º-F; lembram que o Congresso barrou ideia semelhante em 2024 (MP 1.227).",
+      "Tributaristas apontam que o texto não fixa prazo máximo nem ressalva pagamento indevido ou crédito judicial. É leitura de opinião, a confirmar no ato regulamentar.",
+      "Transição da reforma: PIS e Cofins dão lugar à CBS em 2027. A exceção protege o uso contra a CBS, mas créditos usados hoje contra IRPJ, CSLL ou contribuição previdenciária podem ficar parados.",
+      "Benefícios: setores com isenção ou alíquota zero de PIS/Cofins passam a pagar parte do tributo e precisam refazer preço e margem de 2027."
+     ]
+    },
+    {
+     "titulo": "O argumento do governo",
+     "itens": [
+      "Melhora estimada de R$ 45,1 bi a R$ 56,1 bi no resultado primário de 2027.",
+      "Combate a abusos com créditos, como a compra de empresas falidas para usar saldo credor.",
+      "A restrição não é automática: depende do acionamento da contenção e de ato que fixe os percentuais."
+     ]
+    }
+   ],
+   "oQueFazer": [
+    "Mapear os saldos credores de PIS/Cofins e IPI por origem: insumos, crédito presumido, pagamento indevido ou decisão judicial.",
+    "Simular o caixa de 2027 sem a compensação cruzada, num cenário conservador.",
+    "Listar os benefícios fiscais do cliente afetados pelo corte de 20% e a data de efeito de cada tributo.",
+    "Acompanhar o ato do Executivo que fixará os percentuais e eventuais questionamentos judiciais das entidades."
+   ],
+   "cuidado": "O texto literal reproduz apenas trechos do art. 6º-F. Os percentuais da restrição ainda não existem, e o exemplo usa 50% só para ilustrar. Confira a íntegra no Planalto antes de aplicar a um caso concreto.",
+   "fonte": "Planalto: Lei Complementar nº 239/2026",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/Lcp239.htm",
+   "cadeia": {
+    "titulo": "Da LC 239 até a decisão de caixa",
+    "elos": [
+     {
+      "etapa": "Norma",
+      "texto": "O art. 6º-F autoriza limitar a compensação com créditos de outros tributos."
+     },
+     {
+      "etapa": "Sistema",
+      "texto": "O PER/DCOMP passa a aceitar só um percentual, fixado por ato."
+     },
+     {
+      "etapa": "Cadastro/dado",
+      "texto": "Mapa de créditos por origem, tipo e valor: é por ele que o limite será aplicado."
+     },
+     {
+      "etapa": "Crédito",
+      "texto": "Parte do saldo credor fica parada até poder ser usada contra o próprio tributo ou contra a CBS."
+     },
+     {
+      "etapa": "Caixa",
+      "texto": "IRPJ, CSLL e INSS antes compensados passam a ser pagos em dinheiro."
+     },
+     {
+      "etapa": "Decisão",
+      "texto": "Rever capital de giro, preço e o calendário de uso dos créditos de 2027."
+     }
+    ]
+   }
+  }
+ ]
+}
