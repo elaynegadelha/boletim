@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IA — DECODIFICA. — Elayne Gadelha</title>
+<meta name="description" content="As notícias de inteligência artificial do dia que importam para empresas, contadores e profissionais, com a Exame como fonte principal. Uma publicação de Elayne Gadelha.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE: DECODIFICA. — editorial, calmo, técnico; uma publicação assinada.
+   IDEA: a edição impressa de um boletim de escritório, com a norma do dia "aberta na mesa".
+   PICTURE: o quarto de círculo sálvia e as curvas finas da marca, com o ponto de atenção sobre eles.
+   COLOUR and TYPE: marfim #F5F0EB, grafite #253030, sálvia #708370/#758975; TT Ramillas + Neue Montreal (fallback Fraunces + Manrope).
+   LAYOUT: cabeçalho e rodapé da marca entre linhas finas; capa; norma explicada como peça central; arquivo pesquisável no fim. */
+:root{color-scheme:light dark;
+ --bg:light-dark(#F5F0EB,#18201D);--panel:light-dark(#FBF8F4,#202A26);--ink:light-dark(#253030,#EEE8E0);
+ --sup:light-dark(#424F4D,#C9C4BB);--foot:light-dark(#6B7471,#9AA39F);--acc:light-dark(#708370,#A3B8A3);
+ --shape:light-dark(#758975,#5E725F);--line:light-dark(#D9D1C6,#34403B);--code:light-dark(#253030,#0F1513);
+ --serif:"TT Ramillas","Fraunces",Georgia,serif;--sans:"Neue Montreal","Manrope",system-ui,sans-serif}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 var(--sans);overflow-x:clip}
+a{color:inherit;text-decoration-color:var(--acc);text-underline-offset:3px}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 max(5vw,18px)}
+.brandline{display:flex;align-items:center;gap:18px;padding:26px 0 10px;color:var(--sup);font:500 13px/1 var(--sans);letter-spacing:.3em;text-transform:uppercase;justify-content:center;text-align:center}
+.brandline::before,.brandline::after{content:"";flex:1;max-width:220px;height:1px;background:var(--line)}
+.abas{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;padding:4px 0 16px}.abas a{min-height:44px;display:inline-flex;align-items:center;padding:8px 20px;border-radius:999px;border:1px solid var(--line);color:var(--ink);text-decoration:none;font:500 15px/1 var(--sans)}.abas a:hover{border-color:var(--ink)}@media(max-width:430px){.abas{gap:6px}.abas a{padding:8px 13px;font-size:14px}}.abas a[aria-current=page]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.nav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav .scroll{display:flex;gap:4px;overflow-x:auto;padding:6px 0;scrollbar-width:none}
+.nav a{flex:none;padding:10px 12px;font-size:14px;color:var(--sup);text-decoration:none;border-radius:4px}
+.nav a:hover{color:var(--ink);background:var(--panel)}
+.hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:center;padding:clamp(28px,5vw,64px) 0}
+.kick{font-size:14px;color:var(--foot);margin:0 0 14px}
+h1{font:400 clamp(40px,6vw,72px)/1 var(--serif);margin:0;text-wrap:balance}
+h1 em,h2 em{font-style:italic;color:var(--acc)}
+.sig{font:400 clamp(18px,1.9vw,22px)/1.3 var(--sans);color:var(--sup);margin:14px 0 0}.sig em{font-style:normal;color:var(--acc)}
+.lead{font:400 clamp(19px,2vw,23px)/1.35 var(--serif);margin:22px 0 10px;text-wrap:balance}
+.period{color:var(--sup);font-size:15px;margin:0}
+.pic{position:relative;aspect-ratio:1/1;max-height:460px;width:100%;border-radius:2px;overflow:hidden;background:var(--panel)}
+.pic svg{position:absolute;inset:0;width:100%;height:100%}
+.pic .card{position:absolute;left:8%;top:10%;right:22%;padding:20px 22px;background:var(--bg);border:1px solid var(--line)}
+.pic .card b{display:block;font:500 13px/1.2 var(--sans);color:var(--acc);margin-bottom:10px}
+.pic .card p{margin:0;font:400 clamp(17px,1.8vw,21px)/1.35 var(--serif)}
+section{padding:clamp(34px,5vw,64px) 0;border-top:1px solid var(--line)}
+h2{font:400 clamp(30px,3.6vw,44px)/1.05 var(--serif);margin:0 0 8px;text-wrap:balance}
+.sub{color:var(--sup);margin:0 0 26px;max-width:68ch}
+h3{font:500 19px/1.3 var(--sans);margin:0 0 8px}
+.dest{display:grid;gap:0;margin:0;padding:0;list-style:none;counter-reset:d}
+.dest li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px;padding:14px 0;border-bottom:1px solid var(--line);font:400 19px/1.4 var(--serif)}
+.dest li::before{counter-increment:d;content:counter(d);font:500 14px/1.9 var(--sans);color:var(--acc)}
+.norma{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(22px,4vw,48px)}
+.panel{background:var(--panel);border:1px solid var(--line);padding:clamp(18px,2.6vw,30px)}
+.ident{font:400 24px/1.25 var(--serif);margin:0 0 6px}
+.ementa{color:var(--sup);margin:0 0 18px}
+blockquote{margin:0 0 20px;padding:14px 18px;border-left:2px solid var(--acc);font:italic 400 18px/1.45 var(--serif);background:var(--bg)}
+blockquote small{display:block;font:400 13px/1.4 var(--sans);color:var(--foot);font-style:normal;margin-top:8px}
+.tl{list-style:none;margin:0;padding:0;position:relative}
+.tl::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:1px;background:var(--line)}
+.tl li{position:relative;padding:0 0 18px 32px}
+.tl li::before{content:"";position:absolute;left:0;top:6px;width:15px;height:15px;border-radius:50%;background:var(--shape)}
+.tl .when{font:500 15px/1.3 var(--sans);white-space:nowrap}
+.tl p{margin:2px 0 0;color:var(--sup);font-size:15px}
+.ex ol{margin:0;padding-left:20px}.ex li{margin:0 0 8px}
+.pts{margin:0 0 10px;padding-left:20px}.pts li{margin:0 0 6px}.todo{margin:0;padding-left:20px}.todo li{margin:0 0 6px}
+.note{font-size:14px;color:var(--foot);margin:16px 0 0}
+.extra-norma{margin-top:clamp(34px,5vw,56px);padding-top:clamp(28px,4vw,44px);border-top:1px dashed var(--line)}
+.dados{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(22px,4vw,48px)}
+.check{list-style:none;margin:16px 0 0;padding:0}
+.check li{padding:10px 0 10px 30px;border-bottom:1px solid var(--line);position:relative}
+.check li::before{content:"";position:absolute;left:0;top:14px;width:16px;height:16px;border:1.5px solid var(--acc);border-radius:2px}
+.codebox{background:var(--code);color:#E9E5DD;border-radius:2px}
+.codebar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid #34403B;font-size:13px;color:#B8C2BC;gap:10px}
+pre{margin:0;padding:16px;overflow-x:auto;font:13.5px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+button{font:500 14px var(--sans);min-height:44px;padding:0 16px;border-radius:2px;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer}
+.codebar button{background:transparent;color:#E9E5DD;border-color:#4A5852;min-height:36px}
+.cats{display:grid;gap:34px}
+.cat h3{font:400 24px/1.2 var(--serif);margin:0 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.items{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:16px}
+.item{background:var(--panel);border:1px solid var(--line);padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:500 12px/1 var(--sans);padding:6px 8px;border-radius:2px;border:1px solid var(--line);color:var(--sup);white-space:nowrap}
+.chip.alta{background:var(--acc);color:var(--bg);border-color:var(--acc)}
+.item h4{font:400 20px/1.3 var(--serif);margin:0}
+.item p{margin:0;font-size:15px}
+.item .imp{color:var(--sup)}.item .imp b{color:var(--ink);font-weight:600}
+.item .src{font-size:13px;color:var(--foot)}
+.empty{color:var(--foot);font-style:italic;margin:0}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th{text-align:left;font:500 13px var(--sans);color:var(--foot);padding:10px 12px 10px 0;border-bottom:1px solid var(--ink)}
+td{padding:12px 12px 12px 0;border-bottom:1px solid var(--line);vertical-align:top}
+td.d{white-space:nowrap;font-weight:600}
+.acoes{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.acoes li{padding:16px 18px;background:var(--panel);border-left:2px solid var(--acc)}
+.glos{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:0 28px;margin:0}
+.glos div{padding:12px 0;border-bottom:1px solid var(--line)}
+.glos dt{font:400 19px/1.3 var(--serif)}.glos dd{margin:4px 0 0;color:var(--sup);font-size:15px}
+.fontes{margin:0;padding-left:22px;font-size:15px}.fontes li{margin:0 0 6px}
+.arq-tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:18px}
+.arq-tools input{flex:1 1 260px;font:16px var(--sans);min-height:44px;padding:0 14px;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:2px}
+.tagbtn{min-height:36px;padding:0 12px;font-size:13px}
+.tagbtn[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.arq{list-style:none;margin:0;padding:0}
+.arq li a{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;padding:16px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.arq .dt{font-weight:600;white-space:nowrap}.arq .tt{font:400 19px/1.35 var(--serif)}.arq .nm{display:block;font-size:14px;color:var(--foot);margin-top:4px}
+.arq li a:hover .tt{color:var(--acc)}
+.arq li.cur a .dt::after{content:"Em leitura";display:block;font-weight:400;font-size:13px;color:var(--acc)}
+footer{padding:30px 0 40px;text-align:center;color:var(--foot);font-size:14px}
+footer .brandline{color:var(--foot);font-size:12px}
+footer p{max-width:70ch;margin:10px auto}
+.loading{padding:80px 0;text-align:center;color:var(--foot)}
+.conexao{background:var(--shape);color:#F5F0EB;padding:clamp(28px,4.5vw,56px) clamp(22px,4vw,52px);margin:0 0 clamp(28px,4vw,48px);position:relative;overflow:hidden}
+.conexao .lbl{font:500 13px/1 var(--sans);opacity:.85;margin:0 0 16px}
+.conexao p.q{font:400 clamp(22px,2.7vw,32px)/1.3 var(--serif);margin:0;max-width:44ch;text-wrap:pretty}
+.conexao .liga{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;padding:0;list-style:none}
+.conexao .liga li{font-size:13px;padding:7px 10px;border:1px solid rgba(245,240,235,.45)}
+.conexao svg{position:absolute;right:-40px;top:-40px;width:260px;height:260px;opacity:.35}
+.chain{list-style:none;margin:clamp(22px,3vw,36px) 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));gap:0}
+.chain li{position:relative;padding:18px 28px 18px 0;border-top:2px solid var(--acc)}
+.chain li:not(:last-child)::after{content:"→";position:absolute;right:8px;top:14px;color:var(--acc);font-size:18px}
+.chain b{display:block;font:500 13px/1.2 var(--sans);color:var(--acc);margin-bottom:6px}
+.chain span{font:400 17px/1.35 var(--serif)}
+.chain-t{font:500 15px var(--sans);color:var(--sup);margin:30px 0 0}
+.ce{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(18px,3vw,40px);align-items:start}
+.ce .tag{font:400 clamp(30px,3.6vw,44px)/1.05 var(--serif);margin:0}
+.ce .tag em{color:var(--acc)}
+.ce p{margin:0 0 12px}.ce .olho{border-left:2px solid var(--acc);padding:4px 0 4px 16px;font:400 19px/1.45 var(--serif)}
+.autora{border-top:1px solid var(--line);background:var(--panel)}
+.autora-in{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1fr);gap:clamp(24px,5vw,64px);align-items:center;padding-block:clamp(36px,6vw,80px)}
+.autora figure{margin:0;position:relative}
+.autora figure::after{content:"";position:absolute;right:-14px;bottom:-14px;width:38%;aspect-ratio:1;background:var(--shape);border-top-left-radius:100%;z-index:0}
+.autora img{position:relative;z-index:1;display:block;width:100%;height:auto;border-radius:2px}
+.autora h2{margin-bottom:16px}
+.autora .bio{font:400 clamp(18px,1.8vw,21px)/1.5 var(--serif);margin:0 0 18px;max-width:46ch}
+.autora .assin{font:italic 400 20px/1.3 var(--serif);color:var(--acc);margin:0 0 18px}
+.autora .ig{font-weight:500}
+@media(max-width:760px){.autora-in{grid-template-columns:minmax(0,1fr)}.autora figure{max-width:420px;margin-right:14px}}
+@media(max-width:600px){.brandline{letter-spacing:.18em;font-size:12px;gap:12px}}
+@media(max-width:860px){.ce{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:600px){.chain li{padding-right:0}.chain li:not(:last-child)::after{content:"↓";right:0}}
+@media(max-width:860px){.hero,.norma,.dados{grid-template-columns:minmax(0,1fr)}.pic{max-height:380px;aspect-ratio:4/3}}
+@media(max-width:600px){.dest li{grid-template-columns:28px minmax(0,1fr);font-size:17px}.arq li a{grid-template-columns:minmax(0,1fr);gap:4px}
+ table{font-size:13px}.stack thead{display:none}.stack tr{display:grid;padding-block:10px;border-bottom:1px solid var(--line)}.stack td{display:flow-root;border:0;padding:3px 0;padding-inline-start:8em;text-align:start;white-space:normal}.stack td::before{content:attr(data-l);float:inline-start;width:7.5em;margin-inline-start:-8em;color:var(--foot);font-weight:400}.stack td:empty{display:none}}
+@media(prefers-reduced-motion:no-preference){.pic .curve{stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 2.4s ease-out forwards}@keyframes draw{to{stroke-dashoffset:0}}}
+.dia{padding-top:clamp(26px,4vw,48px)}
+.news{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:16px}
+.news li{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:20px 20px 18px;display:flex;flex-direction:column;gap:8px}
+.news .meta{font-size:13px;color:var(--foot);display:flex;gap:10px;flex-wrap:wrap}
+.news .meta b{font-weight:500;color:var(--acc)}
+.news h3{font:400 21px/1.2 var(--serif);margin:0}
+.news h3 a{text-decoration:none}.news h3 a:hover{text-decoration:underline}
+.news p{margin:0;color:var(--sup);font-size:15px}
+.news .pq{color:var(--ink);border-top:1px dashed var(--line);padding-top:10px}
+.news .pq span{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--foot);margin-bottom:4px}
+.lead{font:400 clamp(19px,2.2vw,23px)/1.45 var(--serif);max-width:60ch;margin:0 0 26px}
+</style>
+<script>new MutationObserver(()=>{for(const c of document.querySelectorAll('.stack td:not([data-l])')){let i=0,p=c;while(p=p.previousElementSibling)i+=p.colSpan;c.dataset.l=c.closest('table').rows[0].cells[i]?.textContent||''}}).observe(document,{childList:true,subtree:true})</script>
+</head><body>
+<div class="wrap"><div class="brandline">DECODIFICA. · Elayne Gadelha</div>
+<nav class="abas" aria-label="Áreas do site"><a href="./">Edição do dia</a><a href="tributario.html">Tributário</a><a href="trabalhista.html">Trabalhista</a><a href="ia.html" aria-current="page">IA</a></nav></div>
+<main class="wrap" id="app"><p class="loading">Carregando…</p></main>
+<footer class="wrap">
+<div class="brandline">Inteligência aplicada aos negócios</div>
+<p>DECODIFICA. — curadoria e análise de Elayne Gadelha, contadora e especialista em tributário. Cada informação traz a sua fonte oficial ou jornalística, com link. Conteúdo de caráter informativo, que não substitui a análise de um caso concreto.</p>
+<p><a href="https://www.instagram.com/elaynegadelha/">@elaynegadelha</a></p>
+</footer>
+<script>
+{
+const app=document.getElementById('app');
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const url=u=>/^https?:\/\//.test(u||'')?esc(u):'#';
+const MESES=['janeiro','fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
+const fmt=d=>{const[y,m,dd]=d.split('-');return `${+dd} de ${MESES[+m-1]} de ${y}`};
+const card=n=>`<li><div class="meta"><b>${esc(n.tema||'IA')}</b><span>${esc(n.fonte)} · ${esc(n.data)}</span></div>
+<h3><a href="${url(n.url)}">${esc(n.titulo)}</a></h3><p>${esc(n.resumo)}</p>
+${n.porQueImporta?`<p class="pq"><span>Por que importa</span>${esc(n.porQueImporta)}</p>`:''}</li>`;
+(async()=>{
+ try{
+  const r=await fetch('ia.json',{cache:'no-cache'});const dias=(await r.json()).dias||[];
+  app.innerHTML=`<header style="padding:clamp(18px,3vw,36px) 0 0"><p class="kick">IA</p><h1>Inteligência artificial, <em>sem ruído</em></h1><p class="sub" style="margin-top:14px">As notícias de IA do dia que mudam alguma coisa para empresas, contadores e profissionais. Fonte principal: Exame.</p></header>`+
+   dias.map((d,i)=>`<section class="dia" id="ia-${esc(d.date)}"><p class="kick">${i?'':'Hoje · '}${esc(fmt(d.date))}</p><h2>${esc(d.titulo)}</h2>${d.resumo?`<p class="lead">${esc(d.resumo)}</p>`:''}<ul class="news">${(d.noticias||[]).map(card).join('')}</ul></section>`).join('');
+  if(location.hash){const el=document.getElementById(location.hash.slice(1));if(el)el.scrollIntoView();}
+ }catch(_){app.innerHTML='<p class="loading">Não foi possível carregar as notícias agora. Recarregue a página.</p>'}
+})();
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+{
+ "dias": [
+  {
+   "date": "2026-11-25",
+   "titulo": "IA corporativa ganha escala, e a governança ainda não acompanha",
+   "resumo": "O uso de IA no trabalho dobrou no Brasil, mas quase metade dos profissionais usa por conta própria e só 27% das empresas têm governança madura para agentes. Ao mesmo tempo, fornecedores passam a oferecer retenção zero de dados e limites de uso mais rígidos: a pergunta deixa de ser se a empresa usa IA e passa a ser com que regra.",
+   "noticias": [
+    {
+     "titulo": "Estreia da Anthropic na Nasdaq: alta de 17% e cerca de US$ 14 bilhões deixados na mesa",
+     "fonte": "Exame",
+     "data": "24/11/2026",
+     "url": "https://exame.com/carreira/por-que-a-alta-de-17-no-maior-ipo-da-historia-custou-bilhoes-a-anthropic/",
+     "tema": "Mercado",
+     "resumo": "A dona do Claude precificou o IPO a US$ 83 por ação, acima da faixa de US$ 70 a US$ 78, e estreou em 19/11 fechando a US$ 97,17 (+17,07%). Com a colocação privada, a captação somou US$ 107,3 bilhões. A diferença entre o preço da oferta e o fechamento, multiplicada pelas ações vendidas, dá cerca de US$ 14 bilhões que a empresa deixou de captar.",
+     "porQueImporta": "O maior IPO da história confirma o volume de capital indo para IA corporativa. Para empresas usuárias, o efeito prático é concorrência maior entre fornecedores de modelos e pressão por preço e por garantias de uso de dados."
+    },
+    {
+     "titulo": "Uso diário de IA no trabalho dobrou no Brasil em 18 meses",
+     "fonte": "Exame",
+     "data": "24/11/2026",
+     "url": "https://exame.com/inteligencia-artificial/uso-diario-de-ia-no-trabalho-dobrou-no-brasil-em-18-meses-o-que-isso-muda-na-sua-rotina/",
+     "tema": "Trabalho",
+     "resumo": "Levantamento do LinkedIn mostra que o uso diário de IA no trabalho entre usuários brasileiros da rede passou de 17% para 35% entre 2024 e 2025, e o semanal de 15% para 25%. 79% dizem que a IA os torna mais eficientes. Os usos mais citados são pautas de reunião, rascunhos de ata e relatórios.",
+     "porQueImporta": "Em escritório contábil, as mesmas tarefas (atas, relatórios, e-mails a clientes) são as primeiras a ganhar tempo. A ressalva da própria pesquisa vale em dobro na área fiscal: conferir o resultado e não colocar dado sigiloso de cliente fora das ferramentas autorizadas."
+    },
+    {
+     "titulo": "43% dos profissionais usam IA por conta própria, sem incentivo da empresa",
+     "fonte": "Exame",
+     "data": "24/11/2026",
+     "url": "https://exame.com/inteligencia-artificial/por-conta-propria-43-dos-profissionais-usam-ia-sem-incentivo-da-empresa-como-virar-referencia/",
+     "tema": "Trabalho",
+     "resumo": "Estudo da WeWork com a Offerwise, com 2.500 profissionais, aponta que 43% usam IA por iniciativa própria, enquanto só 19% dizem que a organização incentiva o uso. A recomendação é medir o ganho em uma tarefa repetitiva antes e depois da IA e levar o resultado à liderança.",
+     "porQueImporta": "Uso sem política da empresa é risco de vazamento de dados fiscais e trabalhistas. Escritórios e departamentos fiscais precisam de regra clara: quais ferramentas, com quais dados e quem revisa."
+    },
+    {
+     "titulo": "Empresas poderão usar o Claude sem que a Anthropic retenha os dados",
+     "fonte": "Exame",
+     "data": "23/11/2026",
+     "url": "https://exame.com/inteligencia-artificial/claude-protecao-dados-empresas-anthropic/",
+     "tema": "Ferramentas",
+     "resumo": "A Anthropic abriu em beta público o Enterprise Frontier Safeguards, com retenção zero do conteúdo coberto e registros de segurança criptografados guardados em ambiente controlado pelo cliente. Funciona na plataforma da Anthropic, na AWS (Bedrock) e no Google Cloud, sem taxa adicional além do custo de uso.",
+     "porQueImporta": "Retenção de dados é a principal objeção de escritórios e empresas a usar IA com documentos de clientes. Recursos desse tipo tendem a virar exigência em contratos com fornecedores de IA."
+    },
+    {
+     "titulo": "Harvey, startup de IA jurídica, monta equipe em São Paulo",
+     "fonte": "Exame",
+     "data": "23/11/2026",
+     "url": "https://exame.com/inteligencia-artificial/harvey-ia-advocacia-sao-paulo/",
+     "tema": "Negócios",
+     "resumo": "A Harvey anunciou equipe em São Paulo para atender Brasil e América Latina, com vagas em vendas, atendimento e engenharia jurídica. A plataforma já funciona em português e usa fontes jurídicas locais por parcerias com JUIT e Jusratio. Entre os clientes estão Machado Meyer, Mattos Filho, Pinheiro Neto, Gerdau e XP.",
+     "porQueImporta": "IA especializada chega ao mercado brasileiro de serviços profissionais pelo jurídico; o tributário é o próximo passo natural. Surgem vagas híbridas, que pedem conhecimento técnico da área e domínio de ferramentas de IA."
+    },
+    {
+     "titulo": "95% das empresas brasileiras querem IA agêntica, mas só 27% têm governança madura",
+     "fonte": "Exame",
+     "data": "23/11/2026",
+     "url": "https://exame.com/inteligencia-artificial/95-das-empresas-brasileiras-querem-adotar-ia-agentica-mas-so-27-tem-governanca-madura/",
+     "tema": "Empresas",
+     "resumo": "Pesquisa da Deloitte com 3.235 líderes em 24 países, 115 deles no Brasil, indica que 95% das organizações brasileiras pretendem adotar agentes de IA em até dois anos, mas só 27% têm modelo de governança maduro. A EY aponta que 21% dos brasileiros já delegam decisões a IA autônoma.",
+     "porQueImporta": "Agente que executa tarefas (emitir, conciliar, pagar) sem governança vira risco fiscal. Quem desenha controles e trilhas de revisão para esses agentes ocupa um espaço que a maioria das empresas ainda não preencheu."
+    },
+    {
+     "titulo": "Orçamento de IA nas grandes empresas deve ir de 28% para 45% até 2028",
+     "fonte": "Exame",
+     "data": "23/11/2026",
+     "url": "https://exame.com/inteligencia-artificial/orcamento-de-ia-nas-grandes-empresas-deve-passar-de-28-para-45-ate-2028-aponta-idc/",
+     "tema": "Empresas",
+     "resumo": "Estudo da IDC encomendado pela Microsoft Brasil, com 73 executivos de empresas com mais de mil funcionários, mostra 28% do orçamento de investimento já ligado a IA, com previsão de 45% em 2028. 56% usam agentes de IA em piloto ou produção, e 30% citam falta de talentos como barreira.",
+     "porQueImporta": "A falta de gente que una conhecimento do negócio e IA é a barreira mais citada. Para profissionais fiscais, o recado é de demanda: quem entende o processo tributário e sabe automatizá-lo é raro."
+    },
+    {
+     "titulo": "Governo federal prepara duas IAs que alteram registros em bases públicas",
+     "fonte": "Convergência Digital",
+     "data": "24/11/2026",
+     "url": "https://convergenciadigital.com.br/governo/governo-esta-prestes-a-lancar-duas-ia-transacionais-nos-servicos-digitais/",
+     "tema": "Governo",
+     "resumo": "Na abertura da Semana Dados BR, o Ministério da Gestão anunciou dois serviços de IA transacional prontos para lançamento, capazes de alterar registros em bases do governo. Há mais de 300 soluções de IA em operação em 78 órgãos federais. Os serviços e as formas de autenticação e correção de erros não foram detalhados.",
+     "porQueImporta": "Atendimento público que executa, e não só responde, pode chegar a serviços usados por empresas e contadores. Vale acompanhar quais cadastros serão alcançados e como contestar uma alteração indevida."
+    },
+    {
+     "titulo": "ChatGPT pago terá limite de uso medido em tokens a partir de dezembro",
+     "fonte": "Canaltech",
+     "data": "24/11/2026",
+     "url": "https://canaltech.com.br/inteligencia-artificial/gpt-62-chega-aos-usuarios-do-chatgpt-com-alertas-de-preco-mas-ha-um-problema/",
+     "tema": "Ferramentas",
+     "resumo": "Com o GPT-6.2 liberado nos planos Plus, Pro, Business e Enterprise, a OpenAI informou que Plus, Pro e Business passam a ter, em dezembro, limites compartilhados entre ChatGPT e Codex, medidos em tokens. As quantidades não foram divulgadas; o modo Instant fica fora da conta.",
+     "porQueImporta": "Dezembro é mês de pico no escritório contábil. Quem usa a ferramenta para ler normas, revisar planilhas ou gerar código precisa acompanhar o consumo para não ficar sem acesso no fechamento."
+    }
+   ]
+  }
+ ]
+}
