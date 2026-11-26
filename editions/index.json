@@ -1,5 +1,21 @@
 [
  {
+  "date": "2026-11-26",
+  "titulo": "Redata perde PIS/Cofins e IPI em 31/12; Receita apresenta o novo PGDAS",
+  "atencao": "Restam 35 dias para os benefícios de PIS/Cofins e IPI do Redata. Pela Lei nº 15.504/2026, a suspensão desses tributos na compra de equipamentos para datacenters produz efeitos só até 31/12/2026; o Imposto de Importação segue por cinco anos. Para datacenter habilitado e fornecedor coabilitado, a data da operação decide o tratamento: entrega e nota em dezembro têm suspensão; em janeiro, a compra já segue a CBS.",
+  "norma": "Lei nº 15.504/2026 (Redata)",
+  "conexao": "O fim do benefício de PIS/Cofins e IPI do Redata em 31/12 e a apresentação do novo PGDAS integrado à apuração assistida mostram o mesmo calendário por dois ângulos: 2026 é o último ano dos tributos que a CBS substitui. Benefício preso a PIS/Cofins acaba com eles, e o Simples passa a conversar com a apuração do IBS e da CBS. Nos dois casos, a data da nota fiscal decide qual regra se aplica.",
+  "tags": [
+   "Redata",
+   "Simples Nacional",
+   "PGDAS",
+   "ITCD Ceará",
+   "Split payment",
+   "IA",
+   "Dados"
+  ]
+ },
+ {
   "date": "2026-11-25",
   "titulo": "Receita mira notas sem IBS/CBS; apuração assistida da CBS prometida para janeiro",
   "atencao": "Empresas que emitem nota sem destaque de IBS e CBS, ou com destaque parcial, entraram numa lista da Receita e do CGIBS, e o contador responsável será procurado pelo CFC e pelo CRC. A orientação é preventiva e não é autuação, mas o mesmo dado vai alimentar a apuração assistida da CBS em 2027: corrigir o cadastro de produtos e o emissor ainda em dezembro custa menos do que refazer apuração em janeiro.",

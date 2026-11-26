@@ -1,0 +1,728 @@
+{
+ "date": "2026-11-26",
+ "titulo": "Redata perde PIS/Cofins e IPI em 31/12; Receita apresenta o novo PGDAS",
+ "periodo": "De quarta-feira, 25/11, até a manhã de quinta-feira, 26/11/2026. Sem feriado no intervalo.",
+ "tags": [
+  "Redata",
+  "Simples Nacional",
+  "PGDAS",
+  "ITCD Ceará",
+  "Split payment",
+  "IA",
+  "Dados"
+ ],
+ "atencao": "Restam 35 dias para os benefícios de PIS/Cofins e IPI do Redata. Pela Lei nº 15.504/2026, a suspensão desses tributos na compra de equipamentos para datacenters produz efeitos só até 31/12/2026; o Imposto de Importação segue por cinco anos. Para datacenter habilitado e fornecedor coabilitado, a data da operação decide o tratamento: entrega e nota em dezembro têm suspensão; em janeiro, a compra já segue a CBS.",
+ "destaques": [
+  "Receita apresenta hoje, às 15h, o novo PGDAS integrado à apuração assistida da CBS e do IBS.",
+  "Redata: suspensão de PIS/Cofins e IPI na compra de equipamentos para datacenters vale só até 31/12/2026 (Lei nº 15.504/2026).",
+  "Ceará: IN SEFAZ nº 114/2026 obriga cartórios a comunicar à Sefaz, em 5 dias, inventários e partilhas extrajudiciais feitos sem ITCD prévio; vigência em 1º/12.",
+  "Solução de Consulta nº 8.024/2026 (DOU de 25/11): condomínio de lotes pode optar pelo RET.",
+  "IA e dados: Lumi, modelo de linguagem aberto em português, e ex-contador que transformou a carteira em plataforma de gestão de PJs com IA."
+ ],
+ "conexao": {
+  "texto": "O fim do benefício de PIS/Cofins e IPI do Redata em 31/12 e a apresentação do novo PGDAS integrado à apuração assistida mostram o mesmo calendário por dois ângulos: 2026 é o último ano dos tributos que a CBS substitui. Benefício preso a PIS/Cofins acaba com eles, e o Simples passa a conversar com a apuração do IBS e da CBS. Nos dois casos, a data da nota fiscal decide qual regra se aplica.",
+  "liga": [
+   "Lei nº 15.504/2026 (Redata): efeitos até 31/12/2026",
+   "Live da Receita sobre o novo PGDAS",
+   "Split payment e cadastro fiscal"
+  ]
+ },
+ "ceara": {
+  "novidade": "Instrução Normativa SEFAZ nº 114/2026, publicada no DOE-CE de 24/11/2026 e noticiada em 25/11, altera a IN SEFAZ nº 75/2024 (procedimentos do ITCD). Principais pontos: (1) Seção IV-B, arts. 5º-C a 5º-E: define as informações que os cartórios devem prestar nos inventários e partilhas extrajudiciais lavrados sem recolhimento prévio do ITCD; (2) o Tabelionato de Notas comunica a Sefaz-CE pelo sistema e-ITCD no prazo de 5 dias do encerramento do ato; (3) a Sefaz calcula, lança e notifica o contribuinte para pagar; (4) cumpridas as regras, o tabelião não responde solidária nem subsidiariamente pelo imposto não pago; (5) vigência a partir de 1º/12/2026. Na prática, o inventário em cartório deixa de esperar o pagamento do ITCD, e a cobrança passa a chegar depois, por lançamento. Os pontos seguem a reprodução da LegisWeb; a data de assinatura não consta da fonte.",
+  "olho": "Fortaleza sediou o Fórum de Administração Tributária da OCDE, onde a Receita assinou acordo aduaneiro com o Reino Unido. Prazos locais curtos: até 30/11 para o cadastro no Nota Fortaleza (desconto no IPTU 2027) e para pontuar no Sua Nota Tem Valor (IPVA 2027); até 30/12 para o Refis 2026 do Ceará."
+ },
+ "normaExplicada": {
+  "norma": "Lei nº 15.504, de 15 de setembro de 2026, publicada no DOU de 15/09/2026 (edição extra) — Redata",
+  "ementa": "Altera a Lei nº 11.196/2005 para instituir, entre outros, o Regime Especial de Tributação para Serviços de Datacenter (Redata), e altera a Lei nº 15.211/2025 (ECA Digital).",
+  "pontos": [
+   "Art. 2º: insere na Lei nº 11.196/2005 os arts. 11-A a 11-J, que criam o Redata (regime especial para datacenters).",
+   "Art. 11-A: pode ser habilitada a pessoa jurídica que implemente projeto de instalação, modernização ou ampliação de datacenter no País; pelo § 2º, o fabricante que fornece produtos de TIC para o ativo imobilizado da habilitada pode ser coabilitado, e a coabilitação acaba com o fim do contrato (§ 3º).",
+   "Art. 11-B, § 1º: a habilitada assume compromissos, entre eles ofertar ao mercado interno ao menos 10% do fornecimento (com redução de 20% dessa exigência no Norte, Nordeste e Centro-Oeste, § 7º), suprir 100% da energia com fontes renováveis ou de baixa emissão, manter WUE de até 0,05 L/kWh e investir 2% do valor dos produtos em P&D no País.",
+   "Art. 11-C: suspende PIS/Pasep e Cofins (inciso I), PIS/Pasep-Importação e Cofins-Importação (II), IPI (III) e Imposto de Importação (IV) na compra de componentes eletrônicos e produtos de TIC destinados ao ativo imobilizado da habilitada; a suspensão vira alíquota zero quando os compromissos são cumpridos e o bem é incorporado ao ativo.",
+   "Art. 11-J, caput: os benefícios têm vigência de 5 anos.",
+   "Art. 11-J, parágrafo único: os benefícios de PIS/Cofins (nacional e importação) e de IPI produzem efeitos só até 31/12/2026, por causa da EC 132/2023 e da LC 214/2025; o do Imposto de Importação segue pelo prazo de 5 anos."
+  ],
+  "literal": "Art. 11-J, parágrafo único: \"Os benefícios fiscais relativos aos tributos previstos nos incisos I, II e III do caput do art. 11-C desta Lei produzirão efeitos até 31 de dezembro de 2026, observado o disposto na Emenda Constitucional nº 132, de 20 de dezembro de 2023, e na Lei Complementar nº 214, de 16 de janeiro de 2025.\"",
+  "oQueDiz": "Cria um regime para quem instala, moderniza ou amplia datacenter no Brasil. Na compra de componentes e equipamentos de TIC para o ativo imobilizado, ficam suspensos PIS/Cofins, IPI e Imposto de Importação; a suspensão vira alíquota zero quando a empresa cumpre compromissos de mercado interno, energia renovável, uso de água e pesquisa. O benefício dura cinco anos, mas, para PIS/Cofins e IPI, só produz efeitos até 31/12/2026.",
+  "porQue": "O país quer atrair datacenters, inclusive de IA, cujo custo é dominado por equipamentos. O corte em 2026 decorre da reforma tributária: PIS e Cofins são extintos e substituídos pela CBS a partir de 2027, e a EC 132/2023 e a LC 214/2025 limitam a criação de benefícios fora das novas regras.",
+  "datas": [
+   {
+    "data": "15/09/2026",
+    "quem": "Publicação e vigência da Lei nº 15.504/2026"
+   },
+   {
+    "data": "31/12/2026",
+    "quem": "Fim dos efeitos da suspensão de PIS/Cofins e IPI para habilitadas e coabilitadas"
+   },
+   {
+    "data": "1º/1/2027",
+    "quem": "Compras passam a seguir a CBS; Imposto de Importação segue suspenso no prazo de 5 anos"
+   }
+  ],
+  "exemplo": {
+   "titulo": "Exemplo: datacenter habilitado em Fortaleza (números ilustrativos)",
+   "passos": [
+    "A DataMar Fortaleza Ltda. (fictícia), habilitada ao Redata, compra R$ 10.000.000 em servidores de um fabricante nacional coabilitado.",
+    "Nota emitida e mercadoria entregue em dezembro/2026: PIS/Cofins de 9,25% (R$ 925.000) e IPI ficam suspensos e depois viram alíquota zero, se os compromissos forem cumpridos.",
+    "Se a entrega escorregar para janeiro/2027, a suspensão de PIS/Cofins e IPI já não produz efeitos; a operação passa a seguir a CBS, com destaque na nota e crédito para o comprador conforme a LC 214/2025.",
+    "Interpretação: o custo final pode ficar parecido no longo prazo, mas a diferença de caixa no mês da compra é relevante, e o contrato precisa dizer quem arca com a mudança de regime."
+   ]
+  },
+  "oQueFazer": [
+   "Levantar pedidos de equipamentos para datacenter com entrega prevista entre dezembro/2026 e o 1º trimestre/2027.",
+   "Negociar com o fornecedor coabilitado a emissão da nota e a entrega até 31/12/2026, quando viável.",
+   "Revisar cláusulas de preço e de tributos dos contratos para a hipótese de faturamento em 2027.",
+   "Conferir se os compromissos do art. 11-B estão sendo cumpridos, para que a suspensão vire alíquota zero."
+  ],
+  "cuidado": "O trecho literal foi conferido na página da lei no Planalto, mas a versão consolidada pode trazer ajustes; confira o texto oficial antes de aplicar a um caso concreto. O efeito exato sobre as compras de 2027 depende da regulamentação da CBS e de eventual mudança legislativa: o relator do marco de IA e o setor pedem o alinhamento do Redata à reforma.",
+  "fonte": "Planalto — Lei nº 15.504/2026",
+  "url": "https://www.planalto.gov.br/ccivil_03/_Ato2023-2026/2026/Lei/l15504.htm"
+ },
+ "cadeia": {
+  "titulo": "Do prazo do Redata até a decisão de compra",
+  "elos": [
+   {
+    "etapa": "Norma",
+    "texto": "O art. 11-J, parágrafo único, da Lei 15.504 limita a 31/12/2026 os efeitos de PIS/Cofins e IPI do Redata."
+   },
+   {
+    "etapa": "Processo",
+    "texto": "Fornecedor coabilitado emite a nota com suspensão só se a operação ocorrer até essa data."
+   },
+   {
+    "etapa": "Cadastro/dado",
+    "texto": "Data de emissão, código de suspensão e destinação ao imobilizado precisam estar corretos na nota e no ERP."
+   },
+   {
+    "etapa": "Preço",
+    "texto": "Compra em 2027 passa a carregar CBS, e o preço do contrato precisa prever isso."
+   },
+   {
+    "etapa": "Caixa",
+    "texto": "Um mês de atraso na entrega pode mudar em centenas de milhares de reais o desembolso da compra."
+   },
+   {
+    "etapa": "Decisão",
+    "texto": "Antecipar entregas para dezembro ou renegociar o contrato antes da virada."
+   }
+  ]
+ },
+ "fiscalDados": {
+  "titulo": "Redata: o que entra até 31/12",
+  "texto": "A pergunta de dezembro para datacenters e fornecedores é simples e pode ser respondida com dados: quais pedidos com suspensão de PIS/Cofins e IPI ainda não foram faturados, e quanto deles corre o risco de virar 2027.",
+  "checklist": [
+   "A empresa está habilitada (ou coabilitada) e a habilitação está ativa?",
+   "Quais pedidos destinados ao imobilizado têm entrega prevista depois de 31/12/2026?",
+   "As notas emitidas trazem o código de suspensão correto?",
+   "Os bens recebidos já foram incorporados ao ativo imobilizado?",
+   "Os compromissos do art. 11-B (energia, água, P&D, mercado interno) têm evidência documentada?"
+  ],
+  "sqlTitulo": "Consulta de conferência (exemplo com tabela fictícia)",
+  "sql": "-- Pedidos Redata ainda não faturados com entrega prevista para 2027\n-- Tabela fictícia: pedidos(id, fornecedor, valor, dt_entrega_prevista, nf_emitida, destino)\nSELECT fornecedor,\n       COUNT(*) AS qtd_pedidos,\n       SUM(valor) AS valor_em_risco,\n       ROUND(SUM(valor) * 0.0925, 2) AS pis_cofins_estimado\nFROM pedidos\nWHERE destino = 'IMOBILIZADO_DATACENTER'\n  AND nf_emitida = FALSE\n  AND dt_entrega_prevista > DATE '2026-12-31'\nGROUP BY fornecedor\nORDER BY valor_em_risco DESC;",
+  "ferramenta": "Texto da Lei nº 15.504/2026 no Planalto",
+  "ferramentaUrl": "https://www.planalto.gov.br/ccivil_03/_Ato2023-2026/2026/Lei/l15504.htm"
+ },
+ "categorias": [
+  {
+   "id": "federal",
+   "nome": "Atos oficiais federais",
+   "itens": [
+    {
+     "titulo": "Receita apresenta hoje, às 15h, o novo PGDAS da reforma tributária",
+     "status": "PUBLICADO",
+     "relevancia": "ALTA",
+     "resumo": "Comunicado da Receita Federal divulgado pelo Ministério da Fazenda em 25/11/2026: transmissão ao vivo nesta quinta-feira (26/11), às 15h, no canal TV Receita Federal no YouTube, sobre o novo Programa Gerador do Documento de Arrecadação do Simples Nacional (PGDAS). Pauta: mudanças no programa, integração com as apurações assistidas da CBS e do IBS, tratamento de débitos e pagamentos, ajustes em sistemas contábeis, fiscais e de gestão e cronograma da solução, com perguntas ao vivo. O comunicado não cita norma nem data de implantação.",
+     "literal": "",
+     "impacto": "Optantes do Simples, contadores e desenvolvedores de software fiscal. É o primeiro detalhamento oficial de como o PGDAS vai conversar com a apuração assistida em 2027; vale assistir e registrar as respostas sobre cronograma e leiaute.",
+     "fontes": [
+      {
+       "nome": "Ministério da Fazenda / Receita Federal",
+       "data": "25/11/2026",
+       "url": "https://www.gov.br/fazenda/pt-br/assuntos/noticias/2026/novembro/receita-federal-realiza-live-sobre-o-novo-programa-gerador-do-documento-de-arrecadacao-do-simples-nacional-pgdas-no-contexto-da-reforma-tributaria"
+      }
+     ]
+    },
+    {
+     "titulo": "Solução de Consulta nº 8.024/2026: incorporador de condomínio de lotes pode optar pelo RET",
+     "status": "PUBLICADO",
+     "relevancia": "MÉDIA",
+     "resumo": "Solução de Consulta nº 8.024, de 05/08/2026, publicada no DOU de 25/11/2026. A Receita confirma que a incorporação no formato de condomínio de lotes (art. 1.358-A do Código Civil), residencial ou não, admite o Regime Especial de Tributação (RET), desde que cumpridos os requisitos da Lei nº 10.931/2004. A unidade emissora não aparece na reprodução disponível.",
+     "pontos": [
+      "Lei nº 10.931/2004, arts. 1º a 4º: a opção pelo RET depende de cumprir os requisitos do regime, inclusive a afetação do terreno e das acessões.",
+      "Lei nº 4.591/1964, arts. 31-A a 31-E: o patrimônio de afetação é condição para o RET também no condomínio de lotes.",
+      "Código Civil, art. 1.358-A, e Lei nº 6.766/1979: o formato de condomínio de lotes, por si só, não impede a opção pelo RET.",
+      "Vinculação: a solução segue o entendimento da Solução de Consulta Cosit nº 205/2024."
+     ],
+     "literal": "",
+     "impacto": "Incorporadoras e loteadoras que estruturam condomínios de lotes passam a ter respaldo para a tributação unificada do RET, desde que constituam o patrimônio de afetação. O texto oficial não estava disponível no fechamento; os pontos seguem a reprodução do Atlas Público e devem ser conferidos no DOU antes de aplicação a caso concreto.",
+     "fontes": [
+      {
+       "nome": "Atlas Público",
+       "data": "25/11/2026",
+       "url": "https://atlaspublico.com.br/noticias/receita-federal-confirma-que-incorporador-de-condominio-de-104853"
+      }
+     ]
+    },
+    {
+     "titulo": "PGFN prorroga parcelas e suspende cobranças em Tupanciretã (RS)",
+     "status": "PUBLICADO",
+     "relevancia": "BAIXA",
+     "resumo": "Portaria PGFN/MF nº 3.458, de 23/11/2026, publicada no DOU de 23/11/2026 e divulgada pela PGFN em 25/11, por calamidade pública no município.",
+     "pontos": [
+      "Parcelas de transações e parcelamentos da PGFN vencidas em novembro/2026 passam para o último dia útil de fevereiro/2027.",
+      "Parcelas de dezembro/2026 passam para o último dia útil de março/2027.",
+      "Ficam suspensos por 90 dias protesto de CDA, averbação pré-executória, exclusões por inadimplência, novas inscrições no Cadin e prazos de defesa e recurso.",
+      "Os juros continuam correndo, não há restituição do que já foi pago e o parcelamento do Simples Nacional fica de fora."
+     ],
+     "literal": "",
+     "impacto": "Somente contribuintes domiciliados em Tupanciretã (RS). Os pontos seguem a notícia oficial da PGFN; o texto da portaria no DOU não estava disponível no fechamento.",
+     "fontes": [
+      {
+       "nome": "PGFN",
+       "data": "25/11/2026",
+       "url": "https://www.gov.br/pgfn/pt-br/assuntos/noticias/2026/pgfn-prorroga-vencimentos-de-dividas-e-suspende-cobrancas-em-tupancireta-rs-por-calamidade-publica"
+      }
+     ]
+    },
+    {
+     "titulo": "Receita e aduana do Reino Unido assinam acordo de cooperação, em Fortaleza",
+     "status": "PUBLICADO",
+     "relevancia": "BAIXA",
+     "resumo": "Acordo entre a Receita Federal e a HMRC, assinado durante o Fórum de Administração Tributária da OCDE, em Fortaleza, e divulgado em 25/11/2026. Prevê troca de informações aduaneiras, combate a fraude e contrafação e abre caminho para o reconhecimento mútuo dos programas de Operador Econômico Autorizado (OEA).",
+     "literal": "",
+     "impacto": "Exportadores e importadores com o Reino Unido, sobretudo os certificados como OEA. Assinatura não é vigência: o acordo só produz efeitos depois da ratificação, que no Brasil passa pelo Congresso.",
+     "fontes": [
+      {
+       "nome": "Ministério da Fazenda / Receita Federal",
+       "data": "25/11/2026",
+       "url": "https://www.gov.br/fazenda/pt-br/assuntos/noticias/2026/novembro/receita-federal-do-brasil-e-receita-e-alfandega-do-reino-unido-assinam-novo-acordo-de-cooperacao-aduaneira"
+      }
+     ]
+    },
+    {
+     "titulo": "Receita Federal: sem instruções normativas ou atos conjuntos relevantes no período",
+     "status": "PUBLICADO",
+     "relevancia": "BAIXA",
+     "resumo": "Nas páginas de notícias, legislação e reforma tributária da Receita, a única notícia de 25/11 trata de operação de fiscalização, sem efeito tributário. As páginas da reforma tributária não trazem atualização datada de 25 ou 26/11; a última é de 20/11, sobre a ampliação da produção restrita do Piloto RTC-CBS. A edição do DOU de 26/11 não estava disponível até o fechamento.",
+     "literal": "",
+     "impacto": "Sem mudança de obrigação ou prazo federal no período. A agenda tributária de dezembro ainda não foi publicada pela Receita.",
+     "fontes": [
+      {
+       "nome": "Receita Federal",
+       "data": "26/11/2026",
+       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "legislativo",
+   "nome": "Legislativo",
+   "itens": [
+    {
+     "titulo": "Comissão de Orçamento aprova receita de 2027 com R$ 37,1 bilhões a mais",
+     "status": "EM TRAMITAÇÃO",
+     "relevancia": "MÉDIA",
+     "resumo": "A CMO aprovou em 25/11/2026 o relatório de receita do projeto do Orçamento 2027 (PLN 24/2026), relator deputado Neto Carletto. A previsão de receita sobe R$ 37,1 bilhões, com ganho líquido de R$ 17,6 bilhões; os novos parâmetros reduzem em R$ 12 bilhões a arrecadação administrada pela Receita. É o primeiro orçamento com CBS e Imposto Seletivo.",
+     "pontos": [
+      "Conta com o corte adicional de benefícios fiscais da LC nº 239/2026 (de 10% para 20%), estimado em R$ 15,4 bilhões.",
+      "Prevê perda de R$ 1,1 bilhão com o perdão de dívidas do MEI.",
+      "Registra aumento de R$ 254,4 milhões em gasto tributário pela Lei nº 15.525/2026.",
+      "Primeira peça orçamentária com receitas de CBS e Imposto Seletivo."
+     ],
+     "literal": "",
+     "impacto": "Empresas com benefícios fiscais federais: o orçamento já conta com o corte de 20% da LC 239, o que reduz a chance de recuo em 2027. O relatório ainda depende do parecer final e da votação no Congresso.",
+     "fontes": [
+      {
+       "nome": "Agência Senado",
+       "data": "25/11/2026",
+       "url": "https://www12.senado.leg.br/noticias/materias/2026/11/25/relatorio-eleva-em-r-37-1-bilhoes-a-previsao-de-receita-para-2027"
+      },
+      {
+       "nome": "Agência Câmara",
+       "data": "25/11/2026",
+       "url": "https://www.camara.leg.br/noticias/1322856-comissao-de-orcamento-aprova-relatorio-que-eleva-em-r-371-bilhoes-a-previsao-de-receita-para-2027"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tribunais",
+   "nome": "Tribunais",
+   "itens": [],
+   "vazio": "Sem novidades relevantes no período. No STJ, está previsto para 03/12/2026 o julgamento dos EREsps 2.215.482 e 2.182.950, sobre a manutenção de créditos de PIS/Cofins na aquisição de insumos com alíquota zero."
+  },
+  {
+   "id": "contabilidade",
+   "nome": "Contabilidade",
+   "itens": [
+    {
+     "titulo": "NFS-e nacional: releases da NT 009 previstos para produção em 1º/12",
+     "status": "ESPECULAÇÃO/IMPRENSA",
+     "relevancia": "MÉDIA",
+     "resumo": "Orientação do CRC-MA (03/11/2026) indica que os releases 1 a 3 da Nota Técnica 009, com os campos de IBS e CBS, estão previstos para o ambiente de produção em 1º/12/2026, com cronograma formal ainda a publicar. A LegisWeb noticiou em 25/11 a liberação do Release 2 no ambiente de testes; a página oficial de documentação técnica da NFS-e, atualizada em 23/11, ainda não registra esse release.",
+     "literal": "",
+     "impacto": "Prestadores de serviço e escritórios que emitem NFS-e pelo padrão nacional ou por emissor próprio: testar o leiaute novo antes de dezembro evita rejeição de nota na virada. Até o cronograma oficial sair, a data de 1º/12 é previsão.",
+     "fontes": [
+      {
+       "nome": "CRC-MA",
+       "data": "03/11/2026",
+       "url": "https://crcma.org.br/noticias/nfs-e-nacional-confira-as-orientacoes-sobre-leiaute-em-producao-regras-de-preenchimento-de-ibs-cbs-e-status-da-nota-tecnica-009"
+      },
+      {
+       "nome": "Portal NFS-e (documentação RTC)",
+       "data": "23/11/2026",
+       "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "imprensa",
+   "nome": "Imprensa especializada",
+   "itens": [
+    {
+     "titulo": "Tax Prático: sem atos federais novos listados no período",
+     "status": "ESPECULAÇÃO/IMPRENSA",
+     "relevancia": "BAIXA",
+     "resumo": "A Tax Prático não traz publicação nova de 25 ou 26/11; os destaques mais recentes seguem sendo a LC nº 239/2026 e a Resolução CGSN nº 196/2026, já tratadas nas edições anteriores.",
+     "literal": "",
+     "impacto": "Sem novo ato a incorporar à rotina além dos já explicados nas abas Edição do dia e Tributário.",
+     "fontes": [
+      {
+       "nome": "Tax Prático",
+       "data": "26/11/2026",
+       "url": "https://taxpratico.com.br/"
+      }
+     ]
+    },
+    {
+     "titulo": "Redata pode reduzir em quase 20% o custo de GPU, mas o benefício de PIS/Cofins e IPI acaba em 31/12",
+     "status": "ESPECULAÇÃO/IMPRENSA",
+     "relevancia": "MÉDIA",
+     "resumo": "Estudo da Forward Intelligence, publicado pela Exame em 25/11, estima queda de quase 20% no custo por hora de GPU no país com o Redata. Pela FGV, um datacenter de IA de 100 MW custa cerca de R$ 25 bilhões, R$ 20 bilhões só em equipamentos. Advogados do setor defendem alinhar o regime à reforma tributária, já que a suspensão de PIS/Cofins e IPI vale só até o fim de 2026. A estimativa é do estudo; a regra de prazo está na lei (ver Norma explicada).",
+     "literal": "",
+     "impacto": "Datacenters e fabricantes de equipamentos de TIC: compras que ficarem para 2027 perdem a suspensão de PIS/Cofins e IPI e passam a seguir a CBS. A antecipação de entregas e a revisão de contratos precisam acontecer em dezembro.",
+     "fontes": [
+      {
+       "nome": "Exame",
+       "data": "25/11/2026",
+       "url": "https://exame.com/inteligencia-artificial/redata-pode-cortar-em-quase-20-o-custo-de-operar-gpus-no-brasil-diz-forward-intelligence/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dados",
+   "nome": "Dados, IA e tecnologia",
+   "itens": [
+    {
+     "titulo": "Ferramenta de IA: Lumi, modelo de linguagem em português, gratuito e aberto",
+     "status": "PUBLICADO",
+     "relevancia": "MÉDIA",
+     "resumo": "O Centro de Excelência em IA da UFG lançou em 25/11 o Lumi, modelo de linguagem pequeno com 4 bilhões de parâmetros, treinado com 100 bilhões de tokens em português. É gratuito, de código aberto, está no Hugging Face e pode rodar em servidor próprio e ser ajustado com dados internos.",
+     "literal": "",
+     "impacto": "Escritórios e empresas que querem usar IA sem enviar dados de clientes para nuvens estrangeiras ganham uma opção nacional, sem custo em dólar. Exige equipe ou parceiro técnico para instalar e manter.",
+     "fontes": [
+      {
+       "nome": "Mobile Time",
+       "data": "25/11/2026",
+       "url": "https://www.mobiletime.com.br/noticias/25/11/2026/ceia-lanca-lumi-slm-br/"
+      }
+     ]
+    },
+    {
+     "titulo": "IA em empresas: Mercado Livre encurta em um terço o fechamento contábil",
+     "status": "ESPECULAÇÃO/IMPRENSA",
+     "relevancia": "MÉDIA",
+     "resumo": "Em painel relatado pela Exame (25/11), executivos de Anthropic, AWS e Rappi contaram o que já delegam à IA. No Mercado Livre, o fechamento contábil mensal ficou um terço mais curto; na Kavak, um agente assumiu o trabalho de cinco a seis equipes no crédito; a Rappi fixou metas de proficiência em IA por cargo.",
+     "literal": "",
+     "impacto": "O fechamento contábil é um processo com etapas repetitivas e conferências bem definidas, o que o torna candidato natural a automação com revisão humana. Medir o tempo antes e depois é o que permite provar o ganho.",
+     "fontes": [
+      {
+       "nome": "Exame",
+       "data": "25/11/2026",
+       "url": "https://exame.com/inteligencia-artificial/descobrimos-o-que-os-executivos-de-anthropic-aws-e-rappi-ja-delegam-a-ia/"
+      }
+     ]
+    },
+    {
+     "titulo": "Tax Tech: split payment leva o cálculo do imposto para o momento do pagamento",
+     "status": "ESPECULAÇÃO/IMPRENSA",
+     "relevancia": "ALTA",
+     "resumo": "Artigo de opinião na Mobile Time (19/11) sustenta que, com o split payment, o tributo é calculado e separado na liquidação, e erros de cadastro, como classificação do produto ou regime do destinatário, deixam de ter janela de correção. Cita o Gartner: 63% das organizações não têm, ou não sabem se têm, gestão de dados adequada para IA.",
+     "literal": "",
+     "impacto": "Interpretação: o cadastro fiscal passa a ser controle de caixa, não só de obrigação acessória. Revisar classificação de itens e regime dos clientes é serviço de contador com demanda certa em 2027.",
+     "fontes": [
+      {
+       "nome": "Mobile Time",
+       "data": "19/11/2026",
+       "url": "https://www.mobiletime.com.br/artigos/19/11/2026/split-payment-2027-arquitetura-de-dados-e-ia-o-que-muda-quando-o-calculo-migra-para-a-transacao/"
+      }
+     ]
+    },
+    {
+     "titulo": "Caso real de negócio com IA: ex-contador cria a ContrataPJ e projeta R$ 4 milhões",
+     "status": "ESPECULAÇÃO/IMPRENSA",
+     "relevancia": "MÉDIA",
+     "resumo": "A Exame (25/11) conta a história de Dario Perez, ex-contador e consultor, que transformou um problema da própria carteira (cerca de 90% de 300 clientes contratavam PJs) em plataforma de gestão de prestadores. Um agente de IA gera contratos e analisa documentos; notas fiscais e pagamentos por Pix em lote são automatizados. São cerca de 10 mil prestadores e 250 empresas, com receita recorrente projetada de R$ 4 milhões em 2026.",
+     "literal": "",
+     "impacto": "Mostra o caminho de um escritório contábil para produto: um processo repetido em muitos clientes, automatizado com IA, mantendo atendimento humano.",
+     "fontes": [
+      {
+       "nome": "Exame",
+       "data": "25/11/2026",
+       "url": "https://exame.com/negocios/ele-vai-faturar-r-4-milhoes-acabando-com-a-bagunca-na-contratacao-de-pjs/"
+      }
+     ]
+    },
+    {
+     "titulo": "Mercado: vagas de IA pedem Python e SQL; demanda fiscal cresce com a reforma",
+     "status": "ESPECULAÇÃO/IMPRENSA",
+     "relevancia": "MÉDIA",
+     "resumo": "Pela Exame (25/11), engenharia de IA é a função que mais cresce no ranking do LinkedIn, e as vagas pedem Python, SQL e estatística; o Guia Salarial 2026 da Robert Half aponta cientistas de dados entre R$ 14,7 mil e R$ 24,6 mil por mês. Levantamento citado pela TAGD (13/10) registrou alta de 138,5% nas vagas fiscais e tributárias no 1º semestre de 2026, com procura por quem une tributário, parametrização de ERP, documentos eletrônicos e integração de dados.",
+     "literal": "",
+     "impacto": "O perfil mais disputado em 2027 combina regra tributária e dado: SQL para conferir notas, Power BI para mostrar o efeito no caixa e Python para automatizar.",
+     "fontes": [
+      {
+       "nome": "Exame",
+       "data": "25/11/2026",
+       "url": "https://exame.com/inteligencia-artificial/profissoes-em-alta-com-ia-no-brasil-o-que-as-vagas-pedem-e-quanto-pagam/"
+      },
+      {
+       "nome": "TAGD Advogados",
+       "data": "13/10/2026",
+       "url": "https://tagdlaw.com.br/reforma-tributaria-impulsiona-contratacoes-e-aumenta-em-1385-a-demanda-por-profissionais-fiscais-e-tributarios/"
+      }
+     ]
+    },
+    {
+     "titulo": "Regulação: marco legal da IA fica sem prazo de votação",
+     "status": "EM TRAMITAÇÃO",
+     "relevancia": "BAIXA",
+     "resumo": "O relator do PL 2338 na Câmara, deputado Aguinaldo Ribeiro, disse em 25/11 que vai cobrar prioridade do governo para o marco de IA e para a regulamentação do Redata, mas só apresentará o texto quando houver espaço para votação, depois do projeto de mercados digitais. Não há prazo.",
+     "literal": "",
+     "impacto": "Sem marco legal em 2026, o uso de IA nas empresas continua orientado pela LGPD e por regras setoriais. Política interna de uso de dados segue sendo a principal proteção.",
+     "fontes": [
+      {
+       "nome": "Convergência Digital",
+       "data": "25/11/2026",
+       "url": "https://convergenciadigital.com.br/governo/regulamentacao-do-redata-e-pl-do-marco-de-ia-relator-na-camara-cobra-agilidade-e-prioridade-do-governo/"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "prazos": [
+  {
+   "data": "30/11/2026",
+   "obrigacao": "Cadastro do CPF no Nota Fortaleza para desconto extra (1% a 2%) na cota única do IPTU 2027",
+   "afetados": "Proprietários de imóveis residenciais em Fortaleza",
+   "fonte": "Prefeitura de Fortaleza via LegisWeb",
+   "url": "https://legisweb.com.br/noticia/?id=34849"
+  },
+  {
+   "data": "30/11/2026",
+   "obrigacao": "Último dia para acumular pontos do Sua Nota Tem Valor com desconto no IPVA 2027",
+   "afetados": "Consumidores do Ceará",
+   "fonte": "Sefaz-CE via Legisweb",
+   "url": "https://www.legisweb.com.br/noticia/?id=34750"
+  },
+  {
+   "data": "01/12/2026",
+   "obrigacao": "Início da vigência das novas regras do ITCD para inventário e partilha extrajudiciais (IN SEFAZ nº 114/2026)",
+   "afetados": "Cartórios de notas, herdeiros e advogados no Ceará",
+   "fonte": "Sefaz-CE via LegisWeb",
+   "url": "https://www.legisweb.com.br/noticia/?id=34942"
+  },
+  {
+   "data": "01/12/2026",
+   "obrigacao": "Previsão de produção dos releases 1 a 3 da NT 009 da NFS-e (IBS/CBS); cronograma formal pendente",
+   "afetados": "Prestadores de serviço emissores de NFS-e",
+   "fonte": "CRC-MA",
+   "url": "https://crcma.org.br/noticias/nfs-e-nacional-confira-as-orientacoes-sobre-leiaute-em-producao-regras-de-preenchimento-de-ibs-cbs-e-status-da-nota-tecnica-009"
+  },
+  {
+   "data": "03/12/2026",
+   "obrigacao": "Julgamento previsto no STJ sobre créditos de PIS/Cofins de insumos com alíquota zero",
+   "afetados": "Empresas do regime não cumulativo",
+   "fonte": "Cescon Barrieu",
+   "url": "https://cesconbarrieu.com.br/minuto-tributario-semana-09-a-13-de-novembro-de-2026/"
+  },
+  {
+   "data": "15/12/2026",
+   "obrigacao": "Prazo do Senado para fixar a alíquota de referência da CBS; sem resolução, vale o cálculo do TCU (11,3%)",
+   "afetados": "Todos os contribuintes da CBS",
+   "fonte": "Mix Vale",
+   "url": "https://www.mixvale.com.br/2026/11/24/cbs-de-2027-tera-aliquota-de-referencia-de-113-calculada-pelo-tcu/"
+  },
+  {
+   "data": "15/12/2026",
+   "obrigacao": "Primeiros eventos mensais da DeRE (competência novembro)",
+   "afetados": "Contribuintes obrigados à DeRE",
+   "fonte": "Radar RT (Ato Conjunto RFB/CGIBS nº 4/2026)",
+   "url": "https://radarrt.com/normas/ato-conjunto-rfb-cgibs-4-2026/"
+  },
+  {
+   "data": "20/12/2026",
+   "obrigacao": "Fim do prazo para cancelar a opção pelo recolhimento do IBS/CBS no regime regular (optantes do Simples)",
+   "afetados": "ME e EPP que optaram pelo regime regular",
+   "fonte": "CRC-SP",
+   "url": "https://online.crcsp.org.br/portal/noticias/noticia.asp?c=11355"
+  },
+  {
+   "data": "30/12/2026",
+   "obrigacao": "Fim da adesão ao Refis 2026 do Ceará (ICMS, IPVA, ITCD)",
+   "afetados": "Contribuintes com débitos estaduais no Ceará",
+   "fonte": "Sefaz-CE via Legisweb",
+   "url": "https://www.legisweb.com.br/noticia/?id=34699"
+  },
+  {
+   "data": "31/12/2026",
+   "obrigacao": "Fim dos efeitos da suspensão de PIS/Cofins e IPI do Redata (art. 11-J, parágrafo único, da Lei nº 15.504/2026)",
+   "afetados": "Datacenters habilitados e fornecedores coabilitados",
+   "fonte": "Planalto",
+   "url": "https://www.planalto.gov.br/ccivil_03/_Ato2023-2026/2026/Lei/l15504.htm"
+  },
+  {
+   "data": "31/12/2026",
+   "obrigacao": "Corte do regime de caixa no Simples: saldo a receber entra em dezembro",
+   "afetados": "ME e EPP no regime de caixa",
+   "fonte": "Tax Prático",
+   "url": "https://taxpratico.com.br/detalhes-artigo/resolucao-cgsn-no-196-de-16-de-novembro-de-2026"
+  },
+  {
+   "data": "1º/1/2027",
+   "obrigacao": "Início da cobrança da CBS; NFS-e de condomínios, locação e demais serviços",
+   "afetados": "Contribuintes do regime regular, condomínios e prestadores de serviço",
+   "fonte": "Portas",
+   "url": "https://portas.com.br/noticias/nota-fiscal-condominio-2027/"
+  }
+ ],
+ "acoes": [
+  "Assistir à live da Receita sobre o novo PGDAS (26/11, 15h) e registrar as respostas sobre cronograma e integração com a apuração assistida.",
+  "Mapear clientes com compras de equipamentos para datacenter sob o Redata e antecipar o faturamento possível para até 31/12/2026.",
+  "Avisar clientes do Ceará com inventário em andamento que, a partir de 1º/12, o cartório comunicará o ato à Sefaz e o ITCD chegará por lançamento.",
+  "Testar o emissor de NFS-e com o leiaute da NT 009 antes da produção prevista para dezembro.",
+  "Estudar: rodar a consulta SQL de pedidos não faturados, montar no Power BI o valor em risco por fornecedor e testar um modelo de IA local, como o Lumi, para resumir contratos sem enviar dados para fora."
+ ],
+ "glossario": [
+  {
+   "termo": "Redata",
+   "def": "Regime especial que suspende tributos na compra de equipamentos para datacenters habilitados."
+  },
+  {
+   "termo": "Coabilitada",
+   "def": "Fabricante de TIC que fornece à empresa habilitada e também usa o regime."
+  },
+  {
+   "termo": "Suspensão",
+   "def": "Tributo não é pago na operação e vira alíquota zero se as condições forem cumpridas."
+  },
+  {
+   "termo": "WUE",
+   "def": "Indicador de eficiência hídrica: litros de água por kWh consumido pelo datacenter."
+  },
+  {
+   "termo": "PGDAS",
+   "def": "Programa que calcula o DAS e registra a apuração mensal do Simples Nacional."
+  },
+  {
+   "termo": "RET",
+   "def": "Regime Especial de Tributação da incorporação imobiliária, com pagamento unificado sobre a receita."
+  },
+  {
+   "termo": "Patrimônio de afetação",
+   "def": "Separação do terreno e da obra do patrimônio do incorporador, exigida para o RET."
+  },
+  {
+   "termo": "ITCD",
+   "def": "Imposto estadual sobre herança e doação; no Ceará, ITCD."
+  },
+  {
+   "termo": "SLM",
+   "def": "Modelo de linguagem pequeno, que pode rodar em servidor próprio."
+  }
+ ],
+ "fontes": [
+  {
+   "nome": "Receita Federal",
+   "titulo": "Notícias da Receita Federal",
+   "data": "26/11/2026",
+   "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias"
+  },
+  {
+   "nome": "Receita Federal",
+   "titulo": "Normas da Receita Federal (Sijut)",
+   "data": "26/11/2026",
+   "url": "http://normas.receita.fazenda.gov.br/"
+  },
+  {
+   "nome": "Receita Federal",
+   "titulo": "Legislação da Receita Federal",
+   "data": "26/11/2026",
+   "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao"
+  },
+  {
+   "nome": "Receita Federal",
+   "titulo": "Reforma Tributária",
+   "data": "26/11/2026",
+   "url": "https://www.gov.br/receitafederal/pt-br/assuntos/reforma-tributaria"
+  },
+  {
+   "nome": "Receita Federal",
+   "titulo": "Reforma Tributária do Consumo",
+   "data": "26/11/2026",
+   "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria-do-consumo"
+  },
+  {
+   "nome": "Receita Federal",
+   "titulo": "Agenda Tributária",
+   "data": "26/11/2026",
+   "url": "https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria"
+  },
+  {
+   "nome": "Imprensa Nacional",
+   "titulo": "Diário Oficial da União",
+   "data": "26/11/2026",
+   "url": "https://www.in.gov.br/"
+  },
+  {
+   "nome": "Ministério da Fazenda",
+   "titulo": "Live sobre o novo PGDAS",
+   "data": "25/11/2026",
+   "url": "https://www.gov.br/fazenda/pt-br/assuntos/noticias/2026/novembro/receita-federal-realiza-live-sobre-o-novo-programa-gerador-do-documento-de-arrecadacao-do-simples-nacional-pgdas-no-contexto-da-reforma-tributaria"
+  },
+  {
+   "nome": "Ministério da Fazenda",
+   "titulo": "Acordo de cooperação aduaneira RFB–HMRC",
+   "data": "25/11/2026",
+   "url": "https://www.gov.br/fazenda/pt-br/assuntos/noticias/2026/novembro/receita-federal-do-brasil-e-receita-e-alfandega-do-reino-unido-assinam-novo-acordo-de-cooperacao-aduaneira"
+  },
+  {
+   "nome": "PGFN",
+   "titulo": "Prorrogação de vencimentos em Tupanciretã (RS)",
+   "data": "25/11/2026",
+   "url": "https://www.gov.br/pgfn/pt-br/assuntos/noticias/2026/pgfn-prorroga-vencimentos-de-dividas-e-suspende-cobrancas-em-tupancireta-rs-por-calamidade-publica"
+  },
+  {
+   "nome": "Atlas Público",
+   "titulo": "Solução de Consulta nº 8.024/2026",
+   "data": "25/11/2026",
+   "url": "https://atlaspublico.com.br/noticias/receita-federal-confirma-que-incorporador-de-condominio-de-104853"
+  },
+  {
+   "nome": "Planalto",
+   "titulo": "Lei nº 15.504/2026",
+   "data": "15/09/2026",
+   "url": "https://www.planalto.gov.br/ccivil_03/_Ato2023-2026/2026/Lei/l15504.htm"
+  },
+  {
+   "nome": "LegisWeb",
+   "titulo": "ITCMD/CE: inventário e partilha extrajudiciais",
+   "data": "25/11/2026",
+   "url": "https://www.legisweb.com.br/noticia/?id=34942"
+  },
+  {
+   "nome": "Agência Senado",
+   "titulo": "Relatório eleva a previsão de receita de 2027",
+   "data": "25/11/2026",
+   "url": "https://www12.senado.leg.br/noticias/materias/2026/11/25/relatorio-eleva-em-r-37-1-bilhoes-a-previsao-de-receita-para-2027"
+  },
+  {
+   "nome": "Agência Câmara",
+   "titulo": "CMO aprova relatório de receita de 2027",
+   "data": "25/11/2026",
+   "url": "https://www.camara.leg.br/noticias/1322856-comissao-de-orcamento-aprova-relatorio-que-eleva-em-r-371-bilhoes-a-previsao-de-receita-para-2027"
+  },
+  {
+   "nome": "CRC-MA",
+   "titulo": "NFS-e nacional e Nota Técnica 009",
+   "data": "03/11/2026",
+   "url": "https://crcma.org.br/noticias/nfs-e-nacional-confira-as-orientacoes-sobre-leiaute-em-producao-regras-de-preenchimento-de-ibs-cbs-e-status-da-nota-tecnica-009"
+  },
+  {
+   "nome": "Portal NFS-e",
+   "titulo": "Documentação técnica RTC",
+   "data": "23/11/2026",
+   "url": "https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc"
+  },
+  {
+   "nome": "Cescon Barrieu",
+   "titulo": "Minuto Tributário",
+   "data": "13/11/2026",
+   "url": "https://cesconbarrieu.com.br/minuto-tributario-semana-09-a-13-de-novembro-de-2026/"
+  },
+  {
+   "nome": "Tax Prático",
+   "titulo": "Atos do dia",
+   "data": "26/11/2026",
+   "url": "https://taxpratico.com.br/"
+  },
+  {
+   "nome": "Exame",
+   "titulo": "Redata e custo de GPUs",
+   "data": "25/11/2026",
+   "url": "https://exame.com/inteligencia-artificial/redata-pode-cortar-em-quase-20-o-custo-de-operar-gpus-no-brasil-diz-forward-intelligence/"
+  },
+  {
+   "nome": "Exame",
+   "titulo": "O que executivos já delegam à IA",
+   "data": "25/11/2026",
+   "url": "https://exame.com/inteligencia-artificial/descobrimos-o-que-os-executivos-de-anthropic-aws-e-rappi-ja-delegam-a-ia/"
+  },
+  {
+   "nome": "Exame",
+   "titulo": "Profissões em alta com IA",
+   "data": "25/11/2026",
+   "url": "https://exame.com/inteligencia-artificial/profissoes-em-alta-com-ia-no-brasil-o-que-as-vagas-pedem-e-quanto-pagam/"
+  },
+  {
+   "nome": "Exame",
+   "titulo": "ContrataPJ",
+   "data": "25/11/2026",
+   "url": "https://exame.com/negocios/ele-vai-faturar-r-4-milhoes-acabando-com-a-bagunca-na-contratacao-de-pjs/"
+  },
+  {
+   "nome": "Mobile Time",
+   "titulo": "Lumi, SLM em português",
+   "data": "25/11/2026",
+   "url": "https://www.mobiletime.com.br/noticias/25/11/2026/ceia-lanca-lumi-slm-br/"
+  },
+  {
+   "nome": "Mobile Time",
+   "titulo": "Split payment, dados e IA",
+   "data": "19/11/2026",
+   "url": "https://www.mobiletime.com.br/artigos/19/11/2026/split-payment-2027-arquitetura-de-dados-e-ia-o-que-muda-quando-o-calculo-migra-para-a-transacao/"
+  },
+  {
+   "nome": "Convergência Digital",
+   "titulo": "Redata e marco de IA",
+   "data": "25/11/2026",
+   "url": "https://convergenciadigital.com.br/governo/regulamentacao-do-redata-e-pl-do-marco-de-ia-relator-na-camara-cobra-agilidade-e-prioridade-do-governo/"
+  },
+  {
+   "nome": "TAGD Advogados",
+   "titulo": "Demanda por profissionais fiscais",
+   "data": "13/10/2026",
+   "url": "https://tagdlaw.com.br/reforma-tributaria-impulsiona-contratacoes-e-aumenta-em-1385-a-demanda-por-profissionais-fiscais-e-tributarios/"
+  },
+  {
+   "nome": "Exame (editoria de IA)",
+   "titulo": "Últimas notícias de IA",
+   "data": "26/11/2026",
+   "url": "https://exame.com/inteligencia-artificial/ultimas-noticias/1/"
+  },
+  {
+   "nome": "Exame (Negócios)",
+   "titulo": "Últimas notícias de negócios",
+   "data": "26/11/2026",
+   "url": "https://exame.com/negocios/ultimas-noticias/"
+  }
+ ]
+}
