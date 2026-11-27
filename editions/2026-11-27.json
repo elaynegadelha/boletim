@@ -1,0 +1,713 @@
+{
+ "date": "2026-11-27",
+ "titulo": "Confederações pedem ao STF adiar a CBS; NFS-e da reforma vai para 07/12",
+ "periodo": "De quinta-feira, 26/11, até a manhã de sexta-feira, 27/11/2026. Sem feriado no intervalo.",
+ "tags": [
+  "CBS",
+  "STF",
+  "NFS-e",
+  "NF-e",
+  "MEI",
+  "IA",
+  "Dados"
+ ],
+ "atencao": "O pedido das confederações ao STF não suspende nada. Enquanto não houver decisão, a LC nº 214/2025 continua valendo: a CBS passa a ser cobrada sobre fatos geradores a partir de 1º/1/2027 (art. 347) e os artigos que instituem PIS e Cofins nas Leis 10.637/2002 e 10.833/2003 ficam revogados na mesma data (art. 542). Restam 35 dias. Preço, contrato e emissor de nota precisam estar prontos para a data da lei, não para a data que se pede no tribunal.",
+ "destaques": [
+  "Reforma: CNA, CNC e CNT vão ao STF pedir que a cobrança da CBS e do IBS comece só até 90 dias depois da regulamentação pendente.",
+  "NFS-e: release 2 da NT 009 entra em homologação; cronograma do CGNFS-e leva os releases 1 a 3 à produção em 07/12 e o release do Simples a 24/12.",
+  "Câmara cancela a votação do PLP 108/2021, que eleva o limite do MEI para R$ 130 mil e permite dois empregados; sem nova data.",
+  "Receita publica quadro de bagagem no Guia do Viajante: cota de US$ 1.000 em viagens aéreas e marítimas e de US$ 500 por terra.",
+  "IA: Claude passa a criar programas para computador até no plano gratuito, e PicPay anuncia agente de IA que faz Pix por voz para clientes PJ."
+ ],
+ "conexao": {
+  "texto": "O pedido das confederações ao STF para adiar a CBS e a remarcação dos releases da NFS-e para 07/12 e 24/12 contam a mesma história: a data de 1º/1/2027 está fixada em lei, mas os sistemas e a regulamentação ainda se movem. Para as empresas, isso significa preparar o emissor e a precificação para a data legal e tratar qualquer adiamento como hipótese, não como plano. O MEI sem novo limite votado mostra o mesmo descompasso no Simples.",
+  "liga": [
+   "Confederações vão ao STF para adiar CBS e IBS",
+   "NT 009 da NFS-e: produção em 07/12 e release do Simples em 24/12",
+   "PLP 108/2021 (MEI) sem data de votação",
+   "LC nº 214/2025, arts. 346 a 348 e 542"
+  ]
+ },
+ "ceara": {
+  "novidade": "Sem norma tributária nova da Sefaz-CE, da Prefeitura de Fortaleza ou da Assembleia Legislativa no período. O efeito local vem das novidades nacionais: prestadores de serviço de Fortaleza que emitem NFS-e no padrão nacional precisam testar o release 2 da NT 009 antes da produção prevista para 07/12, e o comércio cearense do regime regular deve precificar 2027 com a CBS na data da lei, apesar do pedido de adiamento no STF. Na segunda-feira, 1º/12, começa a valer a IN SEFAZ nº 114/2026: inventários e partilhas extrajudiciais sem ITCD prévio passam a ser comunicados pelo cartório à Sefaz-CE, que lança o imposto depois.",
+  "olho": "Prazos locais curtos: 30/11 é o último dia para cadastro no Nota Fortaleza (desconto extra no IPTU 2027) e para acumular pontos do Sua Nota Tem Valor (desconto no IPVA 2027). O Refis 2026 do Ceará vai até 30/12."
+ },
+ "normaExplicada": {
+  "norma": "Lei Complementar nº 214, de 16/01/2025, publicada no DOU de 16/01/2025 (edição extra) e republicada no DOU de 23/01/2025, com alterações da LC nº 227/2026 — regras de transição de 2026 para 2027 (arts. 343, 346, 347, 348 e 542)",
+  "ementa": "Institui o IBS, a CBS e o Imposto Seletivo e cria o Comitê Gestor do IBS; os arts. 342 a 350 tratam da transição, e o art. 542 revoga a partir de 1º/1/2027 os dispositivos que instituem PIS e Cofins.",
+  "pontos": [
+   "Art. 343: em 2026, o IBS é cobrado à alíquota estadual de 0,1%.",
+   "Art. 346: em 2026, a CBS é cobrada à alíquota de 0,9%.",
+   "Art. 348, I e II: o IBS e a CBS recolhidos em 2026 são compensados com PIS/Cofins devidos no mesmo período; sem débito suficiente, compensam-se com outro tributo federal ou são ressarcidos em até 60 dias, a pedido. Pelo inciso III, alínea c, essas regras não se aplicam às operações dos optantes pelo Simples Nacional.",
+   "Art. 348, §§ 1º e 2º: fica dispensado o recolhimento de IBS e CBS de 2026 para quem cumprir as obrigações acessórias; quem usa a dispensa continua obrigado a pagar integralmente PIS e Cofins.",
+   "Art. 347: de 1º/1/2027 a 31/12/2028, a CBS é cobrada pela alíquota fixada nos termos do art. 14, reduzida em 0,1 ponto percentual.",
+   "Art. 542, incisos XVIII, XXI e XXIII: a partir de 1º/1/2027 ficam revogados os arts. 1º a 5º-A da Lei nº 10.637/2002, 1º a 16 da Lei nº 10.833/2003 e 1º a 20 da Lei nº 10.865/2004 (PIS e Cofins, inclusive na importação)."
+  ],
+  "literal": "Art. 346: \"Em relação aos fatos geradores ocorridos de 1º de janeiro a 31 de dezembro de 2026, a CBS será cobrada mediante aplicação da alíquota de 0,9% (nove décimos por cento).\" Art. 542, caput: \"Ficam revogados a partir de 1º de janeiro de 2027:\"",
+  "oQueDiz": "Define o ano de 2026 como período de teste: a CBS (0,9%) e o IBS (0,1%) são destacados, mas o recolhimento é dispensado para quem cumpre as obrigações acessórias, e PIS/Cofins continuam integralmente devidos. A partir de 1º/1/2027, a CBS passa a ser cobrada pela alíquota de referência menos 0,1 ponto, e os dispositivos que instituem PIS e Cofins deixam de valer.",
+  "porQue": "A transição foi desenhada para testar sistemas e documentos fiscais em 2026 sem custo extra para quem cumpre as regras, e trocar PIS/Cofins pela CBS de uma vez em 2027. É essa data fixa que as confederações pedem ao STF para adiar, sob o argumento de que a regulamentação ainda não está completa.",
+  "datas": [
+   {
+    "data": "16/01/2025",
+    "quem": "Publicação da LC nº 214/2025 (DOU, edição extra); republicação em 23/01/2025"
+   },
+   {
+    "data": "1º/1 a 31/12/2026",
+    "quem": "Ano de teste: CBS 0,9% e IBS 0,1%, com dispensa de recolhimento para quem cumpre as obrigações acessórias"
+   },
+   {
+    "data": "15/12/2026",
+    "quem": "Prazo do Senado para fixar a alíquota de referência da CBS"
+   },
+   {
+    "data": "1º/1/2027",
+    "quem": "Início da cobrança da CBS e revogação dos dispositivos de PIS/Cofins"
+   }
+  ],
+  "exemplo": {
+   "titulo": "Exemplo: distribuidora do regime regular em Fortaleza (números ilustrativos)",
+   "passos": [
+    "A Distribuidora Iracema Ltda. (fictícia), do lucro real, fatura R$ 500.000 em dezembro/2026.",
+    "Dezembro/2026: as notas destacam CBS de 0,9% (R$ 4.500) e IBS de 0,1% (R$ 500). Com as obrigações acessórias em dia, o recolhimento fica dispensado (art. 348, § 1º), e a empresa paga PIS/Cofins não cumulativos de 9,25% (R$ 46.250, antes dos créditos).",
+    "Janeiro/2027: PIS/Cofins deixam de existir. Supondo alíquota de referência de 11,3% (proposta do TCU, ainda sem resolução do Senado), a CBS de 2027 seria de 11,2% (art. 347): R$ 56.000 sobre o mesmo valor, cobrada por fora do preço e com crédito amplo para o comprador.",
+    "Se o STF adiasse a cobrança, a empresa teria de manter PIS/Cofins por mais tempo; sem decisão, o cenário válido é o de janeiro com CBS. Preços e contratos precisam prever as duas hipóteses."
+   ]
+  },
+  "oQueFazer": [
+   "Conferir se as notas de 2026 estão destacando CBS e IBS e se as obrigações acessórias estão em dia, condição para a dispensa do art. 348, § 1º.",
+   "Simular o preço de janeiro/2027 com a CBS por fora, usando a alíquota que o Senado fixar (ou a do TCU, se não houver resolução).",
+   "Revisar contratos de fornecimento contínuo para incluir cláusula de troca de PIS/Cofins pela CBS.",
+   "Acompanhar a ação das confederações no STF, sem mudar o cronograma interno enquanto não houver decisão."
+  ],
+  "cuidado": "Os trechos literais foram conferidos no texto compilado do Planalto, que traz alterações da LC nº 227/2026; o texto do DOU prevalece. O número e o tipo da ação das confederações no STF não constam da reportagem disponível. A alíquota de 11,3% é proposta do TCU e pode mudar por resolução do Senado.",
+  "fonte": "Planalto — Lei Complementar nº 214/2025 (texto compilado)",
+  "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm"
+ },
+ "cadeia": {
+  "titulo": "Da data fixada na LC 214 até a decisão de preço",
+  "elos": [
+   {
+    "etapa": "Norma",
+    "texto": "Os arts. 347 e 542 da LC 214 trocam PIS/Cofins pela CBS em 1º/1/2027."
+   },
+   {
+    "etapa": "Sistema",
+    "texto": "Emissores de NF-e e NFS-e precisam gerar o grupo IBS/CBS e o novo DANFE (NT 2026.010, NT 009)."
+   },
+   {
+    "etapa": "Cadastro/dado",
+    "texto": "Classificação tributária de cada item e o regime de cada cliente definem o destaque e o crédito."
+   },
+   {
+    "etapa": "Preço",
+    "texto": "A CBS é cobrada por fora: a tabela de janeiro precisa ser recalculada sem PIS/Cofins embutidos."
+   },
+   {
+    "etapa": "Caixa",
+    "texto": "Com o split payment e o crédito amplo, o momento de pagar e de recuperar o tributo muda."
+   },
+   {
+    "etapa": "Decisão",
+    "texto": "Planejar para a data da lei e tratar o pedido no STF como risco a monitorar."
+   }
+  ]
+ },
+ "fiscalDados": {
+  "titulo": "Notas de 2026 sem destaque de CBS e IBS",
+  "texto": "A dispensa de recolhimento de 2026 depende do cumprimento das obrigações acessórias (art. 348, § 1º, da LC 214). A conferência começa pelas notas: quantas saíram sem o grupo IBS/CBS ou com valores zerados, por cliente e por item.",
+  "checklist": [
+   "Todas as NF-e e NFS-e de novembro trazem o grupo IBS/CBS preenchido?",
+   "O emissor já gera o DANFE da NT 2026.010, em produção em 1º/12?",
+   "O código de classificação tributária de cada produto está cadastrado no ERP?",
+   "O emissor de NFS-e foi testado com o release 2 da NT 009 em homologação?",
+   "A tabela de preços de janeiro/2027 já simula a CBS por fora?"
+  ],
+  "sqlTitulo": "Consulta de conferência (exemplo com tabela fictícia)",
+  "sql": "-- Notas de nov/2026 sem destaque de CBS ou IBS\n-- Tabela fictícia: notas(numero, modelo, dt_emissao, cliente, valor, vl_cbs, vl_ibs)\nSELECT modelo,\n       cliente,\n       COUNT(*) AS qtd_notas,\n       SUM(valor) AS valor_total\nFROM notas\nWHERE dt_emissao BETWEEN DATE '2026-11-01' AND DATE '2026-11-30'\n  AND (COALESCE(vl_cbs, 0) = 0 OR COALESCE(vl_ibs, 0) = 0)\nGROUP BY modelo, cliente\nORDER BY valor_total DESC;",
+  "ferramenta": "Portal da NFS-e Nacional — orientações sobre IBS/CBS",
+  "ferramentaUrl": "https://www.gov.br/nfse/pt-br/noticias/nfs-e-nacional-confira-oas-rientacoes-sobre-leiaute-em-producao-regras-de-preenchimento-de-ibs-cbs-e-status-da-nota-tecnica-009"
+ },
+ "categorias": [
+  {
+   "id": "federal",
+   "nome": "Atos oficiais federais",
+   "itens": [
+    {
+     "titulo": "NFS-e: release 2 da NT 009 entra em homologação; produção prevista para 07/12",
+     "status": "PUBLICADO",
+     "relevancia": "ALTA",
+     "resumo": "O Comitê Gestor da NFS-e anunciou em 25/11 o release 2 da NT 009 v1.01, implantado em homologação em 24/11. Entram o campo de versão da calculadora de tributos, ajustes nos dados do destinatário, novos campos de comércio exterior, o município de alguns eventos e a documentação da importação de serviços pelo tomador. O cronograma inicial do comitê, de 25/11, leva os releases 1 a 3 à produção em 07/12/2026 e o release 4 (Simples Nacional) a 24/12/2026, substituindo a previsão anterior de 1º/12. A data de 24/12 consta de leitura de fornecedor de software e deve ser conferida no portal oficial.",
+     "literal": "",
+     "impacto": "Prestadores de serviço e desenvolvedores de emissores ganham uma semana a mais em relação à data anterior, mas o intervalo até a virada do ano fica curto: testar agora em homologação evita rejeições em janeiro. Optantes do Simples dependem do release 4.",
+     "fontes": [
+      {
+       "nome": "Sindifiscal/MS",
+       "data": "26/11/2026",
+       "url": "https://www.sindifiscalms.org.br/materia/nfse-release2-testes-ibs-cbs-novembro-2026"
+      },
+      {
+       "nome": "Notagateway (leitura do cronograma do CGNFS-e)",
+       "data": "26/11/2026",
+       "url": "https://notagateway.com.br/blog/nt-009-nfse-cronograma/"
+      },
+      {
+       "nome": "Portal da NFS-e Nacional",
+       "data": "29/10/2026",
+       "url": "https://www.gov.br/nfse/pt-br/noticias/nfs-e-nacional-confira-oas-rientacoes-sobre-leiaute-em-producao-regras-de-preenchimento-de-ibs-cbs-e-status-da-nota-tecnica-009"
+      }
+     ]
+    },
+    {
+     "titulo": "NF-e: DANFE da reforma entra em produção em 1º/12; notas técnicas do Simples ficam para 14/12",
+     "status": "PUBLICADO",
+     "relevancia": "ALTA",
+     "resumo": "Pela NT 2026.010, o DANFE (NF-e, modelo 55) passa a trazer, a partir de 1º/12/2026, um bloco com os totais de IBS, CBS e Imposto Seletivo, o código de regime tributário (CRT) do emitente e campos por item, sem mudar o XML. Aviso de 12/11 no Portal DF-e, relatado por fornecedor de software, adiou de 16/11 para 14/12/2026 as NTs 2026.005 (Simples Nacional), 2026.006 e 2026.008; a NT 2025.002-RTC v1.53 foi mantida.",
+     "literal": "",
+     "impacto": "Quem emite NF-e precisa atualizar o leiaute de impressão até segunda-feira. Para optantes do Simples, as regras específicas da NT 2026.005 ficam para 14/12, a duas semanas da virada.",
+     "fontes": [
+      {
+       "nome": "PWR TI",
+       "data": "16/11/2026",
+       "url": "https://pwrti.com/novo-danfe/"
+      }
+     ]
+    },
+    {
+     "titulo": "Receita publica quadro de bagagem no Guia do Viajante",
+     "status": "PUBLICADO",
+     "relevancia": "BAIXA",
+     "resumo": "Nova versão do Guia do Viajante, divulgada em 26/11, traz um quadro sintético que associa cada situação de bagagem na chegada ao Brasil à regra e ao procedimento. Segundo o guia, a cota de isenção é de US$ 1.000 em viagens aéreas e marítimas e de US$ 500 por via terrestre, fluvial ou lacustre. Quem escolhe \"nada a declarar\" levando bens que deveriam ser declarados paga imposto de 50% e multa de 50% sobre o excesso.",
+     "literal": "",
+     "impacto": "Importadores informais, viajantes a negócio e quem traz equipamentos de trabalho do exterior. Conferir os valores na página oficial antes de orientar clientes.",
+     "fontes": [
+      {
+       "nome": "Receita Federal",
+       "data": "26/11/2026",
+       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/sem-surpresas-na-alfandega-receita-federal-publica-quadro-inedito-de-bagagem-e-esclarece-limites-de-compras-na-chegada-ao-brasil"
+      }
+     ]
+    },
+    {
+     "titulo": "Receita Federal: sem atos normativos relevantes no período",
+     "status": "PUBLICADO",
+     "relevancia": "BAIXA",
+     "resumo": "Sem instrução normativa, portaria, ato declaratório ou ato conjunto novo da Receita, do CGSN ou do CGIBS com efeito tributário entre 26/11 e a manhã de 27/11. A Receita realizou em 26/11 a live sobre o novo PGDAS, sem resumo oficial publicado até o fechamento. As demais notícias do período tratam de operações e apreensões, sem efeito tributário.",
+     "literal": "",
+     "impacto": "Valem as normas já publicadas na semana: Resolução CGSN nº 196/2026 e LC nº 239/2026 (DOU de 24/11) e Portaria RFB nº 763/2026 (piloto da CBS).",
+     "fontes": [
+      {
+       "nome": "Receita Federal — Notícias",
+       "data": "27/11/2026",
+       "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "legislativo",
+   "nome": "Legislativo",
+   "itens": [
+    {
+     "titulo": "Câmara cancela votação do novo limite do MEI; sem nova data",
+     "status": "EM TRAMITAÇÃO",
+     "relevancia": "MÉDIA",
+     "resumo": "A comissão especial da Câmara cancelou a reunião de 25/11 que votaria o parecer do relator, deputado Jorge Goetten (Republicanos-SC), ao PLP 108/2021, já aprovado pelo Senado. A Agência Câmara não informa o motivo nem nova data.",
+     "pontos": [
+      "Texto aprovado pelo Senado: eleva o limite anual de receita bruta do MEI de R$ 81 mil para R$ 130 mil.",
+      "Texto aprovado pelo Senado: permite ao MEI contratar até dois empregados, em vez de um.",
+      "Tramitação: depende de parecer da comissão especial e de votação no Plenário da Câmara; se alterado, volta ao Senado."
+     ],
+     "literal": "",
+     "impacto": "MEIs perto do teto atual de R$ 81 mil continuam sujeitos ao desenquadramento em 2026. Sem votação na Câmara e sanção, nada muda; o planejamento deve seguir o limite vigente.",
+     "fontes": [
+      {
+       "nome": "Agência Câmara",
+       "data": "25/11/2026",
+       "url": "https://www.camara.leg.br/noticias/1321031-cancelada-reuniao-para-votar-parecer-sobre-ampliacao-do-limite-de-faturamento-de-meis"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tribunais",
+   "nome": "Tribunais",
+   "itens": [
+    {
+     "titulo": "Confederações vão ao STF para adiar o início da CBS e do IBS",
+     "status": "EM TRAMITAÇÃO",
+     "relevancia": "ALTA",
+     "resumo": "Segundo o JOTA (26/11), a CNA, a CNC e a CNT recorreram ao STF para que a cobrança da CBS e do IBS só comece até 90 dias depois da publicação da regulamentação ainda pendente. O tipo e o número da ação não constam da reportagem disponível.",
+     "literal": "",
+     "impacto": "Sem decisão do STF, a LC nº 214/2025 segue valendo e a CBS começa em 1º/1/2027. Empresas não devem reduzir o ritmo de adaptação; uma eventual liminar mudaria o cronograma de PIS/Cofins e exigiria nova revisão de preços.",
+     "fontes": [
+      {
+       "nome": "JOTA",
+       "data": "26/11/2026",
+       "url": "https://jota.info/coberturas-especiais/pulso-da-reforma/reforma-tributaria-confederacoes-vao-ao-stf-para-adiar-inicio-da-cbs-e-do-ibs"
+      }
+     ]
+    }
+   ],
+   "vazio": ""
+  },
+  {
+   "id": "contabilidade",
+   "nome": "Contabilidade",
+   "itens": [],
+   "vazio": "Sem novidades relevantes no período. No STJ, está previsto para 03/12/2026 o julgamento sobre a manutenção de créditos de PIS/Cofins na aquisição de insumos com alíquota zero."
+  },
+  {
+   "id": "imprensa",
+   "nome": "Imprensa especializada",
+   "itens": [
+    {
+     "titulo": "Tax Prático: sem atos federais novos listados no período",
+     "status": "PUBLICADO",
+     "relevancia": "BAIXA",
+     "resumo": "A lista de legislação federal da Tax Prático não traz ato datado de 26/11 ou 27/11/2026; os mais recentes são a LC nº 239/2026 e a Resolução CGSN nº 196/2026, publicadas em 24/11. O noticiário do dia destaca a disputa em torno da alíquota de 11,3% da CBS proposta pelo TCU e o cancelamento da votação do limite do MEI.",
+     "literal": "",
+     "impacto": "O Senado tem até 15/12 para fixar a alíquota de referência da CBS; sem resolução, vale o cálculo do TCU.",
+     "fontes": [
+      {
+       "nome": "Tax Prático",
+       "data": "27/11/2026",
+       "url": "https://taxpratico.com.br/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dados",
+   "nome": "Dados, IA e tecnologia",
+   "itens": [
+    {
+     "titulo": "Ferramenta de IA: Claude passa a criar programas para computador, inclusive no plano gratuito",
+     "status": "PUBLICADO",
+     "relevancia": "MÉDIA",
+     "resumo": "A Anthropic liberou em beta, para todos os planos, um recurso que cria e instala programas para Windows e macOS a partir de pedidos em linguagem natural, sem programação. Exige o aplicativo de desktop atualizado, e a criação e o uso dos apps consomem o limite da conta. Os apps não passam por análise de segurança da empresa, e os que têm acesso total ao computador podem modificar ou apagar arquivos sem pedir confirmação.",
+     "literal": "",
+     "impacto": "Escritórios podem criar pequenas ferramentas internas (conferência de planilhas, organização de arquivos) sem desenvolvedor. O risco está no acesso a pastas com dados de clientes: usar em máquina de teste e sem permissão total.",
+     "fontes": [
+      {
+       "nome": "Canaltech",
+       "data": "26/11/2026",
+       "url": "https://canaltech.com.br/inteligencia-artificial/claude-agora-cria-programas-reais-para-pc-no-plano-gratis/"
+      }
+     ]
+    },
+    {
+     "titulo": "IA em empresas: PicPay anuncia agente que faz Pix e emite cobranças por voz para clientes PJ",
+     "status": "PUBLICADO",
+     "relevancia": "MÉDIA",
+     "resumo": "O PicPay vai lançar dois agentes de IA para empresas: um gerente financeiro que faz Pix, cria links de pagamento e emite extratos por comando de voz, ainda neste ano, e um agente de agendamento para autônomos e prestadores de serviço no início de 2027. O agente de marketing já lançado criou 70 mil campanhas a partir de 8 mil contas PJ em pouco mais de dois meses.",
+     "literal": "",
+     "impacto": "Pagamentos disparados por agente exigem trilha de autorização e conciliação: o contador precisa saber quem aprovou cada Pix e como o extrato chega à contabilidade.",
+     "fontes": [
+      {
+       "nome": "Mobile Time",
+       "data": "26/11/2026",
+       "url": "https://www.mobiletime.com.br/noticias/26/11/2026/picpay-agentes-para-pj/"
+      }
+     ]
+    },
+    {
+     "titulo": "Tax Tech: NFS-e da reforma ganha campo de versão da calculadora de tributos",
+     "status": "PUBLICADO",
+     "relevancia": "ALTA",
+     "resumo": "O release 2 da NT 009 inclui na NFS-e o campo que informa a versão da calculadora de tributos usada no cálculo de IBS e CBS, além de campos de comércio exterior e de importação de serviços. A produção dos releases 1 a 3 está prevista para 07/12/2026.",
+     "literal": "",
+     "impacto": "O dado permite auditar qual regra de cálculo gerou cada nota. Para quem monta painéis fiscais, é uma nova coluna para cruzar divergências entre emissor e calculadora oficial.",
+     "fontes": [
+      {
+       "nome": "Sindifiscal/MS",
+       "data": "26/11/2026",
+       "url": "https://www.sindifiscalms.org.br/materia/nfse-release2-testes-ibs-cbs-novembro-2026"
+      }
+     ]
+    },
+    {
+     "titulo": "Caso real de negócio com IA: Settle dobra receita a cada três meses com IA para licitações",
+     "status": "PUBLICADO",
+     "relevancia": "MÉDIA",
+     "resumo": "A Settle, startup de Alice Iglesias e Mateus Brum, usa agentes de IA para ler editais em PDF, pontuar oportunidades segundo critérios do cliente e pré-checar documentos de habilitação. Recebeu aporte pré-semente de US$ 3,08 milhões, tem quatro clientes corporativos, entre eles Vivo e Betha, e espera passar de R$ 1 milhão de receita recorrente anual no início de 2027.",
+     "literal": "",
+     "impacto": "Leitura de documento longo e conferência de requisitos é tarefa típica de escritório contábil e fiscal; o caso mostra que o ganho está em automatizar a triagem e manter a decisão com pessoas.",
+     "fontes": [
+      {
+       "nome": "Startups",
+       "data": "19/11/2026",
+       "url": "https://startups.com.br/negocios/inteligencia-artificial/investida-da-canary-settle-acelera-levando-ia-para-as-compras-publicas/"
+      }
+     ]
+    },
+    {
+     "titulo": "Mercado: nuvem de IA brasileira mira São Paulo em 2027",
+     "status": "ESPECULAÇÃO/IMPRENSA",
+     "relevancia": "BAIXA",
+     "resumo": "A Keraunos Compute planeja iniciar no 1º trimestre de 2027 uma nuvem de IA em São Paulo, usando servidores com GPU em datacenters existentes para treinamento e uso de modelos. Tem cerca de 10 MW em desenvolvimento e vê potencial de 750 MW em cinco anos; não divulga investimento nem fornecedores de chips.",
+     "literal": "",
+     "impacto": "Mais capacidade local reduz a dependência de nuvens estrangeiras para dados sensíveis. O custo tributário dos equipamentos depende do Redata, cujo benefício de PIS/Cofins e IPI acaba em 31/12.",
+     "fontes": [
+      {
+       "nome": "Exame",
+       "data": "27/11/2026",
+       "url": "https://exame.com/inteligencia-artificial/nuvem-de-ia-chega-a-sao-paulo-em-2027-com-plano-de-crescer-75-vezes-em-cinco-anos/"
+      }
+     ]
+    },
+    {
+     "titulo": "Tendência: semântica de dados aparece como condição para agentes de IA acertarem",
+     "status": "ESPECULAÇÃO/IMPRENSA",
+     "relevancia": "BAIXA",
+     "resumo": "Conteúdo de marca da Exame resume as dez tendências de tecnologia do Gartner para 2027. A consultoria projeta que dados bem descritos podem elevar em até 80% a precisão de agentes de IA e que, até 2028, 25% das violações de segurança em empresas envolverão uso indevido de agentes.",
+     "literal": "",
+     "impacto": "Para a área fiscal, cadastro bem estruturado (NCM, classificação tributária, regime do cliente) é o que separa um agente útil de um agente que erra. A trilha SQL e Power BI começa pela qualidade do cadastro.",
+     "fontes": [
+      {
+       "nome": "Exame (conteúdo de marca)",
+       "data": "26/11/2026",
+       "url": "https://exame.com/inteligencia-artificial/gartner-aponta-dez-tendencias-para-2027-da-ia-que-ouve-e-calcula-a-tecnologia-soberana/"
+      }
+     ]
+    },
+    {
+     "titulo": "Regulação: Senado debaterá agentes de IA; marco legal pode incluir cibersegurança",
+     "status": "EM TRAMITAÇÃO",
+     "relevancia": "BAIXA",
+     "resumo": "A Comissão de Ciência e Tecnologia do Senado aprovou em 26/11 audiência pública sobre agentes autônomos e modelos de fronteira, ainda sem data. Na Câmara, o relator do marco legal da IA, deputado Aguinaldo Ribeiro, disse que parlamentares querem incluir cibersegurança no texto final e que só o apresentará se houver compromisso de votação neste ano.",
+     "literal": "",
+     "impacto": "O marco legal segue sem data de votação; empresas que usam IA devem definir governança própria (quem aprova, que dados podem ser usados) sem esperar a lei.",
+     "fontes": [
+      {
+       "nome": "Convergência Digital",
+       "data": "26/11/2026",
+       "url": "https://convergenciadigital.com.br/governo/senado-tera-audiencia-publica-para-debater-ia-agentes-ia-e-riscos-ciberneticos/"
+      },
+      {
+       "nome": "Convergência Digital",
+       "data": "26/11/2026",
+       "url": "https://convergenciadigital.com.br/governo/parlamentares-querem-ciberseguranca-no-pl-do-marco-legal-da-inteligencia-artificial/"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "prazos": [
+  {
+   "data": "30/11/2026",
+   "obrigacao": "Cadastro do CPF no Nota Fortaleza para desconto extra na cota única do IPTU 2027",
+   "afetados": "Proprietários de imóveis residenciais em Fortaleza",
+   "fonte": "Prefeitura de Fortaleza via LegisWeb",
+   "url": "https://legisweb.com.br/noticia/?id=34849"
+  },
+  {
+   "data": "30/11/2026",
+   "obrigacao": "Último dia para acumular pontos do Sua Nota Tem Valor com desconto no IPVA 2027",
+   "afetados": "Consumidores do Ceará",
+   "fonte": "Sefaz-CE via LegisWeb",
+   "url": "https://www.legisweb.com.br/noticia/?id=34750"
+  },
+  {
+   "data": "01/12/2026",
+   "obrigacao": "Início da vigência da IN SEFAZ nº 114/2026 (ITCD em inventários e partilhas extrajudiciais)",
+   "afetados": "Cartórios, herdeiros e advogados no Ceará",
+   "fonte": "Edição de 26/11/2026",
+   "url": "https://elaynegadelha.com.br/#ed-2026-11-26"
+  },
+  {
+   "data": "01/12/2026",
+   "obrigacao": "Produção do DANFE da reforma (NT 2026.010), com totais de IBS, CBS e IS",
+   "afetados": "Emitentes de NF-e",
+   "fonte": "PWR TI",
+   "url": "https://pwrti.com/novo-danfe/"
+  },
+  {
+   "data": "03/12/2026",
+   "obrigacao": "Julgamento previsto no STJ sobre créditos de PIS/Cofins de insumos com alíquota zero",
+   "afetados": "Empresas do regime não cumulativo",
+   "fonte": "Cescon Barrieu",
+   "url": "https://cesconbarrieu.com.br/minuto-tributario-semana-09-a-13-de-novembro-de-2026/"
+  },
+  {
+   "data": "07/12/2026",
+   "obrigacao": "Produção dos releases 1 a 3 da NT 009 da NFS-e (IBS/CBS)",
+   "afetados": "Prestadores de serviço e emissores de NFS-e",
+   "fonte": "Sindifiscal/MS",
+   "url": "https://www.sindifiscalms.org.br/materia/nfse-release2-testes-ibs-cbs-novembro-2026"
+  },
+  {
+   "data": "14/12/2026",
+   "obrigacao": "Produção das NTs 2026.005 (Simples Nacional), 2026.006 e 2026.008 da NF-e",
+   "afetados": "Emitentes de NF-e, inclusive optantes do Simples",
+   "fonte": "PWR TI",
+   "url": "https://pwrti.com/novo-danfe/"
+  },
+  {
+   "data": "15/12/2026",
+   "obrigacao": "Prazo do Senado para fixar a alíquota de referência da CBS; sem resolução, vale o cálculo do TCU (11,3%)",
+   "afetados": "Todos os contribuintes da CBS",
+   "fonte": "Mix Vale",
+   "url": "https://www.mixvale.com.br/2026/11/24/cbs-de-2027-tera-aliquota-de-referencia-de-113-calculada-pelo-tcu/"
+  },
+  {
+   "data": "20/12/2026",
+   "obrigacao": "Fim do prazo para cancelar a opção pelo IBS/CBS no regime regular (optantes do Simples)",
+   "afetados": "ME e EPP que optaram pelo regime regular",
+   "fonte": "CRC-SP",
+   "url": "https://online.crcsp.org.br/portal/noticias/noticia.asp?c=11355"
+  },
+  {
+   "data": "24/12/2026",
+   "obrigacao": "Produção prevista do release 4 da NT 009 (Simples Nacional) da NFS-e",
+   "afetados": "Optantes do Simples que emitem NFS-e",
+   "fonte": "Notagateway",
+   "url": "https://notagateway.com.br/blog/nt-009-nfse-cronograma/"
+  },
+  {
+   "data": "30/12/2026",
+   "obrigacao": "Fim da adesão ao Refis 2026 do Ceará (ICMS, IPVA, ITCD)",
+   "afetados": "Contribuintes com débitos estaduais no Ceará",
+   "fonte": "Sefaz-CE via LegisWeb",
+   "url": "https://www.legisweb.com.br/noticia/?id=34699"
+  },
+  {
+   "data": "31/12/2026",
+   "obrigacao": "Fim do ano de teste: último mês com dispensa de recolhimento de CBS e IBS (art. 348 da LC 214)",
+   "afetados": "Contribuintes do regime regular",
+   "fonte": "Planalto",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm"
+  },
+  {
+   "data": "1º/1/2027",
+   "obrigacao": "Início da cobrança da CBS e revogação dos dispositivos de PIS/Cofins (arts. 347 e 542 da LC 214)",
+   "afetados": "Contribuintes do regime regular",
+   "fonte": "Planalto",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm"
+  }
+ ],
+ "acoes": [
+  "Atualizar o emissor de NF-e para o DANFE da NT 2026.010 antes de 1º/12 e testar a impressão com o bloco de IBS, CBS e IS.",
+  "Testar o emissor de NFS-e com o release 2 da NT 009 em homologação e planejar a virada para 07/12; nos clientes do Simples, acompanhar o release de 24/12.",
+  "Manter o cronograma de 1º/1/2027 para a CBS e simular os preços de janeiro com a CBS por fora, sem contar com o adiamento pedido no STF.",
+  "Avisar MEIs perto de R$ 81 mil que o novo limite segue sem votação e planejar o desenquadramento, se necessário.",
+  "Estudar: rodar a consulta SQL de notas sem destaque de CBS/IBS, montar no Power BI um painel por cliente e modelo de nota e testar, em máquina sem dados de clientes, um app interno criado com IA para automatizar a conferência."
+ ],
+ "glossario": [
+  {
+   "termo": "Ano de teste",
+   "def": "2026: CBS de 0,9% e IBS de 0,1% destacados, com recolhimento dispensado para quem cumpre as obrigações acessórias."
+  },
+  {
+   "termo": "Dispensa de recolhimento",
+   "def": "Regra do art. 348, § 1º, da LC 214: o tributo é destacado mas não pago, se as obrigações acessórias estiverem em dia."
+  },
+  {
+   "termo": "Alíquota de referência",
+   "def": "Alíquota da CBS fixada pelo Senado, calculada para manter a arrecadação dos tributos substituídos."
+  },
+  {
+   "termo": "Cobrança por fora",
+   "def": "Tributo somado ao preço, e não embutido nele, como ocorre com PIS/Cofins."
+  },
+  {
+   "termo": "NT 009",
+   "def": "Nota técnica que adapta a NFS-e nacional ao IBS e à CBS, liberada em etapas (releases)."
+  },
+  {
+   "termo": "Release",
+   "def": "Etapa de uma nota técnica liberada em homologação e depois em produção."
+  },
+  {
+   "termo": "DANFE",
+   "def": "Representação impressa da NF-e; passa a trazer os totais de IBS, CBS e IS."
+  },
+  {
+   "termo": "PLP",
+   "def": "Projeto de lei complementar, exigido para mudar regras do Simples e do MEI."
+  },
+  {
+   "termo": "Agente de IA",
+   "def": "Sistema de IA que executa tarefas em outros programas, como fazer um Pix ou ler um edital."
+  }
+ ],
+ "fontes": [
+  {
+   "nome": "Receita Federal",
+   "titulo": "Notícias da Receita Federal",
+   "data": "27/11/2026",
+   "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias"
+  },
+  {
+   "nome": "Receita Federal",
+   "titulo": "Normas da Receita Federal (Sijut)",
+   "data": "27/11/2026",
+   "url": "http://normas.receita.fazenda.gov.br/"
+  },
+  {
+   "nome": "Receita Federal",
+   "titulo": "Legislação da Receita Federal",
+   "data": "27/11/2026",
+   "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/legislacao"
+  },
+  {
+   "nome": "Receita Federal",
+   "titulo": "Reforma Tributária",
+   "data": "27/11/2026",
+   "url": "https://www.gov.br/receitafederal/pt-br/assuntos/reforma-tributaria"
+  },
+  {
+   "nome": "Receita Federal",
+   "titulo": "Reforma Tributária do Consumo",
+   "data": "27/11/2026",
+   "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria-do-consumo"
+  },
+  {
+   "nome": "Receita Federal",
+   "titulo": "Quadro de bagagem no Guia do Viajante",
+   "data": "26/11/2026",
+   "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/sem-surpresas-na-alfandega-receita-federal-publica-quadro-inedito-de-bagagem-e-esclarece-limites-de-compras-na-chegada-ao-brasil"
+  },
+  {
+   "nome": "Imprensa Nacional",
+   "titulo": "Diário Oficial da União",
+   "data": "27/11/2026",
+   "url": "https://www.in.gov.br/"
+  },
+  {
+   "nome": "Tax Prático",
+   "titulo": "Legislação e notícias do dia",
+   "data": "27/11/2026",
+   "url": "https://taxpratico.com.br/"
+  },
+  {
+   "nome": "Planalto",
+   "titulo": "Lei Complementar nº 214/2025 (texto compilado)",
+   "data": "27/11/2026",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm"
+  },
+  {
+   "nome": "JOTA",
+   "titulo": "Confederações vão ao STF para adiar início da CBS e do IBS",
+   "data": "26/11/2026",
+   "url": "https://jota.info/coberturas-especiais/pulso-da-reforma/reforma-tributaria-confederacoes-vao-ao-stf-para-adiar-inicio-da-cbs-e-do-ibs"
+  },
+  {
+   "nome": "Agência Câmara",
+   "titulo": "Cancelada reunião sobre limite do MEI",
+   "data": "25/11/2026",
+   "url": "https://www.camara.leg.br/noticias/1321031-cancelada-reuniao-para-votar-parecer-sobre-ampliacao-do-limite-de-faturamento-de-meis"
+  },
+  {
+   "nome": "Sindifiscal/MS",
+   "titulo": "NFS-e libera nova etapa de testes de IBS e CBS",
+   "data": "26/11/2026",
+   "url": "https://www.sindifiscalms.org.br/materia/nfse-release2-testes-ibs-cbs-novembro-2026"
+  },
+  {
+   "nome": "Notagateway",
+   "titulo": "NT 009 NFS-e: cronograma de 07/12",
+   "data": "26/11/2026",
+   "url": "https://notagateway.com.br/blog/nt-009-nfse-cronograma/"
+  },
+  {
+   "nome": "PWR TI",
+   "titulo": "Novo DANFE em 1º/12",
+   "data": "16/11/2026",
+   "url": "https://pwrti.com/novo-danfe/"
+  },
+  {
+   "nome": "Portal da NFS-e Nacional",
+   "titulo": "Orientações sobre leiaute e NT 009",
+   "data": "29/10/2026",
+   "url": "https://www.gov.br/nfse/pt-br/noticias/nfs-e-nacional-confira-oas-rientacoes-sobre-leiaute-em-producao-regras-de-preenchimento-de-ibs-cbs-e-status-da-nota-tecnica-009"
+  },
+  {
+   "nome": "Canaltech",
+   "titulo": "Claude cria programas para PC no plano grátis",
+   "data": "26/11/2026",
+   "url": "https://canaltech.com.br/inteligencia-artificial/claude-agora-cria-programas-reais-para-pc-no-plano-gratis/"
+  },
+  {
+   "nome": "Mobile Time",
+   "titulo": "PicPay lançará agentes de IA para PJ",
+   "data": "26/11/2026",
+   "url": "https://www.mobiletime.com.br/noticias/26/11/2026/picpay-agentes-para-pj/"
+  },
+  {
+   "nome": "Convergência Digital",
+   "titulo": "Senado terá audiência sobre agentes de IA",
+   "data": "26/11/2026",
+   "url": "https://convergenciadigital.com.br/governo/senado-tera-audiencia-publica-para-debater-ia-agentes-ia-e-riscos-ciberneticos/"
+  },
+  {
+   "nome": "Convergência Digital",
+   "titulo": "Cibersegurança no marco legal da IA",
+   "data": "26/11/2026",
+   "url": "https://convergenciadigital.com.br/governo/parlamentares-querem-ciberseguranca-no-pl-do-marco-legal-da-inteligencia-artificial/"
+  },
+  {
+   "nome": "Startups",
+   "titulo": "Settle leva IA às compras públicas",
+   "data": "19/11/2026",
+   "url": "https://startups.com.br/negocios/inteligencia-artificial/investida-da-canary-settle-acelera-levando-ia-para-as-compras-publicas/"
+  },
+  {
+   "nome": "Let's Money",
+   "titulo": "Avra capta US$ 6 milhões",
+   "data": "26/11/2026",
+   "url": "https://www.letsmoney.com.br/ia/avra-capta-6-milhoes-ia-nxtp/"
+  },
+  {
+   "nome": "Startups",
+   "titulo": "Zoop quer chegar a R$ 10 bi vendendo IA",
+   "data": "12/11/2026",
+   "url": "https://startups.com.br/negocios/depois-de-fintech-zoop-quer-chegar-a-r-10b-vendendo-ia/"
+  },
+  {
+   "nome": "Exame",
+   "titulo": "Mapa da Mina: lições de gestão",
+   "data": "24/11/2026",
+   "url": "https://exame.com/negocios/ruptura-e-o-maior-pecado-do-varejo-3-licoes-de-gestao-desta-rede-que-fatura-r33-mi-com-semijoias/"
+  },
+  {
+   "nome": "Exame",
+   "titulo": "Nuvem de IA chega a São Paulo em 2027",
+   "data": "27/11/2026",
+   "url": "https://exame.com/inteligencia-artificial/nuvem-de-ia-chega-a-sao-paulo-em-2027-com-plano-de-crescer-75-vezes-em-cinco-anos/"
+  },
+  {
+   "nome": "Exame",
+   "titulo": "Estagiário e trainee na era da IA",
+   "data": "27/11/2026",
+   "url": "https://exame.com/inteligencia-artificial/estagiario-e-trainee-na-era-da-ia-quais-tarefas-de-aprendizado-ainda-existem/"
+  },
+  {
+   "nome": "Exame",
+   "titulo": "Empreender com IA",
+   "data": "27/11/2026",
+   "url": "https://exame.com/inteligencia-artificial/cogitando-empreender-com-ia-o-que-muda-para-quem-quer-largar-o-emprego-e-abrir-um-negocio/"
+  },
+  {
+   "nome": "Exame",
+   "titulo": "Guia de prompts de Google e Anthropic",
+   "data": "26/11/2026",
+   "url": "https://exame.com/inteligencia-artificial/guia-de-prompts-como-pedir-a-ia-resultados-melhores-no-trabalho-segundo-google-e-anthropic/"
+  },
+  {
+   "nome": "Exame",
+   "titulo": "Tendências do Gartner para 2027",
+   "data": "26/11/2026",
+   "url": "https://exame.com/inteligencia-artificial/gartner-aponta-dez-tendencias-para-2027-da-ia-que-ouve-e-calcula-a-tecnologia-soberana/"
+  },
+  {
+   "nome": "Exame",
+   "titulo": "Quem poderá dizer não à IA",
+   "data": "26/11/2026",
+   "url": "https://exame.com/inteligencia-artificial/a-ia-pode-ficar-mais-inteligente-que-os-humanos-mas-quem-podera-dizer-nao/"
+  }
+ ]
+}

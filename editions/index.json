@@ -1,5 +1,21 @@
 [
  {
+  "date": "2026-11-27",
+  "titulo": "Confederações pedem ao STF adiar a CBS; NFS-e da reforma vai para 07/12",
+  "atencao": "O pedido das confederações ao STF não suspende nada. Enquanto não houver decisão, a LC nº 214/2025 continua valendo: a CBS passa a ser cobrada sobre fatos geradores a partir de 1º/1/2027 (art. 347) e os artigos que instituem PIS e Cofins nas Leis 10.637/2002 e 10.833/2003 ficam revogados na mesma data (art. 542). Restam 35 dias. Preço, contrato e emissor de nota precisam estar prontos para a data da lei, não para a data que se pede no tribunal.",
+  "norma": "LC nº 214/2025 (transição 2026–2027: arts. 346 a 348 e 542)",
+  "conexao": "O pedido das confederações ao STF para adiar a CBS e a remarcação dos releases da NFS-e para 07/12 e 24/12 contam a mesma história: a data de 1º/1/2027 está fixada em lei, mas os sistemas e a regulamentação ainda se movem. Para as empresas, isso significa preparar o emissor e a precificação para a data legal e tratar qualquer adiamento como hipótese, não como plano. O MEI sem novo limite votado mostra o mesmo descompasso no Simples.",
+  "tags": [
+   "CBS",
+   "STF",
+   "NFS-e",
+   "NF-e",
+   "MEI",
+   "IA",
+   "Dados"
+  ]
+ },
+ {
   "date": "2026-11-26",
   "titulo": "Redata perde PIS/Cofins e IPI em 31/12; Receita apresenta o novo PGDAS",
   "atencao": "Restam 35 dias para os benefícios de PIS/Cofins e IPI do Redata. Pela Lei nº 15.504/2026, a suspensão desses tributos na compra de equipamentos para datacenters produz efeitos só até 31/12/2026; o Imposto de Importação segue por cinco anos. Para datacenter habilitado e fornecedor coabilitado, a data da operação decide o tratamento: entrega e nota em dezembro têm suspensão; em janeiro, a compra já segue a CBS.",

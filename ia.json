@@ -1,6 +1,153 @@
 {
  "dias": [
   {
+   "date": "2026-11-27",
+   "titulo": "IA vira produto que se cria sozinho e agente que faz Pix; licitação e crédito viram negócio",
+   "resumo": "A IA avança do texto para a ação: o Claude passa a criar programas para o computador e o PicPay prepara agente que faz pagamentos por voz. Startups brasileiras crescem automatizando leitura de editais e análise de risco, enquanto o Congresso discute agentes e cibersegurança sem prazo para o marco legal. Para empresas e escritórios, o ganho vem com uma exigência: saber quem autoriza o que o agente faz e com que dados.",
+   "negocios": [
+    {
+     "nome": "Settle",
+     "quem": "Alice Iglesias (cofundadora e CEO) e Mateus Brum (cofundador e diretor)",
+     "local": "Brasil",
+     "fonte": "Startups",
+     "data": "19/11/2026",
+     "url": "https://startups.com.br/negocios/inteligencia-artificial/investida-da-canary-settle-acelera-levando-ia-para-as-compras-publicas/",
+     "negocio": "Plataforma de IA para empresas que vendem ao governo encontrarem e disputarem licitações.",
+     "comoUsaIA": "Agentes leem editais em PDF, pontuam cada oportunidade pelos critérios do cliente e pré-conferem os documentos de habilitação; também cruzam contratos e portais de transparência para prever licitações.",
+     "numeros": "Receita dobrando a cada três meses; expectativa de passar de R$ 1 milhão de receita recorrente anual no início de 2027; cerca de R$ 4 bilhões em oportunidades qualificadas só em setembro; ganho de 35% a 40% em tarefas operacionais; quatro clientes corporativos (entre eles Vivo, Betha e BR Supply); aporte pré-semente de US$ 3,08 milhões.",
+     "licao": "Leitura e conferência de documentos longos é rotina de escritório contábil. Automatizar a triagem e deixar a decisão com pessoas é um serviço que pode ser oferecido a clientes que participam de licitações."
+    },
+    {
+     "nome": "Avra",
+     "quem": "Viviane Meister, cofundadora e CEO",
+     "local": "Brasil",
+     "fonte": "Let's Money (com informações do Brazil Journal)",
+     "data": "26/11/2026",
+     "url": "https://www.letsmoney.com.br/ia/avra-capta-6-milhoes-ia-nxtp/",
+     "negocio": "Ferramenta de IA que indica a grandes empresas para quais PMEs e consumidores vender, com risco de inadimplência e valor esperado do cliente.",
+     "comoUsaIA": "Treinou um modelo de base próprio com dados em áudio, PDF, imagem e texto, ajustado para cada cliente.",
+     "numeros": "Rodada de US$ 6 milhões (cerca de R$ 35 milhões) liderada pela NXTP; seis clientes novos em 2026 (entre eles Inter, Getnet, PicPay, Vivo, Ambev e Stone), depois de dois nos primeiros dois anos; receita recorrente multiplicada por 8; equipe de pesquisa de 12 pessoas.",
+     "licao": "Dados que a empresa já tem (documentos, histórico de pagamento) viram vantagem quando são organizados. Escritórios podem começar pelo histórico de inadimplência da própria carteira."
+    },
+    {
+     "nome": "Mapa da Mina Acessórios",
+     "quem": "Elisangela e Jamil Machado, fundadores; Marcos Pertile, sócio-diretor",
+     "local": "Duque de Caxias (RJ)",
+     "fonte": "Exame",
+     "data": "24/11/2026",
+     "url": "https://exame.com/negocios/ruptura-e-o-maior-pecado-do-varejo-3-licoes-de-gestao-desta-rede-que-fatura-r33-mi-com-semijoias/",
+     "negocio": "Rede de franquias de semijoias com 58 unidades entre lojas e quiosques.",
+     "comoUsaIA": "Usa IA para acelerar a análise de vendas: toda segunda-feira, cada franqueado recebe o relatório da semana anterior com sugestão de compra por unidade, sem substituir a decisão dele.",
+     "numeros": "Faturamento de R$ 33,4 milhões em 2025 e projeção de R$ 38,6 milhões em 2026 (+15,5%); número de unidades 10% maior em 2026; meta de estoque médio abaixo de 90 dias.",
+     "licao": "Relatório semanal automático com sugestão de ação é um produto simples que um escritório pode entregar a clientes do varejo, a partir dos dados de vendas que já recebe."
+    },
+    {
+     "nome": "Zoop",
+     "quem": "Cesario Martins, CEO",
+     "local": "Brasil (grupo Prosus/iFood)",
+     "fonte": "Startups",
+     "data": "12/11/2026",
+     "url": "https://startups.com.br/negocios/depois-de-fintech-zoop-quer-chegar-a-r-10b-vendendo-ia/",
+     "negocio": "Empresa de pagamentos que abriu uma linha de infraestrutura de IA para médias e grandes empresas.",
+     "comoUsaIA": "Vende o Toqan Router, que dá acesso a mais de 500 modelos com controle de custo, acesso e dados; diz ter montado sua operação de adquirência em seis meses com agentes de IA.",
+     "numeros": "Meta de R$ 10 bilhões em cinco anos na nova linha; redução de 90% no custo de consumo de IA relatada no iFood, que usa mais de 10 trilhões de tokens por mês; R$ 155 bilhões processados em 12 meses.",
+     "licao": "Caso de empresa grande, citado pelo controle de custo: quem usa vários modelos de IA precisa medir gasto e definir que dados podem sair da empresa."
+    }
+   ],
+   "noticias": [
+    {
+     "titulo": "Claude passa a criar programas para computador, inclusive no plano gratuito",
+     "fonte": "Canaltech",
+     "data": "26/11/2026",
+     "url": "https://canaltech.com.br/inteligencia-artificial/claude-agora-cria-programas-reais-para-pc-no-plano-gratis/",
+     "tema": "Ferramentas",
+     "resumo": "A Anthropic liberou em beta, para todos os planos, a criação e instalação de programas para Windows e macOS por pedido em linguagem natural. A criação e o uso dos apps consomem o limite da conta. A empresa não faz análise de segurança dos apps, e os que têm acesso total podem alterar ou apagar arquivos sem pedir confirmação.",
+     "porQueImporta": "Ferramentas internas de conferência e organização passam a estar ao alcance de quem não programa. Usar em ambiente de teste, sem pastas com dados de clientes."
+    },
+    {
+     "titulo": "PicPay lançará agentes de IA que fazem Pix e agendam serviços para clientes PJ",
+     "fonte": "Mobile Time",
+     "data": "26/11/2026",
+     "url": "https://www.mobiletime.com.br/noticias/26/11/2026/picpay-agentes-para-pj/",
+     "tema": "Empresas",
+     "resumo": "O PicPay anunciou um agente de gestão financeira que faz Pix, cria links de pagamento e emite extratos por voz, ainda neste ano, e um agente de agendamento para autônomos no início de 2027. O agente de marketing lançado antes criou 70 mil campanhas para 8 mil contas PJ em pouco mais de dois meses.",
+     "porQueImporta": "Pagamento feito por agente exige regra de aprovação e conciliação. Contadores de pequenas empresas devem definir com o cliente quem autoriza e como o extrato chega à contabilidade."
+    },
+    {
+     "titulo": "Nuvem de IA chega a São Paulo em 2027 com plano de crescer 75 vezes",
+     "fonte": "Exame",
+     "data": "27/11/2026",
+     "url": "https://exame.com/inteligencia-artificial/nuvem-de-ia-chega-a-sao-paulo-em-2027-com-plano-de-crescer-75-vezes-em-cinco-anos/",
+     "tema": "Mercado",
+     "resumo": "A Keraunos Compute, de Daniel Velloso, Eduardo Meyer e Fabio Schettino, planeja iniciar no 1º trimestre de 2027 uma nuvem de IA em São Paulo com servidores de GPU em datacenters existentes. Tem cerca de 10 MW em desenvolvimento e vê potencial de 750 MW em cinco anos, sem divulgar investimento.",
+     "porQueImporta": "Capacidade local de IA facilita manter dados sensíveis no país. O custo dos equipamentos depende do Redata, com benefício de PIS/Cofins e IPI até 31/12."
+    },
+    {
+     "titulo": "Estagiário e trainee na era da IA: que tarefas de aprendizado ainda existem (conteúdo de marca)",
+     "fonte": "Exame",
+     "data": "27/11/2026",
+     "url": "https://exame.com/inteligencia-artificial/estagiario-e-trainee-na-era-da-ia-quais-tarefas-de-aprendizado-ainda-existem/",
+     "tema": "Trabalho",
+     "resumo": "Conteúdo de marca. Estudo do laboratório de economia digital de Stanford, atualizado em agosto de 2026, indica que o emprego de jovens de 22 a 25 anos nas ocupações mais expostas à IA nos EUA está 19% abaixo do esperado. A sugestão é manter os iniciantes responsáveis por interpretar e revisar o que a IA produz, com supervisão.",
+     "porQueImporta": "Escritórios que automatizam tarefas de entrada precisam redesenhar a formação dos juniores, que passam a revisar e explicar o resultado da IA."
+    },
+    {
+     "titulo": "Empreender com IA: o que muda para quem quer abrir um negócio (conteúdo de marca)",
+     "fonte": "Exame",
+     "data": "27/11/2026",
+     "url": "https://exame.com/inteligencia-artificial/cogitando-empreender-com-ia-o-que-muda-para-quem-quer-largar-o-emprego-e-abrir-um-negocio/",
+     "tema": "Negócios",
+     "resumo": "Conteúdo de marca. Pesquisa do Sebrae de 2026 com 7.182 empreendedores mostra que 52% usaram IA nas duas semanas anteriores à entrevista; a OCDE aponta que 65% das PMEs que usam IA generativa relataram ganho de desempenho. O texto recomenda calcular custos fixos, impostos e ferramentas antes de deixar o emprego.",
+     "porQueImporta": "Metade dos pequenos empreendedores já usa IA: o contador que orienta abertura de empresa pode incluir custo de ferramentas e simulação tributária no plano inicial."
+    },
+    {
+     "titulo": "Guia de prompts: como pedir resultados melhores à IA no trabalho (conteúdo de marca)",
+     "fonte": "Exame",
+     "data": "26/11/2026",
+     "url": "https://exame.com/inteligencia-artificial/guia-de-prompts-como-pedir-a-ia-resultados-melhores-no-trabalho-segundo-google-e-anthropic/",
+     "tema": "Ferramentas",
+     "resumo": "Conteúdo de marca. Resume o guia do Google (persona, tarefa, contexto, formato) e orientações da Anthropic, como dar de três a cinco exemplos do formato desejado. Cita o Work Trend Index 2026 da Microsoft: 86% dos profissionais tratam a resposta da IA como ponto de partida.",
+     "porQueImporta": "Pedidos com contexto e exemplo reduzem retrabalho. Números e fontes devem ser conferidos antes de qualquer material circular."
+    },
+    {
+     "titulo": "Gartner aponta dez tendências para 2027 (conteúdo de marca)",
+     "fonte": "Exame",
+     "data": "26/11/2026",
+     "url": "https://exame.com/inteligencia-artificial/gartner-aponta-dez-tendencias-para-2027-da-ia-que-ouve-e-calcula-a-tecnologia-soberana/",
+     "tema": "Mercado",
+     "resumo": "Conteúdo de marca. O Gartner projeta que dados bem descritos podem elevar em até 80% a precisão de agentes de IA em 2027, que 25% das violações de segurança em empresas envolverão uso indevido de agentes até 2028 e que mais de 75% das organizações fora dos EUA adotarão estratégias de soberania digital até 2030.",
+     "porQueImporta": "Agente fiscal só acerta com cadastro bem descrito: NCM, classificação tributária e regime do cliente são a base."
+    },
+    {
+     "titulo": "A IA pode ficar mais inteligente que os humanos, mas quem poderá dizer não?",
+     "fonte": "Exame",
+     "data": "26/11/2026",
+     "url": "https://exame.com/inteligencia-artificial/a-ia-pode-ficar-mais-inteligente-que-os-humanos-mas-quem-podera-dizer-nao/",
+     "tema": "Regulação",
+     "resumo": "Dario Amodei, CEO da Anthropic, negou em 25/11 apoiar a entrega de decisões políticas à IA, separando automação de tarefas de governança. Alexandr Wang, chefe de IA da Meta, publicou ensaio contra entregar a sociedade à IA, e Dean Ball descreveu a pressão econômica para delegar decisões.",
+     "porQueImporta": "O debate chega às empresas como pergunta prática: que decisões podem ser delegadas a agentes e quais exigem aprovação humana."
+    },
+    {
+     "titulo": "Senado terá audiência pública sobre agentes de IA e riscos cibernéticos",
+     "fonte": "Convergência Digital",
+     "data": "26/11/2026",
+     "url": "https://convergenciadigital.com.br/governo/senado-tera-audiencia-publica-para-debater-ia-agentes-ia-e-riscos-ciberneticos/",
+     "tema": "Regulação",
+     "resumo": "A Comissão de Ciência e Tecnologia do Senado aprovou em 26/11 o requerimento do senador Jorge Seif para audiência sobre agentes autônomos e modelos de fronteira, com GSI, Anatel, Exército, Abin e empresas de IA. A data não foi marcada.",
+     "porQueImporta": "Agentes autônomos entram na pauta regulatória; empresas que os adotam devem registrar o que cada agente pode fazer."
+    },
+    {
+     "titulo": "Parlamentares querem cibersegurança no marco legal da IA",
+     "fonte": "Convergência Digital",
+     "data": "26/11/2026",
+     "url": "https://convergenciadigital.com.br/governo/parlamentares-querem-ciberseguranca-no-pl-do-marco-legal-da-inteligencia-artificial/",
+     "tema": "Regulação",
+     "resumo": "O relator do marco legal da IA na Câmara, deputado Aguinaldo Ribeiro, disse que parlamentares querem incluir cibersegurança no texto final e que só o apresentará se houver compromisso de votação neste ano. Ele também criticou o atraso na regulamentação do Redata.",
+     "porQueImporta": "Sem lei aprovada, a governança de IA nas empresas continua dependendo de política interna."
+    }
+   ]
+  },
+  {
    "date": "2026-11-26",
    "titulo": "IA entra no fechamento contábil e na folha, e o incentivo a datacenters corre contra 31/12",
    "resumo": "Empresas grandes já medem ganho de IA em processos financeiros, como o fechamento contábil do Mercado Livre, e startups brasileiras crescem automatizando contratos, folha e gestão de PJs. Ao mesmo tempo, o Redata perde a suspensão de PIS/Cofins e IPI no fim do ano, e o marco legal da IA segue sem data: o ganho vem do processo bem escolhido e da governança própria, não da regulação.",
